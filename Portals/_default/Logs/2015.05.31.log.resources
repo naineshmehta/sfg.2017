@@ -1,0 +1,274 @@
+2015-05-31 01:00:13,364 [h1901557][Thread:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider iFinity.DNN.Modules.FriendlyUrl.DNNFriendlyUrlProvider, iFinity.FriendlyUrlProvider
+2015-05-31 01:00:43,989 [h1901557][Thread:10][ERROR] DotNetNuke.Framework.Reflection - DotNetNuke.Modules.HtmlEditorManager.Components.UpgradeController, DotNetNuke.Modules.HtmlEditorManager
+System.IO.FileNotFoundException: Could not load file or assembly 'DotNetNuke.Modules.HtmlEditorManager' or one of its dependencies. The system cannot find the file specified.
+File name: 'DotNetNuke.Modules.HtmlEditorManager'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2015-05-31 01:00:43,989 [h1901557][Thread:8][ERROR] DotNetNuke.Framework.Reflection - DotNetNuke.Modules.HtmlEditorManager.Components.UpgradeController, DotNetNuke.Modules.HtmlEditorManager
+System.IO.FileNotFoundException: Could not load file or assembly 'DotNetNuke.Modules.HtmlEditorManager' or one of its dependencies. The system cannot find the file specified.
+File name: 'DotNetNuke.Modules.HtmlEditorManager'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2015-05-31 01:55:02,181 [h1901557][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 02:55:32,037 [h1901557][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 03:11:24,480 [h1901557][Thread:8][ERROR] DotNetNuke.Services.Authentication.OAuth.OAuthClientBase - WebResponse exception: {"error":{"message":"This authorization code has expired.","type":"OAuthException","code":100}}
+2015-05-31 03:54:50,388 [h1901557][Thread:9][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 04:55:04,935 [h1901557][Thread:15][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 05:55:16,880 [h1901557][Thread:15][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 06:51:02,652 [h1901557][Thread:5][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: f60b8e7197d86eb1752316167ce893e6 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 06:51:14,246 [h1901557][Thread:16][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 7bd8d3431f13dd138e18b093289a2f59 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 06:55:38,781 [h1901557][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 07:55:10,651 [h1901557][Thread:20][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 08:55:24,398 [h1901557][Thread:20][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 09:03:04,860 [h1901557][Thread:19][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-05-31 09:55:49,303 [h1901557][Thread:5][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 10:06:30,774 [h1901557][Thread:17][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-05-31 10:56:04,228 [h1901557][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 11:56:28,509 [h1901557][Thread:8][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 12:39:56,994 [h1901557][Thread:13][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at DotNetNuke.UI.WebControls.CaptchaControl.GenerateImage(String encryptedText)
+2015-05-31 12:55:44,280 [h1901557][Thread:26][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 13:56:01,131 [h1901557][Thread:19][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 14:04:16,381 [h1901557][Thread:21][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-05-31 14:56:21,534 [h1901557][Thread:19][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 15:56:31,155 [h1901557][Thread:17][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 16:56:00,667 [h1901557][Thread:30][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 17:42:29,258 [h1901557][Thread:32][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: e004041a2311ff67c8b0c1f5d3025eeb ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 17:42:39,586 [h1901557][Thread:32][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 7dab54d32682c9197232550b6871dac9 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 17:43:52,120 [h1901557][Thread:36][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: e004041a2311ff67c8b0c1f5d3025eeb ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 17:56:19,202 [h1901557][Thread:28][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 18:56:39,811 [h1901557][Thread:28][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 19:34:34,360 [h1901557][Thread:12][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: Could not parse the version in the request
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 19:34:35,360 [h1901557][Thread:31][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: Could not parse the version in the request
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 19:34:36,204 [h1901557][Thread:12][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: Could not parse the version in the request
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 19:34:37,891 [h1901557][Thread:12][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: Could not parse the version in the request
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 19:34:39,532 [h1901557][Thread:31][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: Could not parse the type set in the request
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 19:34:41,188 [h1901557][Thread:31][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: Could not parse the type set in the request
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 19:34:42,735 [h1901557][Thread:25][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: Could not parse the type set in the request
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 19:34:43,985 [h1901557][Thread:31][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: Could not parse the version in the request
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 19:34:45,501 [h1901557][Thread:31][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: Could not parse the version in the request
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 19:34:46,345 [h1901557][Thread:31][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2015-05-31 19:34:47,423 [h1901557][Thread:25][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2015-05-31 19:34:48,142 [h1901557][Thread:25][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2015-05-31 19:34:49,376 [h1901557][Thread:25][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: Could not parse the version in the request
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 19:34:49,767 [h1901557][Thread:25][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2015-05-31 19:56:56,100 [h1901557][Thread:33][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 20:35:23,650 [h1901557][Thread:27][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Conversion from string "" to type 'Integer' is not valid. ---> System.FormatException: Input string was not in a correct format.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at DotNetNuke.Modules.Forum.ForumUserInfo.get_AvatarCoreFile()
+2015-05-31 20:35:23,744 [h1901557][Thread:27][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Conversion from string "" to type 'Integer' is not valid. ---> System.FormatException: Input string was not in a correct format.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at DotNetNuke.Modules.Forum.ForumUserInfo.get_AvatarCoreFile()
+2015-05-31 20:35:23,760 [h1901557][Thread:27][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Conversion from string "" to type 'Integer' is not valid. ---> System.FormatException: Input string was not in a correct format.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at DotNetNuke.Modules.Forum.ForumUserInfo.get_AvatarCoreFile()
+2015-05-31 20:35:23,760 [h1901557][Thread:27][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Conversion from string "" to type 'Integer' is not valid. ---> System.FormatException: Input string was not in a correct format.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at DotNetNuke.Modules.Forum.ForumUserInfo.get_AvatarCoreFile()
+2015-05-31 20:35:23,822 [h1901557][Thread:27][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Conversion from string "" to type 'Integer' is not valid. ---> System.FormatException: Input string was not in a correct format.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at DotNetNuke.Modules.Forum.ForumUserInfo.get_AvatarCoreFile()
+2015-05-31 20:35:23,822 [h1901557][Thread:27][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Conversion from string "" to type 'Integer' is not valid. ---> System.FormatException: Input string was not in a correct format.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at DotNetNuke.Modules.Forum.ForumUserInfo.get_AvatarCoreFile()
+2015-05-31 20:52:09,165 [h1901557][Thread:27][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 2154c4c08fcef6ff723012f7065cc560 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 20:57:16,322 [h1901557][Thread:27][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 21:31:21,133 [h1901557][Thread:25][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 2154c4c08fcef6ff723012f7065cc560 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 21:56:42,051 [h1901557][Thread:25][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 22:02:38,788 [h1901557][Thread:12][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 2154c4c08fcef6ff723012f7065cc560 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-31 22:57:04,907 [h1901557][Thread:18][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-31 23:57:09,584 [h1901557][Thread:24][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)

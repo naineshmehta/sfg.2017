@@ -1,0 +1,244 @@
+﻿
+/* DNN Override*/
+.Normal {
+    font-size: 14px;
+    line-height: 1.428;
+}
+
+.dnnFormItem input[type="text"] {width:100%;}
+.LoginPanel input[type="text"] {width:200px;}
+
+.dnnDropDownList .selected-item a, .dnnDropDownList .selected-item a:link, .dnnDropDownList .selected-item a:visited, .dnnDropDownList .selected-item a:hover, .dnnDropDownList .selected-item a:active{ height: 35px !important;}
+.dnnDropDownList .dt-container .dt-content {margin: 50px 0 0 0;}
+.dnnDropDownList .dt-container .dt-header { height: 50px !important;}
+ul.dnnAdminTabNav { height: 45px;}
+
+#dnnModuleDigitalAssetsMainToolbar{height:40px;}
+#dnnModuleDigitalAssetsSelectionToolbar, 
+#dnnModuleDigitalAssetsListViewToolbar, 
+#dnnModuleDigitalAssetsListContainer, 
+.dnnModuleDigitalAssetsGrid > table > thead > tr {min-height:40px}
+
+/*Width of each row 1600px */
+.row {
+	max-width: 100rem;
+}
+
+.top-bar {
+	max-width: 100rem;
+}
+
+.topbar{
+    height:auto;
+}
+
+.content-holder {
+	padding: 10px;
+}
+
+
+/* Header */
+.logo-holder {margin-left: 10px;}
+
+.clear-container
+{
+    clear: both;
+}
+
+h1 {
+    font-size: 1.8rem; }
+
+h2 {
+    font-size: 1.6rem; }
+
+h3 {
+    font-size: 1.3rem; }
+
+h4 {
+    font-size: 1.1rem; }
+
+h5 {
+    font-size: 1.05rem; }
+
+h6 {
+    font-size: 1rem; }
+
+/*override for dnnLabels in the bootstrap */
+/* everything between 641px and 1920px */
+@media only screen and (min-width: 40em) and (max-width:120em) {
+    .dnnFormShort .dnnLabel,
+    .dnnCaptcha .dnnLabel  {
+        text-align: right;
+        width: 15%;
+    }
+
+    .dnnActions li  {
+        /*float:none;*/
+    }
+}
+
+/* everything up to 640px */
+@media only screen and (max-width: 40em){
+    .articleLatest{
+        width:auto;
+    }
+
+    .NewsArchive{height:200px; overflow:auto;}
+
+    .logo-holder {width:100%;}
+}
+
+/* min-width 641px and max-width 1024px */
+@media only screen and (min-width: 40.063em) and (max-width: 64.063em){
+    .articleLatest{
+        width: 49%;
+    }
+    .logo-holder {width:100%;}
+
+}
+
+/* min-width 1024px and max-width 1440px */
+@media only screen and (min-width: 64.063em) and (max-width: 90em){
+    .articleLatest{
+        width: 31.5%;
+    }
+}
+
+/* Contact Us and Register Forms */
+.Feedback_FieldLabel .dnnLabel, 
+.Feedback_SectionHead .dnnLabel,
+.Feedback_CaptchaLabel .dnnLabel{
+    text-align: left;
+    width: auto;
+}
+
+div.Feedback_CaptchaLabel{
+    text-align:left;
+}
+
+div.Feedback_CaptchaControl{
+    text-align:left;
+}
+
+.Feedback_FieldValue input[type="text"]{
+display: inline;
+}
+
+div.Feedback_Field span.NormalRed{
+    padding-top:0px;
+    padding-bottom:0px;
+    float:left;
+}
+
+span.min-length-text{margin-left:20px;display:inline-block;}
+
+div.meter {margin-left:20px;display:inline-block;}
+
+/* News Article Item */
+.articleTags a{
+    border: 1px solid #8cc63f;
+    color: #fff;
+    background-color: #8cc63f;
+    padding: 5px;
+    margin: 5px 5px;
+    display: inline-block;
+}
+
+.articleSocial span *,.articleSocial span *:before, .articleSocial span *:after {
+    box-sizing: inherit;
+    -webkit-box-sizing: content-box;
+}
+
+/* Create News Article */
+#tblArticle table{
+    width:100%;
+}
+
+#tblArticle input[type="text"]{
+    width:100%;
+}
+
+td > .dnnLabel {
+    width: 10em;
+}
+
+td.SubHead{
+    width: 10em;
+}
+
+#tblArticle label{
+    display:inline-block;
+}
+
+#tblPublishDetail input[type="text"]{
+    display: inline-block;
+}
+
+#tblActionDetail a{
+    font-size:1.5em;
+}
+
+.articleButtons{
+    list-style: none
+}
+
+.articleButtons li{
+    float:left;
+    width:20%;
+    text-align:center;
+}
+
+.dnnTextPanel{width:100%;}
+
+/* News Archive */
+.NewsArchive{display:block}
+.NewsArchive li{list-style-type:none;}
+
+/* Login on Menu */
+#login .loginGroup, #login .registerGroup { 
+    display: block;
+	margin: 0px 10px 0 0;
+	border: 1px solid #8cc63f;
+    background-color: #8cc63f;
+    border-radius: 5px;
+}
+
+#login .loginGroup a, #login .registerGroup a{ 
+    font-weight:bold;
+    font-size:0.8em;
+    padding: 0px 15px;
+}
+
+#login .userNotifications a span{
+    margin-top: 7px;
+    margin-right: -12px;
+}
+
+ul.buttonGroup{
+    margin-left:0px;
+}
+
+/* Facebook responsive */
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget iframe[style]  {width: 100% !important;}
+
+.fb-comments, 
+.fb-comments iframe[style], 
+.fb-comments span {
+   width: 100% !important;
+}
+
+/* Event List */
+#eventStartDate{display:block;}
+#eventTitle{ display:block;}
+#eventDesc{display:block;}
+
+/* Footer */
+ul.footerList{margin-left:0px;}
+li.footerTitle {color:#fff; list-style-type:none;text-decoration:underline;font-weight:bold;}
+li.footerItem {list-style-type:none;
+}
+
+/*Flex Events*/
+.ui-autocomplete.ui-widget-content{z-index:100;}

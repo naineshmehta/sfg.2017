@@ -1,0 +1,44 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** Drop FAQs Table **/
+
+ALTER TABLE {databaseOwner}[{objectQualifier}SFG_Festival] DROP CONSTRAINT [FK_{objectQualifier}SFG_Festival_{objectQualifier}Modules]
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}SFG_Festival] DROP CONSTRAINT [PK_{objectQualifier}SFG_Festival]
+GO
+
+DROP INDEX {databaseOwner}[{objectQualifier}SFG_Festival].[IX_{objectQualifier}SFG_Festival]
+GO
+
+DROP TABLE {databaseOwner}[{objectQualifier}SFG_Festival]
+GO
+
+/** Drop Stored Procedures **/
+
+DROP PROCEDURE {databaseOwner}[{objectQualifier}SFG_GetFestivals]
+GO
+
+DROP PROCEDURE {databaseOwner}[{objectQualifier}SFG_GetFestival]
+GO
+
+DROP PROCEDURE {databaseOwner}[{objectQualifier}SFG_AddFestival]
+GO
+
+DROP PROCEDURE {databaseOwner}[{objectQualifier}SFG_UpdateFestival]
+GO
+
+DROP PROCEDURE {databaseOwner}[{objectQualifier}SFG_DeleteFestival]
+GO
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/

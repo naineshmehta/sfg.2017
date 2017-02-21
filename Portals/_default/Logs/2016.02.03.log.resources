@@ -1,0 +1,445 @@
+2016-02-03 04:00:31,531 [h1901557][Thread:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider iFinity.DNN.Modules.FriendlyUrl.DNNFriendlyUrlProvider, iFinity.FriendlyUrlProvider
+2016-02-03 04:01:00,437 [h1901557][Thread:6][ERROR] DotNetNuke.Framework.Reflection - DotNetNuke.Modules.HtmlEditorManager.Components.UpgradeController, DotNetNuke.Modules.HtmlEditorManager
+System.IO.FileNotFoundException: Could not load file or assembly 'DotNetNuke.Modules.HtmlEditorManager' or one of its dependencies. The system cannot find the file specified.
+File name: 'DotNetNuke.Modules.HtmlEditorManager'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2016-02-03 04:01:00,437 [h1901557][Thread:10][ERROR] DotNetNuke.Framework.Reflection - DotNetNuke.Modules.HtmlEditorManager.Components.UpgradeController, DotNetNuke.Modules.HtmlEditorManager
+System.IO.FileNotFoundException: Could not load file or assembly 'DotNetNuke.Modules.HtmlEditorManager' or one of its dependencies. The system cannot find the file specified.
+File name: 'DotNetNuke.Modules.HtmlEditorManager'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2016-02-03 04:56:04,735 [h1901557][Thread:9][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 05:56:08,361 [h1901557][Thread:9][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 06:03:56,658 [h1901557][Thread:5][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 3c1592b95ba2aec2f87ac74dffcd176c ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-03 06:44:01,923 [h1901557][Thread:12][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 8114dfdefc9a69c280fbae49dd9eb5d5 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-03 06:56:13,955 [h1901557][Thread:20][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 07:56:18,866 [h1901557][Thread:24][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 08:56:25,009 [h1901557][Thread:26][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 09:56:27,238 [h1901557][Thread:26][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 10:19:32,279 [h1901557][Thread:27][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-03 10:56:37,001 [h1901557][Thread:5][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 11:09:48,141 [h1901557][Thread:19][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 188.165.174.36
+	Port: 54365
+	Referer: http://www.google.com
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
+	ViewState: t/Z/UwmMHOlPIwQghexuEYfQ1Wb4/DP31lleq/ooKWPSTBQ8kvryR7RvOwCyVtwTqnnHUKoARxBCGBu5MiasCQ4Loa8ab/b3FHToAoDDLbFVV0Hc8xX0aQb517FsVt 7WmxkS7q89uieVQls91ox51n5XcSnKlz760kCKXIlieBIYDizEjgdEh2c0O hzJxH5pwu8kk hxYc9D06tviZ2f0p2FmSq3bmTXbDdeYt9Cj19JSxGC9BQsnb1XtjdjkrAX1DWeS1ptCJEJA6vXPaDDr7LGNwrNbzh5dKLkFgRYMCueg1v9YfBtPlNeTXxBRMZmVARwYsjpRPSjyDwcaWAnvXuOaKsX2WEu06ZATK/ha/3ncd253wciWmzNK2IBygEqipE/hXXnTRoGiH0nJBOTaZDdrv9/VfLu1UfK7Aj1xl1mmYG4gwnrKl30n46LafeYqjmsVKvxmaC7Cj4XCZ6DrTEIPjQj6KcXFGByFNTA75OnTKSBSuVoviUF Mu7ALdLE/J3GoVJ9BqvwyCCi8Anhnwk1MzuJCWxw2K3cI7SdbrUrebabltCoio21xpfS6L95KswY0GxCGYZzkcq7w5NbZh21Bv52CLtGQDZOQ7YklzNJDvkpZlsG7xH4FAWJYG36D9rWOQIv/uCDb6eY2pyrovSxYEdc6XuJzntuNvwqoLokueNxxX34x/9in2HgRV9NFLe3hPO/nr06DvfrqWFBcv9JYkO7LxlKWAFGu Bx3RCfOW3YWamd19WEVN lvFxQ7JliZSdsa2DM6SY LdxciTvfuazpC09Lk60eCwHVNfm78EJ7d05um3DK52Jn... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2016-02-03 11:09:48,375 [h1901557][Thread:19][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=58&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 188.165.174.36
+	Port: 54365
+	Referer: http://www.google.com
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
+	ViewState: t/Z/UwmMHOlPIwQghexuEYfQ1Wb4/DP31lleq/ooKWPSTBQ8kvryR7RvOwCyVtwTqnnHUKoARxBCGBu5MiasCQ4Loa8ab/b3FHToAoDDLbFVV0Hc8xX0aQb517FsVt 7WmxkS7q89uieVQls91ox51n5XcSnKlz760kCKXIlieBIYDizEjgdEh2c0O hzJxH5pwu8kk hxYc9D06tviZ2f0p2FmSq3bmTXbDdeYt9Cj19JSxGC9BQsnb1XtjdjkrAX1DWeS1ptCJEJA6vXPaDDr7LGNwrNbzh5dKLkFgRYMCueg1v9YfBtPlNeTXxBRMZmVARwYsjpRPSjyDwcaWAnvXuOaKsX2WEu06ZATK/ha/3ncd253wciWmzNK2IBygEqipE/hXXnTRoGiH0nJBOTaZDdrv9/VfLu1UfK7Aj1xl1mmYG4gwnrKl30n46LafeYqjmsVKvxmaC7Cj4XCZ6DrTEIPjQj6KcXFGByFNTA75OnTKSBSuVoviUF Mu7ALdLE/J3GoVJ9BqvwyCCi8Anhnwk1MzuJCWxw2K3cI7SdbrUrebabltCoio21xpfS6L95KswY0GxCGYZzkcq7w5NbZh21Bv52CLtGQDZOQ7YklzNJDvkpZlsG7xH4FAWJYG36D9rWOQIv/uCDb6eY2pyrovSxYEdc6XuJzntuNvwqoLokueNxxX34x/9in2HgRV9NFLe3hPO/nr06DvfrqWFBcv9JYkO7LxlKWAFGu Bx3RCfOW3YWamd19WEVN lvFxQ7JliZSdsa2DM6SY LdxciTvfuazpC09Lk60eCwHVNfm78EJ7d05um3DK52Jn... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2016-02-03 11:15:34,500 [h1901557][Thread:19][ERROR] DotNetNuke.Framework.Reflection - Active.Modules.Forums.SqlDataProvider, Active.Modules.Forums.40.SqlDataProvider
+System.IO.FileNotFoundException: Could not load file or assembly 'Active.Modules.Forums.40.SqlDataProvider' or one of its dependencies. The system cannot find the file specified.
+File name: 'Active.Modules.Forums.40.SqlDataProvider'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2016-02-03 11:32:15,859 [h1901557][Thread:19][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-03 11:56:38,281 [h1901557][Thread:23][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 12:54:19,078 [h1901557][Thread:12][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-03 12:56:47,984 [h1901557][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 13:56:56,250 [h1901557][Thread:16][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 14:23:31,866 [h1901557][Thread:16][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Web.HttpException (0x80004005): Not Found
+   at DotNetNuke.Modules.Admin.Users.ViewProfile.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+2016-02-03 14:23:31,897 [h1901557][Thread:16][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.ModuleLoadException: Unhandled Error Adding Module to LeftPane ---> System.Web.HttpException: Not Found
+   at DotNetNuke.Modules.Admin.Users.ViewProfile.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.InjectModule(Pane pane, ModuleInfo module)
+2016-02-03 14:23:31,944 [h1901557][Thread:16][FATAL] DotNetNuke.Services.Exceptions.Exceptions - System.Web.HttpException (0x80004005): The control collection cannot be modified during DataBind, Init, Load, PreRender or Unload phases.
+   at System.Web.UI.ControlCollection.RemoveAt(Int32 index)
+   at System.Web.UI.ControlCollection.Clear()
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Control.FindControl(String id)
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessModuleLoadException(String FriendlyMessage, Control ctrl, Exception exc, Boolean DisplayErrorMessage)
+2016-02-03 14:23:31,944 [h1901557][Thread:16][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=89&def=ErrorMessage
+System.Web.HttpException (0x80004005): The control collection cannot be modified during DataBind, Init, Load, PreRender or Unload phases.
+   at System.Web.UI.ControlCollection.RemoveAt(Int32 index)
+   at System.Web.UI.ControlCollection.Clear()
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Control.FindControl(String id)
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessModuleLoadException(String FriendlyMessage, Control ctrl, Exception exc, Boolean DisplayErrorMessage)
+2016-02-03 14:49:36,358 [h1901557][Thread:16][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-03 14:57:13,262 [h1901557][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 15:57:11,574 [h1901557][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 16:00:55,386 [h1901557][Thread:26][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-03 16:00:55,449 [h1901557][Thread:8][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-03 16:00:55,527 [h1901557][Thread:22][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-03 16:00:55,621 [h1901557][Thread:26][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-03 16:00:55,683 [h1901557][Thread:8][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-03 16:57:15,345 [h1901557][Thread:25][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 17:30:29,303 [h1901557][Thread:12][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-03 17:57:19,724 [h1901557][Thread:16][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 18:19:17,063 [h1901557][Thread:13][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 162.216.46.159
+	Port: 51022
+	Referer: http://www.google.com
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:21.0) Gecko/20130328 Firefox/21.0
+	ViewState: t6TdS5HTkEt0Uj7aVok18NDraH7bZOoKSMgazwAB5g7EW0458WeyDiErW9WcPh1meqxQD9zf4XSxPYIKy9/WlieFwc8WmTYXruMl6niVapEbEcUuXJ8b0f5GMOcprV/mn/hbcoeBFdoKPatCV qSsppGQPgKx40 MdPOMGUhDRv4jh6q8r5SOlzAIaai0r  tNeZmIVYJbOJi9rFByRYLhTihRQxLPBWKLTKzIqtML/5h4 VqkPXWvC1Hm4eyQOquqCWoMmi6QKk//FqszCkEZAMFkRjPKi7ybWuAv z OidP7WecpjQBgB0A8qJX2nAttDXMJk8MsXcQuG Oi8XYLhVSpIjGyYbyw3tEA9px0kKwv05tKATO/eZruRGB0IKgTvvuCgWi1XitkDo4YSK6I/dWDQI2PdUslYhP/W78T7rMnZ7GlnDnRoKmxvFnXkTXEibiC8RaNm1rCQJRBETQ /1c54ETPizgzs5LgbG69BifD1pMNtshpHx YtLjfbwu2cAKMX6p9b6SrMMQ2K5hb5vrPTABw6IyvI2FdFrs6TY8SJ/oRgVuUx3WKa4KdBv8xmFOmQwY9wE3wogs4AGpFkGsaVwG8Nl3yRnUynelEm9t4tAwe/ vhPdg7ycXSvIfUD6t/Cgx1eaqkefvzC36H9V46EpYNKAKNgRvs0z RlSr/Z4erCEY4F34xjNoe Vrd0x9u/xYNb7BP7CitNTS8WSd5ZwwsggWUNxaF5Y1qTnupQhxHFsxTv7Tlt 0d D fRHcdG6OD/F//3BAj9udy5stkQGB  dbvCCTzChLppl8 U7Bzj98cbHf01ZM1...
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2016-02-03 18:19:17,063 [h1901557][Thread:13][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=58&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 162.216.46.159
+	Port: 51022
+	Referer: http://www.google.com
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:21.0) Gecko/20130328 Firefox/21.0
+	ViewState: t6TdS5HTkEt0Uj7aVok18NDraH7bZOoKSMgazwAB5g7EW0458WeyDiErW9WcPh1meqxQD9zf4XSxPYIKy9/WlieFwc8WmTYXruMl6niVapEbEcUuXJ8b0f5GMOcprV/mn/hbcoeBFdoKPatCV qSsppGQPgKx40 MdPOMGUhDRv4jh6q8r5SOlzAIaai0r  tNeZmIVYJbOJi9rFByRYLhTihRQxLPBWKLTKzIqtML/5h4 VqkPXWvC1Hm4eyQOquqCWoMmi6QKk//FqszCkEZAMFkRjPKi7ybWuAv z OidP7WecpjQBgB0A8qJX2nAttDXMJk8MsXcQuG Oi8XYLhVSpIjGyYbyw3tEA9px0kKwv05tKATO/eZruRGB0IKgTvvuCgWi1XitkDo4YSK6I/dWDQI2PdUslYhP/W78T7rMnZ7GlnDnRoKmxvFnXkTXEibiC8RaNm1rCQJRBETQ /1c54ETPizgzs5LgbG69BifD1pMNtshpHx YtLjfbwu2cAKMX6p9b6SrMMQ2K5hb5vrPTABw6IyvI2FdFrs6TY8SJ/oRgVuUx3WKa4KdBv8xmFOmQwY9wE3wogs4AGpFkGsaVwG8Nl3yRnUynelEm9t4tAwe/ vhPdg7ycXSvIfUD6t/Cgx1eaqkefvzC36H9V46EpYNKAKNgRvs0z RlSr/Z4erCEY4F34xjNoe Vrd0x9u/xYNb7BP7CitNTS8WSd5ZwwsggWUNxaF5Y1qTnupQhxHFsxTv7Tlt 0d D fRHcdG6OD/F//3BAj9udy5stkQGB  dbvCCTzChLppl8 U7Bzj98cbHf01ZM1...
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2016-02-03 18:20:51,140 [h1901557][Thread:6][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: b221e7fcc8bd3a905ee7c8f9046461e6 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-03 18:21:01,390 [h1901557][Thread:16][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 7bd8d3431f13dd138e18b093289a2f59 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-03 18:21:11,531 [h1901557][Thread:6][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: f60b8e7197d86eb1752316167ce893e6 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-03 18:21:21,671 [h1901557][Thread:6][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 67c1fcd599c1ceea709d4f47a9bc926e ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-03 18:52:43,419 [h1901557][Thread:18][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-03 18:57:26,872 [h1901557][Thread:15][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 19:56:36,405 [h1901557][Thread:14][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: b794682ad84a57811c0c64d0fee62932 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-03 19:56:46,561 [h1901557][Thread:10][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 7edeffef6f968a211b512e6b675097a2 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-03 19:56:56,671 [h1901557][Thread:16][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 1bf77f38cc0cb551299e1bfbdf4c4c4b ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-03 19:57:06,796 [h1901557][Thread:5][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: c0f60bd3c947d765c6682fc436e72bea ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-03 19:57:31,811 [h1901557][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 20:57:36,686 [h1901557][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 21:01:39,967 [h1901557][Thread:20][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-03 21:19:30,311 [h1901557][Thread:16][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-03 21:40:55,686 [h1901557][Thread:23][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: f6359a3ee19429204d380e47a1e5f6a2 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-03 21:57:46,515 [h1901557][Thread:15][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 22:57:54,670 [h1901557][Thread:27][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2016-02-03 23:18:32,976 [h1901557][Thread:21][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-03 23:58:01,534 [h1901557][Thread:28][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)

@@ -1,0 +1,842 @@
+2016-02-21 04:00:20,979 [h1901557][Thread:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider iFinity.DNN.Modules.FriendlyUrl.DNNFriendlyUrlProvider, iFinity.FriendlyUrlProvider
+2016-02-21 04:00:46,557 [h1901557][Thread:10][ERROR] DotNetNuke.Framework.Reflection - DotNetNuke.Modules.HtmlEditorManager.Components.UpgradeController, DotNetNuke.Modules.HtmlEditorManager
+System.IO.FileNotFoundException: Could not load file or assembly 'DotNetNuke.Modules.HtmlEditorManager' or one of its dependencies. The system cannot find the file specified.
+File name: 'DotNetNuke.Modules.HtmlEditorManager'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2016-02-21 04:00:46,557 [h1901557][Thread:8][ERROR] DotNetNuke.Framework.Reflection - DotNetNuke.Modules.HtmlEditorManager.Components.UpgradeController, DotNetNuke.Modules.HtmlEditorManager
+System.IO.FileNotFoundException: Could not load file or assembly 'DotNetNuke.Modules.HtmlEditorManager' or one of its dependencies. The system cannot find the file specified.
+File name: 'DotNetNuke.Modules.HtmlEditorManager'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2016-02-21 04:02:55,244 [h1901557][Thread:5][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:53:25,926 [h1901557][Thread:9][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:53:26,504 [h1901557][Thread:7][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:53:26,754 [h1901557][Thread:8][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:53:27,754 [h1901557][Thread:18][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:53:55,036 [h1901557][Thread:18][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:53:55,677 [h1901557][Thread:19][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:53:57,442 [h1901557][Thread:19][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:54:03,255 [h1901557][Thread:9][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:54:58,646 [h1901557][Thread:12][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:54:58,959 [h1901557][Thread:19][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:56:11,350 [h1901557][Thread:9][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:56:11,663 [h1901557][Thread:7][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:59:07,118 [h1901557][Thread:19][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:59:41,181 [h1901557][Thread:14][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:59:49,556 [h1901557][Thread:14][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:59:49,900 [h1901557][Thread:7][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:59:50,306 [h1901557][Thread:12][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 05:59:51,306 [h1901557][Thread:19][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:02:53,777 [h1901557][Thread:12][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:03:17,496 [h1901557][Thread:9][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:03:42,762 [h1901557][Thread:8][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:03:42,950 [h1901557][Thread:12][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:03:43,590 [h1901557][Thread:14][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:04:08,981 [h1901557][Thread:18][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:04:18,872 [h1901557][Thread:7][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:04:56,904 [h1901557][Thread:7][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:09:11,841 [h1901557][Thread:7][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:10:37,920 [h1901557][Thread:18][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:14:06,453 [h1901557][Thread:7][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:16:52,376 [h1901557][Thread:9][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:23:50,738 [h1901557][Thread:19][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:26:44,156 [h1901557][Thread:7][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:28:32,719 [h1901557][Thread:18][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:29:14,422 [h1901557][Thread:9][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:31:45,283 [h1901557][Thread:12][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:31:45,408 [h1901557][Thread:19][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:31:45,642 [h1901557][Thread:14][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:35:02,346 [h1901557][Thread:9][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:35:43,612 [h1901557][Thread:12][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:38:57,875 [h1901557][Thread:12][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:40:44,095 [h1901557][Thread:8][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:42:03,078 [h1901557][Thread:19][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:43:45,312 [h1901557][Thread:18][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:44:12,515 [h1901557][Thread:12][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:49:36,515 [h1901557][Thread:12][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:57:19,485 [h1901557][Thread:18][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 06:58:35,609 [h1901557][Thread:14][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 07:00:57,871 [h1901557][Thread:18][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 07:10:52,449 [h1901557][Thread:7][ERROR] DotNetNuke.Framework.Reflection - Active.Modules.Forums.SqlDataProvider, Active.Modules.Forums.40.SqlDataProvider
+System.IO.FileNotFoundException: Could not load file or assembly 'Active.Modules.Forums.40.SqlDataProvider' or one of its dependencies. The system cannot find the file specified.
+File name: 'Active.Modules.Forums.40.SqlDataProvider'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2016-02-21 07:11:48,528 [h1901557][Thread:19][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 07:15:25,484 [h1901557][Thread:7][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 07:16:49,482 [h1901557][Thread:8][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 07:23:16,662 [h1901557][Thread:8][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 07:23:17,225 [h1901557][Thread:9][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 07:23:37,584 [h1901557][Thread:7][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 07:37:43,084 [h1901557][Thread:9][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 07:39:25,741 [h1901557][Thread:14][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 07:41:57,932 [h1901557][Thread:9][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 08:05:43,592 [h1901557][Thread:25][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 08:06:12,451 [h1901557][Thread:21][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 08:08:43,934 [h1901557][Thread:24][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 08:14:54,120 [h1901557][Thread:16][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 09:01:42,070 [h1901557][Thread:18][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 09:03:23,335 [h1901557][Thread:12][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 09:03:51,726 [h1901557][Thread:24][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 09:12:32,472 [h1901557][Thread:8][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 09:19:04,439 [h1901557][Thread:16][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 09:25:33,561 [h1901557][Thread:13][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 10:50:33,513 [h1901557][Thread:18][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 10:53:42,810 [h1901557][Thread:12][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 11:03:17,075 [h1901557][Thread:19][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 11:19:18,732 [h1901557][Thread:7][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 12:10:54,779 [h1901557][Thread:24][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 13:13:08,569 [h1901557][Thread:15][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The length of the URL for this request exceeds the configured maxUrlLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2016-02-21 13:13:47,726 [h1901557][Thread:17][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-21 13:13:48,147 [h1901557][Thread:25][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-21 13:13:48,335 [h1901557][Thread:23][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-21 13:13:48,397 [h1901557][Thread:7][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-21 13:13:48,522 [h1901557][Thread:20][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-21 13:13:48,601 [h1901557][Thread:27][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-21 13:30:06,705 [h1901557][Thread:15][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The length of the URL for this request exceeds the configured maxUrlLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2016-02-21 13:36:19,515 [h1901557][Thread:23][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 13:36:52,140 [h1901557][Thread:25][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 13:37:13,124 [h1901557][Thread:24][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 13:39:23,171 [h1901557][Thread:24][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 13:41:44,717 [h1901557][Thread:27][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 13:53:54,378 [h1901557][Thread:8][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 13:54:08,409 [h1901557][Thread:8][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 13:58:25,944 [h1901557][Thread:8][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 14:04:42,027 [h1901557][Thread:18][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-21 14:04:45,464 [h1901557][Thread:17][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-21 14:16:22,408 [h1901557][Thread:8][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 16:19:26,080 [h1901557][Thread:30][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider iFinity.DNN.Modules.FriendlyUrl.DNNFriendlyUrlProvider, iFinity.FriendlyUrlProvider
+2016-02-21 16:19:45,330 [h1901557][Thread:5][ERROR] DotNetNuke.Framework.Reflection - DotNetNuke.Modules.HtmlEditorManager.Components.UpgradeController, DotNetNuke.Modules.HtmlEditorManager
+System.IO.FileNotFoundException: Could not load file or assembly 'DotNetNuke.Modules.HtmlEditorManager' or one of its dependencies. The system cannot find the file specified.
+File name: 'DotNetNuke.Modules.HtmlEditorManager'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2016-02-21 16:21:18,893 [h1901557][Thread:30][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider iFinity.DNN.Modules.FriendlyUrl.DNNFriendlyUrlProvider, iFinity.FriendlyUrlProvider
+2016-02-21 16:21:24,846 [h1901557][Thread:20][ERROR] DotNetNuke.Framework.Reflection - DotNetNuke.Modules.HtmlEditorManager.Components.UpgradeController, DotNetNuke.Modules.HtmlEditorManager
+System.IO.FileNotFoundException: Could not load file or assembly 'DotNetNuke.Modules.HtmlEditorManager' or one of its dependencies. The system cannot find the file specified.
+File name: 'DotNetNuke.Modules.HtmlEditorManager'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2016-02-21 16:22:00,612 [h1901557][Thread:30][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider iFinity.DNN.Modules.FriendlyUrl.DNNFriendlyUrlProvider, iFinity.FriendlyUrlProvider
+2016-02-21 16:22:06,471 [h1901557][Thread:16][ERROR] DotNetNuke.Framework.Reflection - DotNetNuke.Modules.HtmlEditorManager.Components.UpgradeController, DotNetNuke.Modules.HtmlEditorManager
+System.IO.FileNotFoundException: Could not load file or assembly 'DotNetNuke.Modules.HtmlEditorManager' or one of its dependencies. The system cannot find the file specified.
+File name: 'DotNetNuke.Modules.HtmlEditorManager'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2016-02-21 17:40:44,185 [h1901557][Thread:17][ERROR] DotNetNuke.UI.WebControls.CaptchaControl - System.ArgumentException: Font 'MS Sans Serif' cannot be found.
+   at System.Drawing.FontFamily.CreateFontFamily(String name, FontCollection fontCollection)
+   at System.Drawing.FontFamily..ctor(String name)
+   at DotNetNuke.UI.WebControls.CaptchaControl.GetFont()
+2016-02-21 17:44:20,373 [h1901557][Thread:16][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - 
+System.Web.HttpException (0x80004005): Resource Not Found
+2016-02-21 18:52:22,052 [h1901557][Thread:26][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 18:54:14,349 [h1901557][Thread:8][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 19:29:20,205 [h1901557][Thread:5][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 19:34:14,501 [h1901557][Thread:25][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 20:03:12,498 [h1901557][Thread:19][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-21 20:03:15,904 [h1901557][Thread:27][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-21 20:03:19,263 [h1901557][Thread:20][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-21 20:03:22,748 [h1901557][Thread:18][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   at System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath)
+   at System.Web.HttpServerUtility.Execute(String path, TextWriter writer, Boolean preserveForm)
+   at System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.Handle404OrException(FriendlyUrlSettings settings, HttpContext context, HttpServerUtility server, Exception ex, UrlAction result, Boolean transfer, Boolean showDebug)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext context, HttpRequest request, HttpServerUtility Server, HttpResponse response, Boolean useFriendlyUrls, String requestType, Uri requestUri, UrlAction result, NameValueCollection queryStringCol, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.ProcessRequest(HttpContext Context, HttpRequest Request, HttpServerUtility Server, HttpResponse Response, Guid parentTraceId)
+   at iFinity.DNN.Modules.UrlMaster.UrlRewriteModule.OnBeginRequest(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-02-21 20:23:47,336 [h1901557][Thread:21][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 20:40:36,285 [h1901557][Thread:17][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-02-21 21:11:53,260 [h1901557][Thread:9][ERROR] DotNetNuke.UI.WebControls.CaptchaControl - System.ArgumentException: Font 'MS Sans Serif' cannot be found.
+   at System.Drawing.FontFamily.CreateFontFamily(String name, FontCollection fontCollection)
+   at System.Drawing.FontFamily..ctor(String name)
+   at DotNetNuke.UI.WebControls.CaptchaControl.GetFont()
+2016-02-21 21:56:44,548 [h1901557][Thread:30][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Framework.DefaultPage.InitializePage()
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2016-02-21 21:56:44,657 [h1901557][Thread:30][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?error=An unexpected error has occurred&content=0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Framework.DefaultPage.InitializePage()
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

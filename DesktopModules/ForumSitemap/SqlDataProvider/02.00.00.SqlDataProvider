@@ -1,0 +1,104 @@
+﻿/************************************************************/
+/*****              SQLDataProvider		                *****/
+/*****   Dnn Forums Sitemap Provider 02.00.00			*****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for  and {objectQualifier}					*****/
+/************************************************************/
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}ifty_fsp_GetForumsGroupsAndThreads]    Script Date: 09/13/2012 17:04:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}ifty_fsp_GetForumsGroupsAndThreads]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC sp_executesql @statement = N'-- =============================================
+-- Author:		Bruce Chapman
+-- Create date: 12 Sep 2012
+-- Description:	Retrieves forums, groups and threads for sitemap
+-- =============================================
+CREATE PROCEDURE {databaseOwner}[{objectQualifier}ifty_fsp_GetForumsGroupsAndThreads] 
+	
+	@portalId int, 
+	@moduleId int,
+	@fromGroupId int,
+	@fromForumId int,
+	@fromThreadId int,
+    @maxCount int
+AS
+BEGIN
+	SET NOCOUNT ON
+declare @runningTotal int, @rowsLeft int
+
+	set rowcount @maxCount
+	
+    Select GroupId, Name, CreatedDate, UpdatedDate
+    From {databaseOwner}{objectQualifier}Forum_Groups
+    where PortalId = @PortalId
+      and ModuleId = @moduleId
+      and GroupId > @fromGroupId
+    order by SortOrder
+
+	set @runningTotal = coalesce(@@RowCount, 0)
+	set @rowsLeft = @maxCount - @runningTotal
+	if @rowsLeft < 0 set @rowsLeft = 0
+	set rowcount @rowsLeft
+		
+	select f.GroupId, f.ForumId, f.ParentId, f.Name, f.CreatedDate, f.UpdatedDate, f.SitemapPriority
+	, (select Max(p.UpdatedDate) from {databaseOwner}{objectQualifier}Forum_Posts p 
+		inner join {databaseOwner}{objectQualifier}Forum_Threads t on p.ThreadId = t.ThreadId
+		where t.ForumId = f.ForumId) as LastPostDate
+	from {databaseOwner}{objectQualifier}Forum_Forums f
+	inner join {databaseOwner}{objectQualifier}Forum_Groups g
+	  on f.Groupid = g.GroupId 
+	where g.PortalId = @portalId
+	  and g.ModuleId = @moduleId
+	  and ForumId > @fromForumId
+	  and IsActive = 1
+	  and PublicView = 1
+	order by g.SortOrder, f.SortOrder
+	  
+    set @runningTotal = @runningTotal + coalesce(@@Rowcount, 0)
+	set @rowsLeft = @maxCount - @runningTotal
+	if @rowsLeft < 0 set @rowsLeft = 0
+	set rowcount @rowsLeft
+	
+	select t.ThreadID, f.ForumId, g.GroupId
+			, [Views], PinnedDate, f.SitemapPriority
+	from {databaseOwner}{objectQualifier}Forum_Threads t
+	inner join {databaseOwner}{objectQualifier}Forum_Forums f
+	  on t.ForumId = f.ForumId
+	inner join {databaseOwner}{objectQualifier}Forum_Groups g
+	 on g.GroupId = f.GroupId
+	where g.PortalId = @portalId
+	  and g.ModuleId = @moduleId
+	  and t.ThreadId > @fromThreadId
+    order by threadId desc 
+    
+   set @runningTotal = @runningTotal + coalesce(@@Rowcount, 0)
+	set @rowsLeft = @maxCount - @runningTotal
+	
+	select t.ThreadId,Min(p.UpdatedDate) as EarliestPostDate, Max(p.UpdatedDate) as LatestPostDate, count(p.PostId) as NumberPosts
+	from {databaseOwner}{objectQualifier}Forum_Threads t
+	inner join {databaseOwner}{objectQualifier}Forum_Posts p
+	 on p.ThreadId = t.ThreadId
+	inner join {databaseOwner}{objectQualifier}Forum_Forums f
+	  on t.ForumId = f.ForumId
+	inner join {databaseOwner}{objectQualifier}Forum_Groups g
+	 on g.GroupId = f.GroupId
+	where g.PortalId = @portalId
+	  and g.ModuleId = @moduleId
+	  and t.ThreadId > @fromThreadId
+	Group by t.ThreadId 
+	order by t.ThreadID desc
+	
+	set rowcount 0 --reset rowcount to return rows
+	select @runningTotal as TotalResults, @rowsLeft as RowsRemaining
+
+	
+END
+' 
+END
+GO

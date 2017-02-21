@@ -1,0 +1,109 @@
+2017-01-10 04:00:18,371 [h1901557][Thread:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider iFinity.DNN.Modules.FriendlyUrl.DNNFriendlyUrlProvider, iFinity.FriendlyUrlProvider
+2017-01-10 04:00:48,341 [h1901557][Thread:9][ERROR] DotNetNuke.Framework.Reflection - DotNetNuke.Modules.HtmlEditorManager.Components.UpgradeController, DotNetNuke.Modules.HtmlEditorManager
+System.IO.FileNotFoundException: Could not load file or assembly 'DotNetNuke.Modules.HtmlEditorManager' or one of its dependencies. The system cannot find the file specified.
+File name: 'DotNetNuke.Modules.HtmlEditorManager'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2017-01-10 06:01:15,416 [h1901557][Thread:6][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2017-01-10 06:37:12,144 [h1901557][Thread:19][ERROR] DotNetNuke.Framework.Reflection - Active.Modules.Forums.SqlDataProvider, Active.Modules.Forums.40.SqlDataProvider
+System.IO.FileNotFoundException: Could not load file or assembly 'Active.Modules.Forums.40.SqlDataProvider' or one of its dependencies. The system cannot find the file specified.
+File name: 'Active.Modules.Forums.40.SqlDataProvider'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2017-01-10 07:13:12,996 [h1901557][Thread:10][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 62.210.111.67
+	Port: 12683
+	Referer: http://www.google.com
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
+	ViewState: nxFSW0TCPTbsxkBx2fcmnxgydWxLo9f9ZXcp5djvJdn6wn11OeUm2sFZqgIwI1EuPV7xLE7zSHSjoOiXysY1SMHDbtbOD6sxPo7vC7BSQ2IUfdwdF B9CRq8ET6gwQr3sEZSd7pEFV2MGsv2LSf9eI02e7DMbgg43sHAhcZlLGsJAcWQLk5OCfU/fMBFFiWsXu5itKmUAeo4ILcxTIWGMq9sytNDDl59mlwjz8PzyLELPYZKCKuGQfAzU8LwOS sfishnulWolV0srmOWjQz8Xla1K 2zHmAN9XTWlDglOsJfS03Lu0LDTG3jCKuvE00pPpHjUU0VSUzlICBC89v7aSWPonlx85y Ok64Jx54K8g9FtxzODUUWgjHOi5k/Pj0zuJ8/9fPEtAtTbxFbbPLzLAXjidO2vsJZxft7 k8yKPFhN3KtnCAHVRlw/WhI7WgP0zTZBwNdxURjFtrMtwDuN3Ph1drLrIJsbA3o/Fidw3O2k15Mbbi6hukf8QGKLiy7PLnDYBq9ZLRH24FoqeV k5BIVERDCY99km57ZJJpx mAt5c/39Oj4qGfQcStsAVpn6clauByI/YWEn cm3qPOAPKVfd v8CHFUcsUp0o6p2GZe2BGZnpRCcGVzE6/iapa5LSu7jNUud3QalFOrqykhw0NnXqCmeFlU2Psv2MsclKQ2 dkZ9OmmBl251qhAT690hJBPBBtVraO5gVHYAIq1TIGYk Iq8bLFa1AYvPTeFi9GG1 srOCP/gc5Lfp5hoKOhuu r0GZikc9abFalrwKcggvrrsmoMiea 2 KFKY YL1iC0VHvuKeOfQX6pH... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-01-10 07:13:13,082 [h1901557][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=58&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 62.210.111.67
+	Port: 12683
+	Referer: http://www.google.com
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
+	ViewState: nxFSW0TCPTbsxkBx2fcmnxgydWxLo9f9ZXcp5djvJdn6wn11OeUm2sFZqgIwI1EuPV7xLE7zSHSjoOiXysY1SMHDbtbOD6sxPo7vC7BSQ2IUfdwdF B9CRq8ET6gwQr3sEZSd7pEFV2MGsv2LSf9eI02e7DMbgg43sHAhcZlLGsJAcWQLk5OCfU/fMBFFiWsXu5itKmUAeo4ILcxTIWGMq9sytNDDl59mlwjz8PzyLELPYZKCKuGQfAzU8LwOS sfishnulWolV0srmOWjQz8Xla1K 2zHmAN9XTWlDglOsJfS03Lu0LDTG3jCKuvE00pPpHjUU0VSUzlICBC89v7aSWPonlx85y Ok64Jx54K8g9FtxzODUUWgjHOi5k/Pj0zuJ8/9fPEtAtTbxFbbPLzLAXjidO2vsJZxft7 k8yKPFhN3KtnCAHVRlw/WhI7WgP0zTZBwNdxURjFtrMtwDuN3Ph1drLrIJsbA3o/Fidw3O2k15Mbbi6hukf8QGKLiy7PLnDYBq9ZLRH24FoqeV k5BIVERDCY99km57ZJJpx mAt5c/39Oj4qGfQcStsAVpn6clauByI/YWEn cm3qPOAPKVfd v8CHFUcsUp0o6p2GZe2BGZnpRCcGVzE6/iapa5LSu7jNUud3QalFOrqykhw0NnXqCmeFlU2Psv2MsclKQ2 dkZ9OmmBl251qhAT690hJBPBBtVraO5gVHYAIq1TIGYk Iq8bLFa1AYvPTeFi9GG1 srOCP/gc5Lfp5hoKOhuu r0GZikc9abFalrwKcggvrrsmoMiea 2 KFKY YL1iC0VHvuKeOfQX6pH... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-01-10 08:00:52,246 [h1901557][Thread:24][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2017-01-10 09:26:46,638 [h1901557][Thread:6][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2017-01-10 14:20:21,067 [h1901557][Thread:14][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2017-01-10 15:22:33,931 [h1901557][Thread:19][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2017-01-10 21:40:55,411 [h1901557][Thread:21][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()

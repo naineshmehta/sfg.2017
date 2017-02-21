@@ -1,0 +1,182 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** Create Table **/
+
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}SFG_Festival]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+	BEGIN
+		CREATE TABLE {databaseOwner}[{objectQualifier}SFG_Festival]
+		(
+			[ModuleID] [int] NOT NULL,
+			[FestivalID] [int] NOT NULL IDENTITY(1, 1),
+			[Name] [nvarchar](200) NOT NULL,
+			[LogoBlog] [nvarchar](200) NULL,
+			[NewsURL] [nvarchar](200) NULL,
+			[FestivalCatID] [int] NULL,
+			[FestivalURL] [nvarchar](500) NULL,
+			[CreatedByUser] [int] NOT NULL,
+			[CreatedDate] [datetime] NOT NULL
+		)
+
+		ALTER TABLE {databaseOwner}[{objectQualifier}SFG_Festival] ADD CONSTRAINT [PK_{objectQualifier}SFG_Festival] PRIMARY KEY CLUSTERED  ([FestivalID])
+		CREATE NONCLUSTERED INDEX [IX_{objectQualifier}SFG_Festival] ON {databaseOwner}[{objectQualifier}SFG_Festival] ([ModuleID])
+
+		ALTER TABLE {databaseOwner}[{objectQualifier}SFG_Festival] WITH NOCHECK ADD CONSTRAINT [FK_{objectQualifier}SFG_Festival_{objectQualifier}Modules] FOREIGN KEY ([ModuleID]) REFERENCES {databaseOwner}[{objectQualifier}Modules] ([ModuleID]) ON DELETE CASCADE NOT FOR REPLICATION
+	END
+GO
+
+
+/** Drop Existing Stored Procedures **/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}SFG_GetFestivals]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}SFG_GetFestivals
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}SFG_GetFestival]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}SFG_GetFestival
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}SFG_AddFestival]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}SFG_AddFestival
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}SFG_UpdateFestival]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}SFG_UpdateFestival
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}SFG_DeleteFestival]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}SFG_DeleteFestival
+GO
+
+/** Create Stored Procedures **/
+
+
+create procedure {databaseOwner}{objectQualifier}SFG_GetFestivals
+
+	@ModuleId int
+
+as
+
+select ModuleId,
+       FestivalID,
+       Name,
+       LogoBlog,
+       NewsURL,
+       FestivalCatID,
+       FestivalURL,
+       {objectQualifier}SFG_Festival.CreatedDate,
+       'CreatedByUserName' = {objectQualifier}Users.FirstName + ' ' + {objectQualifier}Users.LastName
+from {objectQualifier}SFG_Festival
+inner join {objectQualifier}Users on {objectQualifier}SFG_Festival.CreatedByUser = {objectQualifier}Users.UserId
+where  ModuleId = @ModuleId
+GO
+
+create procedure {databaseOwner}{objectQualifier}SFG_GetFestival
+
+	@ModuleId int,
+    @FestivalID int
+
+as
+
+select ModuleId,
+       FestivalID,
+       Name
+       LogoBlog,
+       NewsURL,
+       FestivalCatID,
+       FestivalURL,
+       CreatedByUser,
+       {objectQualifier}SFG_Festival.CreatedDate,
+       'CreatedByUserName' = {objectQualifier}Users.FirstName + ' ' + {objectQualifier}Users.LastName
+from {objectQualifier}SFG_Festival
+inner join {objectQualifier}Users on {objectQualifier}SFG_Festival.CreatedByUser = {objectQualifier}Users.UserId
+where  ModuleId = @ModuleId
+and FestivalID = @FestivalID
+GO
+
+
+create procedure {databaseOwner}{objectQualifier}SFG_AddFestival
+
+	@ModuleId       int,
+	@Name			nvarchar(200),
+	@LogoBlog		nvarchar(200),
+	@NewsURL		nvarchar(200),
+	@FestivalCatID	int,
+	@FestivalURL	nvarchar(500),
+	@UserID         int
+
+as
+
+insert into {objectQualifier}SFG_Festival (
+	ModuleId,
+	Name,
+	LogoBlog,
+	NewsURL,
+	FestivalCatID,
+	FestivalURL,
+	CreatedByUser,
+	CreatedDate
+) 
+values (
+	@ModuleId,
+	@Name,
+	@LogoBlog,
+	@NewsURL,
+	@FestivalCatID,
+	@FestivalURL,
+	@UserID,
+	getdate()
+)
+
+GO
+
+create procedure {databaseOwner}{objectQualifier}SFG_UpdateFestival
+
+	@ModuleId       int,
+    @FestivalID     int,
+	@Name			nvarchar(200),
+	@LogoBlog		nvarchar(200),
+	@NewsURL		nvarchar(200),
+	@FestivalCatID	int,
+	@FestivalURL	nvarchar(200),
+	@UserID         int
+
+as
+
+update {objectQualifier}SFG_Festival
+set		Name			= @Name,
+		LogoBlog		= @LogoBlog,
+		NewsURL			= @NewsURL,
+		FestivalCatID	= @FestivalCatID,
+		FestivalURL		= @FestivalURL,
+		CreatedByUser	= @UserID,
+		CreatedDate		= getdate()
+where  ModuleId = @ModuleId
+and    FestivalID = @FestivalID
+
+GO
+
+create procedure {databaseOwner}{objectQualifier}SFG_DeleteFestival
+
+	@ModuleId       int,
+    @FestivalID     int
+
+as
+
+delete
+from   {objectQualifier}SFG_Festival
+where  ModuleId = @ModuleId
+and    FestivalID = @FestivalID
+
+GO
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/

@@ -1,0 +1,589 @@
+2015-05-06 01:00:31,395 [h1901557][Thread:1][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider iFinity.DNN.Modules.FriendlyUrl.DNNFriendlyUrlProvider, iFinity.FriendlyUrlProvider
+2015-05-06 01:01:00,349 [h1901557][Thread:6][ERROR] DotNetNuke.Framework.Reflection - DotNetNuke.Modules.HtmlEditorManager.Components.UpgradeController, DotNetNuke.Modules.HtmlEditorManager
+System.IO.FileNotFoundException: Could not load file or assembly 'DotNetNuke.Modules.HtmlEditorManager' or one of its dependencies. The system cannot find the file specified.
+File name: 'DotNetNuke.Modules.HtmlEditorManager'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2015-05-06 01:02:00,240 [h1901557][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 02:02:01,895 [h1901557][Thread:22][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 03:02:08,983 [h1901557][Thread:14][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 04:02:18,371 [h1901557][Thread:8][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 04:12:10,750 [h1901557][Thread:15][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 49c28df3bec78bebeaf4a98ba6a51949 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 05:02:19,591 [h1901557][Thread:21][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 06:02:26,993 [h1901557][Thread:19][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 06:11:38,533 [h1901557][Thread:19][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at DotNetNuke.UI.WebControls.CaptchaControl.GenerateImage(String encryptedText)
+2015-05-06 06:18:13,476 [h1901557][Thread:21][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-05-06 07:02:32,183 [h1901557][Thread:21][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 07:14:16,926 [h1901557][Thread:13][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-05-06 07:40:21,414 [h1901557][Thread:17][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-05-06 08:02:36,990 [h1901557][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 08:45:25,937 [h1901557][Thread:10][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 178.90.211.250
+	Port: 62633
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: bhhxd4aqtj3rydbif7vs5adphhyvn 9qfmii7gyl/gzzqtktmfe8mot8yop3kpauf7qchgvwpqlastcrmw0gv3hjiri= ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-05-06 08:45:26,125 [h1901557][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=61&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 178.90.211.250
+	Port: 62633
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: bhhxd4aqtj3rydbif7vs5adphhyvn 9qfmii7gyl/gzzqtktmfe8mot8yop3kpauf7qchgvwpqlastcrmw0gv3hjiri= ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-05-06 08:45:26,844 [h1901557][Thread:10][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 178.90.211.250
+	Port: 62633
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: bhhxd4aqtj3rydbif7vs5adphhyvn 9qfmii7gyl/gzzqtktmfe8mot8yop3kpauf7qchgvwpqlastcrmw0gv3hjiri= ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-05-06 08:45:26,844 [h1901557][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=61&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 178.90.211.250
+	Port: 62633
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: bhhxd4aqtj3rydbif7vs5adphhyvn 9qfmii7gyl/gzzqtktmfe8mot8yop3kpauf7qchgvwpqlastcrmw0gv3hjiri= ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-05-06 08:45:27,828 [h1901557][Thread:19][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 178.90.211.250
+	Port: 62633
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: bhhxd4aqtj3rydbif7vs5adphhyvn 9qfmii7gyl/gzzqtktmfe8mot8yop3kpauf7qchgvwpqlastcrmw0gv3hjiri= ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-05-06 08:45:27,828 [h1901557][Thread:19][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=61&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 178.90.211.250
+	Port: 62633
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: bhhxd4aqtj3rydbif7vs5adphhyvn 9qfmii7gyl/gzzqtktmfe8mot8yop3kpauf7qchgvwpqlastcrmw0gv3hjiri= ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-05-06 08:45:28,859 [h1901557][Thread:19][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 178.90.211.250
+	Port: 62633
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: bhhxd4aqtj3rydbif7vs5adphhyvn 9qfmii7gyl/gzzqtktmfe8mot8yop3kpauf7qchgvwpqlastcrmw0gv3hjiri= ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-05-06 08:45:28,859 [h1901557][Thread:19][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=61&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 178.90.211.250
+	Port: 62633
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: bhhxd4aqtj3rydbif7vs5adphhyvn 9qfmii7gyl/gzzqtktmfe8mot8yop3kpauf7qchgvwpqlastcrmw0gv3hjiri= ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-05-06 08:45:29,687 [h1901557][Thread:19][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 178.90.211.250
+	Port: 62633
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: bhhxd4aqtj3rydbif7vs5adphhyvn 9qfmii7gyl/gzzqtktmfe8mot8yop3kpauf7qchgvwpqlastcrmw0gv3hjiri= ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-05-06 08:45:29,687 [h1901557][Thread:19][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=61&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 178.90.211.250
+	Port: 62633
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: bhhxd4aqtj3rydbif7vs5adphhyvn 9qfmii7gyl/gzzqtktmfe8mot8yop3kpauf7qchgvwpqlastcrmw0gv3hjiri= ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-05-06 08:45:30,516 [h1901557][Thread:19][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 178.90.211.250
+	Port: 62633
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: bhhxd4aqtj3rydbif7vs5adphhyvn 9qfmii7gyl/gzzqtktmfe8mot8yop3kpauf7qchgvwpqlastcrmw0gv3hjiri= ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-05-06 08:45:30,516 [h1901557][Thread:19][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=61&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 178.90.211.250
+	Port: 62633
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: bhhxd4aqtj3rydbif7vs5adphhyvn 9qfmii7gyl/gzzqtktmfe8mot8yop3kpauf7qchgvwpqlastcrmw0gv3hjiri= ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-05-06 08:45:31,344 [h1901557][Thread:10][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 178.90.211.250
+	Port: 62633
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: bhhxd4aqtj3rydbif7vs5adphhyvn 9qfmii7gyl/gzzqtktmfe8mot8yop3kpauf7qchgvwpqlastcrmw0gv3hjiri= ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-05-06 08:45:31,344 [h1901557][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=61&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 178.90.211.250
+	Port: 62633
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: bhhxd4aqtj3rydbif7vs5adphhyvn 9qfmii7gyl/gzzqtktmfe8mot8yop3kpauf7qchgvwpqlastcrmw0gv3hjiri= ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-05-06 08:49:36,222 [h1901557][Thread:10][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 414af604236dae825f59b41dd4541c2c ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 09:02:40,653 [h1901557][Thread:23][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 09:47:42,428 [h1901557][Thread:16][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-05-06 10:02:43,304 [h1901557][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 10:03:24,163 [h1901557][Thread:14][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-05-06 10:08:42,665 [h1901557][Thread:19][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-05-06 10:08:44,462 [h1901557][Thread:19][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 6a8e6bab38e1736a5ccc24984b6bb2af ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 10:09:44,650 [h1901557][Thread:10][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 6a8e6bab38e1736a5ccc24984b6bb2af ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 10:10:44,838 [h1901557][Thread:19][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 6a8e6bab38e1736a5ccc24984b6bb2af ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 11:02:45,071 [h1901557][Thread:20][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 11:28:41,241 [h1901557][Thread:23][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 414af604236dae825f59b41dd4541c2c ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 11:29:41,585 [h1901557][Thread:21][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 414af604236dae825f59b41dd4541c2c ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 11:30:41,945 [h1901557][Thread:23][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 414af604236dae825f59b41dd4541c2c ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 12:02:51,109 [h1901557][Thread:21][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 12:24:36,965 [h1901557][Thread:12][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 593893f74476b74b58b3239821863cdc ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 12:24:47,184 [h1901557][Thread:12][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: b643acf8562b2d6b5c4e61e49142f6bf ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 12:24:57,965 [h1901557][Thread:27][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: dc09c59cbe17860dd75171d9b17c382d ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 12:25:08,075 [h1901557][Thread:27][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: a7e8ae75c8eb95bdf3586962562aa075 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 13:01:13,551 [h1901557][Thread:26][ERROR] DotNetNuke.UI.WebControls.CaptchaControl - System.ArgumentException: Font 'MS Sans Serif' cannot be found.
+   at System.Drawing.FontFamily.CreateFontFamily(String name, FontCollection fontCollection)
+   at System.Drawing.FontFamily..ctor(String name)
+   at DotNetNuke.UI.WebControls.CaptchaControl.GetFont()
+2015-05-06 13:01:13,769 [h1901557][Thread:26][ERROR] DotNetNuke.UI.WebControls.CaptchaControl - System.ArgumentException: Font 'MS Sans Serif' cannot be found.
+   at System.Drawing.FontFamily.CreateFontFamily(String name, FontCollection fontCollection)
+   at System.Drawing.FontFamily..ctor(String name)
+   at DotNetNuke.UI.WebControls.CaptchaControl.GetFont()
+2015-05-06 13:02:53,286 [h1901557][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 14:03:03,135 [h1901557][Thread:27][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 14:11:20,149 [h1901557][Thread:12][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: d2d0670fa45306eb32b670603ac75b46 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 14:24:26,601 [h1901557][Thread:26][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 84e07dd891b18f11d6005c3e5b5dfc59 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 15:02:59,811 [h1901557][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 16:03:06,954 [h1901557][Thread:26][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 16:41:53,940 [h1901557][Thread:16][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 2154c4c08fcef6ff723012f7065cc560 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 16:54:15,192 [h1901557][Thread:16][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: d2d0670fa45306eb32b670603ac75b46 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 16:55:15,366 [h1901557][Thread:16][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: d2d0670fa45306eb32b670603ac75b46 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 16:56:15,727 [h1901557][Thread:20][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: d2d0670fa45306eb32b670603ac75b46 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 17:03:06,189 [h1901557][Thread:20][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 17:53:14,505 [h1901557][Thread:22][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 2154c4c08fcef6ff723012f7065cc560 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 18:03:10,368 [h1901557][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 18:05:13,775 [h1901557][Thread:13][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 2154c4c08fcef6ff723012f7065cc560 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 18:22:24,110 [h1901557][Thread:23][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-05-06 18:44:21,290 [h1901557][Thread:24][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Collections.Generic.KeyNotFoundException: no map was found for the dependency key: 2154c4c08fcef6ff723012f7065cc560 ,CompositeUrlType.MappedId requires that a map is found
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.ProcessRequestInternal(HttpContextBase context, String fileset, ClientDependencyType type, Int32 version, Byte[] outputBytes)
+   at ClientDependency.Core.CompositeFiles.CompositeDependencyHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-05-06 19:03:12,782 [h1901557][Thread:18][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 20:00:37,085 [h1901557][Thread:21][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Conversion from string "" to type 'Integer' is not valid. ---> System.FormatException: Input string was not in a correct format.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at DotNetNuke.Modules.Forum.ForumUserInfo.get_AvatarCoreFile()
+2015-05-06 20:00:37,304 [h1901557][Thread:21][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Conversion from string "" to type 'Integer' is not valid. ---> System.FormatException: Input string was not in a correct format.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at DotNetNuke.Modules.Forum.ForumUserInfo.get_AvatarCoreFile()
+2015-05-06 20:03:14,366 [h1901557][Thread:23][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 20:38:30,493 [h1901557][Thread:21][ERROR] DotNetNuke.ComponentModel.ProviderInstaller - System.Configuration.ConfigurationErrorsException: Could not load provider iFinity.DNN.Modules.FriendlyUrl.DNNFriendlyUrlProvider, iFinity.FriendlyUrlProvider
+2015-05-06 20:38:47,165 [h1901557][Thread:17][ERROR] DotNetNuke.Framework.Reflection - DotNetNuke.Modules.HtmlEditorManager.Components.UpgradeController, DotNetNuke.Modules.HtmlEditorManager
+System.IO.FileNotFoundException: Could not load file or assembly 'DotNetNuke.Modules.HtmlEditorManager' or one of its dependencies. The system cannot find the file specified.
+File name: 'DotNetNuke.Modules.HtmlEditorManager'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2015-05-06 21:03:25,561 [h1901557][Thread:9][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 22:03:26,226 [h1901557][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-05-06 23:03:36,468 [h1901557][Thread:19][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)

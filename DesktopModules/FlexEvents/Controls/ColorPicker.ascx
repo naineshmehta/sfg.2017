@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ColorPicker.ascx.cs" Inherits="BizModules.FlexEvents.Controls.ColorPicker" %>
+<asp:textbox id="txtColor" runat="server" Width="100px" MaxLength="6" CssClass="NormalTextBox color{required:false}"></asp:textbox>

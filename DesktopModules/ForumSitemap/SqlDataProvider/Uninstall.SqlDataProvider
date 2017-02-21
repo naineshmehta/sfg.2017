@@ -1,0 +1,4 @@
+﻿/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}ifty_fsp_GetForumsGroupsAndThreads]    Script Date: 09/13/2012 17:04:09 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}ifty_fsp_GetForumsGroupsAndThreads]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}ifty_fsp_GetForumsGroupsAndThreads]
+GO

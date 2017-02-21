@@ -1,0 +1,318 @@
+﻿/*************** Begin Login & register */
+.contentPane {
+    margin: 0 30px 0 30px;
+}
+#login .registerGroup,
+#login .registerGroup *,
+#login .loginGroup,
+#login .loginGroup * { display: block; }
+
+#login .registerGroup,
+#login .loginGroup {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+#login .registerGroup li:first-child:hover {
+    
+}
+
+/* Register Group Styles */
+#login .registerGroup li {
+    float: left;
+}
+
+#login .registerGroup .buttonGroup {
+    margin-right: 0;
+}
+
+#login .registerGroup a,
+#login .loginGroup a {
+    display: block;
+    position: relative;
+    height: 32px;
+    min-width: 12px;
+    padding: 7px 15px 0 15px;
+    color: #fff;
+    font-size: 12px;
+    vertical-align: middle;
+}/*
+
+#login .registerGroup a:hover,
+#login .loginGroup a:hover {
+    color:#008cba;
+}*/
+
+#login .registerGroup a:active,
+#login .loginGroup a:active {
+    color: #fff;
+}
+
+#login .registerGroup a:hover,
+#login .loginGroup a:hover {
+    text-decoration: none;
+}
+
+#login .registerGroup a strong,
+#login .loginGroup a strong {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    font-size: 11px;
+    text-indent: -9999px;
+}
+
+#login .userMessages a,
+#login .userNotifications a {
+    color:transparent;
+    height:30px;
+}
+#login .userMessages a:hover,
+#login .userNotifications a:hover {
+    color:transparent !important;
+}
+    
+
+#login .userMessages strong {
+    height: 100%;
+    background: url('../img/icon_message.png') no-repeat center center;
+    
+}
+
+#login .userNotifications {
+    /*border-right: 1px solid #CCC;*/
+}
+
+    #login .userNotifications strong {
+        height: 100%;
+        background: url('../img/icon_notification.png') no-repeat center center;
+    }
+
+#login .registerGroup a span {
+    display: inline-block;
+    position: absolute;
+    right: 2px;
+    top: -9px;
+    min-width: 7px;
+    margin-right: 3px;
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+    text-shadow: 0px 1px 0px #333333;
+}
+
+#login .registerGroup .userProfileImg a {
+    min-width: 25px;
+    min-height: 32px;
+    padding: 0;
+    background: none;
+}
+
+#login .registerGroup a img {
+    height: 32px;
+    width: 32px;
+    background: #333;
+}
+
+/* Login Group Styles */
+#login .loginGroup {
+}
+
+    #login .loginGroup a {
+        color: #fff;
+    }
+
+/* Number of message next to the message icon*/
+#login .userMessages a span,
+#login .userNotifications a span {
+    display: inline-block;
+    margin-top: 9px;
+    margin-right: 0px;
+    background-color: transparent;
+    font-size: 10px;
+}
+
+.top-bar-section .dropdown { background:#333333 !important; }
+.top-bar-section ul li:hover:not(.has-form) > a { color:#ffffff!important;}
+/*************** Begin Login & register */
+
+
+
+body { 
+    background:#333333 !important;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+.topbar             { height:35px; margin:0; padding:0; }
+/* ReSharper disable Html.PathError */
+.logo-holder        { line-height:100px;}
+/* ReSharper restore Html.PathError */
+/*.logofullwidth { background: url('../img/banner.jpg') 0px -300px; }*/
+.logofullwidth { background: url('../img/banner-cropped.jpg') 0px 0px; }
+.logo-holder img    { max-width: 100%; height:auto; }
+.seach-button       { font-size: 20px; line-height: 24px; padding:0; margin:0; }
+
+.content-holder     { background:#ffffff; min-height:300px; }
+.header-holder      { background:#ffffff; min-height:80px;}
+.footer-holder      { padding:20px 0 30px 0; margin-top:20px; }
+
+.footerLink,
+a.footerLink,
+a.footerLink:link,
+a.footerLink:active,
+a.footerLink:visited        { color: #ffffff; text-decoration:none; text-shadow:none !important; line-height:24px; }
+a.footerLink:hover          { text-decoration:none; -webkit-transition: all 0.3s ease-in 0s; -moz-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; }
+
+
+.searchButton { font-size:20px; line-height:20px; }
+/*------------------------------------------------*/
+/* Begin SEARCH */
+/*------------------------------------------------*/
+#search                         { float: right; width: 260px; }
+
+#search a.SearchButton:link,
+#search a.SearchButton:visited  { display: inline-block; width:59px; text-align:center; color:#ffffff; float: right; margin: 0; padding: 0; }
+#search a.SearchButton:hover    { -webkit-transition: all 0.3s ease-in 0s; -moz-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; }
+
+#dnn_dnnSearch_txtSearch {
+    display: block;
+    float: left;
+    width:200px;
+    margin-top:-7px !important;
+    padding: 0 5px 0 10px;
+    margin: 0;
+    height:45px;
+    border: solid 1px #cccccc;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: #333333;
+    line-height: 35px;
+    font-size: 14px;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+#dnn_dnnSearch_txtSearch:active, #dnn_dnnSearch_txtSearch:focus {
+    background: #eeeeee;
+}
+
+ul.searchSkinObjectPreview > li {
+padding: 6px 12px 6px 22px;
+border-top: 1px solid #c9c9c9;
+color: #666;
+background:#eeeeee !important;
+cursor: pointer;
+position: relative;
+margin: 0;
+width: 100%;
+text-transform: none;
+width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------*/
+/* End SEARCH */
+/*------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/********** social icons **********/
+.social-holder .social-links           {  }
+.social-holder ul                      { margin-bottom:0 !important; margin-top:-1px; }
+.social-holder .social-links li        { list-style: none; display: inline-block; text-align:center; vertical-align: middle; margin-left:-5px; }
+.social-holder .social-links li a      { width: 34px; line-height:33px; display: block; color: #ffffff; font-size:18px; margin:0;-webkit-transition: all 0.3s ease-in 0s; -moz-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; }
+.social-holder .social-links li a:hover{ width: 34px; line-height:33px; display: block; /*color: #008cba;*/ }
+/********** social icons **********/
+
+/********** social icons **********/
+.social-mobile-holder .social-links           {  }
+.social-mobile-holder ul                      { margin-bottom:0 !important; margin-top:-1px; }
+.social-mobile-holder .social-links li        { list-style: none; display: inline-block; text-align:center; vertical-align: middle; margin-left:-5px; }
+.social-mobile-holder .social-links li a      { width: 34px; line-height:20px; display: block; color: #333333; font-size:24px; margin:0;-webkit-transition: all 0.3s ease-in 0s; -moz-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; }
+.social-mobile-holder .social-links li a:hover{ width: 34px; line-height:20px; display: block; color: /*#028bff*/}
+/********** social icons **********/
+
+/********** Login **********/
+.login-holder { /*line-height: 20px;*/}
+.LoginLink,
+a.LoginLink:link,
+a.LoginLink:visited,
+a.LoginLink:active  { color: #ffffff; text-decoration: none; padding:0 10px 0 10px; font-size:12px; line-height: 30px; -webkit-transition: all 0.3s ease-in 0s; -moz-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; }
+a.LoginLink:hover   { text-decoration: none; }
+/********** Login **********/
+
+/********** Language **********/
+.language-holder    { min-height: 0!important; display: inline; }
+.langauge-object                            { white-space: nowrap; overflow:visible; }
+.langauge-object .Language img              { display:none; }
+.language-object .Language.selected         { 
+    background: #ffffff; 
+    color:#333333; 
+    width:25px; 
+    line-height:35px; 
+    margin-top:-3px !important; }
+.language-object .Language.selected:hover   { 
+    /*color:#028bff;*/
+    -webkit-transition: all 0.3s ease-in 0s; 
+    -moz-transition: all 0.3s ease-in 0s; 
+    transition: all 0.3s ease-in 0s;
+}
+a.Language:hover { 
+    /*color:#028bff; */
+    text-decoration:none;
+    -webkit-transition: all 0.3s ease-in 0s; 
+    -moz-transition: all 0.3s ease-in 0s; 
+    transition: all 0.3s ease-in 0s; }
+a.Language:active, a.Language:visited, a.Language:link, .Language {
+    float:right;
+    margin:0;
+    text-align:center;
+    text-transform:lowercase;
+    color:#ffffff;
+    font-size:14px;
+    text-decoration:none;
+    width:35px !important;
+    line-height:35px;
+    margin-top:-3px !important; 
+    background:#666666;
+}
+/********** Language **********/
+
+
+
+a, a:visited {
+    -webkit-transition: all 0.3s ease-in 0s; -moz-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
+    text-decoration: none;
+    outline: 0;
+}
+a:hover {color: #000000 !important; }

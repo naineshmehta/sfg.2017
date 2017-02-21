@@ -1,0 +1,587 @@
+2015-11-11 04:00:16,587 [h1901557][Thread:7][ERROR] DotNetNuke.Framework.Reflection - DotNetNuke.Modules.HtmlEditorManager.Components.UpgradeController, DotNetNuke.Modules.HtmlEditorManager
+System.IO.FileNotFoundException: Could not load file or assembly 'DotNetNuke.Modules.HtmlEditorManager' or one of its dependencies. The system cannot find the file specified.
+File name: 'DotNetNuke.Modules.HtmlEditorManager'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2015-11-11 04:11:00,512 [h1901557][Thread:7][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 05:11:06,852 [h1901557][Thread:8][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 05:24:52,134 [h1901557][Thread:11][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-11-11 05:27:37,387 [h1901557][Thread:12][ERROR] DotNetNuke.Framework.Reflection - Active.Modules.Forums.SqlDataProvider, Active.Modules.Forums.40.SqlDataProvider
+System.IO.FileNotFoundException: Could not load file or assembly 'Active.Modules.Forums.40.SqlDataProvider' or one of its dependencies. The system cannot find the file specified.
+File name: 'Active.Modules.Forums.40.SqlDataProvider'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2015-11-11 06:11:11,285 [h1901557][Thread:18][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 07:11:14,914 [h1901557][Thread:7][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 08:11:21,375 [h1901557][Thread:7][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 08:41:30,567 [h1901557][Thread:7][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-11-11 09:00:53,425 [h1901557][Thread:13][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 104.200.151.57
+	Port: 56501
+	Referer: http://www.google.com
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)
+	ViewState: 16p/GUOT/ZVs4k/iX8vzARkuhxdeZElDJ8KRqcS74WiCzQm P6bK8sAZcyDzzK//WLF/9B6YXTQMOZVd3/tyxGMKVi/N4jSiSweVIp mKSaJSo2PBmoeLbJ8yUgdfgsnxlN3IS0BZjom0SjasOIfiMI6aI8aJJGXQ42UakEkcTF4s7AjEbZI MnPWnUTRX/A1VLBEbXtXscudPFqvhb1vj5vj4hqmOb0bFeXYi98DA7xFhmbEgTjmzI4k6CnP67GBoERTUwVfSBMbvzWjbNJQFWdQJGt 6xQwCkAjJo9Xt5 xpMwsUfl6t2jJevgsXHVeLb7WnTlVDBVMQGza5AGpKydI2jMoyUxmug6lwipstPH08lYPz69wrsSAJOYVDZg6q5ooT5ufpHahZs/k3MMQ4ch6vmEkYWQ6aOBlggcuNWKXZBLZR Ph2p7ktVPX7exijsfRa C3eSK21qElR3k4BziUGp/CSldsof76OVvZSlsAeMS54THiFj8y0y3KdSsfDk763oQspJXIT4iiyOYx6pMQt3NummYhe/XQSY3zVRZhjM 5wp1JSq7emf3vTdZFHhATYRezAes9qy2NPaXyFUF8OStJebzSBAkeCD5770GY3mNpLA VAtNiuh gsmAcFdh6u6fJjt2J36ru4aigwk3XyfYvREzzi9ZYePwz82BZSc0T8SiSoX1F43KjGgXY3TrPV7sQ9jOm7FgnjdD2vkqbMxC 33xhoXST4Niyp2LUGW5rEBeRn8sao1ZwHL5/KDvJtZ5ov4VzHIvGK32vOGu5zAEyfLgJnF0p6GrSKDRDLqn7tJyV9xP...
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-11-11 09:00:53,550 [h1901557][Thread:13][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=58&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 104.200.151.57
+	Port: 56501
+	Referer: http://www.google.com
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)
+	ViewState: 16p/GUOT/ZVs4k/iX8vzARkuhxdeZElDJ8KRqcS74WiCzQm P6bK8sAZcyDzzK//WLF/9B6YXTQMOZVd3/tyxGMKVi/N4jSiSweVIp mKSaJSo2PBmoeLbJ8yUgdfgsnxlN3IS0BZjom0SjasOIfiMI6aI8aJJGXQ42UakEkcTF4s7AjEbZI MnPWnUTRX/A1VLBEbXtXscudPFqvhb1vj5vj4hqmOb0bFeXYi98DA7xFhmbEgTjmzI4k6CnP67GBoERTUwVfSBMbvzWjbNJQFWdQJGt 6xQwCkAjJo9Xt5 xpMwsUfl6t2jJevgsXHVeLb7WnTlVDBVMQGza5AGpKydI2jMoyUxmug6lwipstPH08lYPz69wrsSAJOYVDZg6q5ooT5ufpHahZs/k3MMQ4ch6vmEkYWQ6aOBlggcuNWKXZBLZR Ph2p7ktVPX7exijsfRa C3eSK21qElR3k4BziUGp/CSldsof76OVvZSlsAeMS54THiFj8y0y3KdSsfDk763oQspJXIT4iiyOYx6pMQt3NummYhe/XQSY3zVRZhjM 5wp1JSq7emf3vTdZFHhATYRezAes9qy2NPaXyFUF8OStJebzSBAkeCD5770GY3mNpLA VAtNiuh gsmAcFdh6u6fJjt2J36ru4aigwk3XyfYvREzzi9ZYePwz82BZSc0T8SiSoX1F43KjGgXY3TrPV7sQ9jOm7FgnjdD2vkqbMxC 33xhoXST4Niyp2LUGW5rEBeRn8sao1ZwHL5/KDvJtZ5ov4VzHIvGK32vOGu5zAEyfLgJnF0p6GrSKDRDLqn7tJyV9xP...
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-11-11 09:11:24,551 [h1901557][Thread:13][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 09:34:34,620 [h1901557][Thread:17][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-11-11 09:46:35,676 [h1901557][Thread:13][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-11-11 10:11:27,131 [h1901557][Thread:17][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 11:11:28,985 [h1901557][Thread:14][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 12:11:31,365 [h1901557][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 12:36:29,306 [h1901557][Thread:15][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-11-11 13:11:35,288 [h1901557][Thread:15][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 13:50:42,683 [h1901557][Thread:14][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-11-11 14:11:39,280 [h1901557][Thread:13][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 14:47:15,275 [h1901557][Thread:17][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-11-11 15:11:41,739 [h1901557][Thread:14][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 16:11:45,318 [h1901557][Thread:16][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 17:04:57,685 [h1901557][Thread:24][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Web.HttpException (0x80004005): Not Found
+   at DotNetNuke.Modules.Admin.Users.ViewProfile.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+2015-11-11 17:04:57,701 [h1901557][Thread:24][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.ModuleLoadException: Unhandled Error Adding Module to LeftPane ---> System.Web.HttpException: Not Found
+   at DotNetNuke.Modules.Admin.Users.ViewProfile.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.InjectModule(Pane pane, ModuleInfo module)
+2015-11-11 17:04:57,795 [h1901557][Thread:24][FATAL] DotNetNuke.Services.Exceptions.Exceptions - System.Web.HttpException (0x80004005): The control collection cannot be modified during DataBind, Init, Load, PreRender or Unload phases.
+   at System.Web.UI.ControlCollection.RemoveAt(Int32 index)
+   at System.Web.UI.ControlCollection.Clear()
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Control.FindControl(String id)
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessModuleLoadException(String FriendlyMessage, Control ctrl, Exception exc, Boolean DisplayErrorMessage)
+2015-11-11 17:04:57,826 [h1901557][Thread:24][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=89&def=ErrorMessage
+System.Web.HttpException (0x80004005): The control collection cannot be modified during DataBind, Init, Load, PreRender or Unload phases.
+   at System.Web.UI.ControlCollection.RemoveAt(Int32 index)
+   at System.Web.UI.ControlCollection.Clear()
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Control.FindControl(String id)
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessModuleLoadException(String FriendlyMessage, Control ctrl, Exception exc, Boolean DisplayErrorMessage)
+2015-11-11 17:04:58,951 [h1901557][Thread:23][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Web.HttpException (0x80004005): Not Found
+   at DotNetNuke.Modules.Admin.Users.ViewProfile.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+2015-11-11 17:04:58,951 [h1901557][Thread:23][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.ModuleLoadException: Unhandled Error Adding Module to LeftPane ---> System.Web.HttpException: Not Found
+   at DotNetNuke.Modules.Admin.Users.ViewProfile.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.InjectModule(Pane pane, ModuleInfo module)
+2015-11-11 17:04:58,967 [h1901557][Thread:23][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Not Found
+   at DotNetNuke.Modules.Admin.Users.ViewProfile.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-11-11 17:11:47,448 [h1901557][Thread:18][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 17:40:52,471 [h1901557][Thread:23][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 83.219.138.161
+	Port: 34252
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: -1' ---> System.FormatException: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. 
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-11-11 17:40:52,502 [h1901557][Thread:23][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=72&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 83.219.138.161
+	Port: 34252
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: -1' ---> System.FormatException: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. 
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-11-11 17:40:53,189 [h1901557][Thread:22][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 83.219.138.161
+	Port: 34252
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: iekomoejxibzckk7qjvfyvayei0fomthpta6at7wus1puqw28mhomhrjypbc2oixzbccpsuwthsnkifdwoizghs 3hwmfoj0ieg3r/frsyape2gcksif/7w k2enshfum4eftx6kx07yaceqaukvt0spgn9vjpfhxcppvdpr0uhkhtwz/jwedmngw2t4qg nhcioi9isc0vqhknd8ucmd46s12jfob8yi6pebu3hcsnumfqxuyh5phrp5s4jocznkxyjjnhwbibmu3lfoxcutnyhp9f4dx6sz4drfnpwscl0iz5sx5cnax0kyddibeiguplggpjnmed8xy64ve4/dptn3s0ncpda1twbblesqejwf8cebqpp2f29oa7yv2omoattextxgvxpd/dloz bc5k0bchhvqfumwbgkr2cl7vuuep/xmeh5tjiubegjfkp6ip xvytezdnqbql1ffz41uouunb2xrxw9sk4qf38admx36upa2ibwtngmb4yko 9zwramxjup7twi6qzb5yr1ztapfepmr/d/sskr7o1otmhorn1tzcmisoboalfqyn0r4f7xrxulpntbbtnzufh5dt4b40zbziy7z0zagqw21xun9jrtiig15 w/uns3fshwjnvohg1/ oyindqirig7rl5yij5fbw/i ld37tcbt5ctvpwqmg4h2jmrhuae8seaspa2by9ky7yjbirzxmni6cmioe/pnlvdqgkfbn7pnk5yb168yflwagfzcsmjsyi q9dhvpbuhpbgpaiaieoe sgbg4hxid5e19lknjw2kkh7mtivqr/bgp4qixbpgkq40npqsrvtywxqcdgrkeb6/mzhcudou3q0qeaatd72wktrxynko... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-11-11 17:40:53,189 [h1901557][Thread:22][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=72&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 83.219.138.161
+	Port: 34252
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: iekomoejxibzckk7qjvfyvayei0fomthpta6at7wus1puqw28mhomhrjypbc2oixzbccpsuwthsnkifdwoizghs 3hwmfoj0ieg3r/frsyape2gcksif/7w k2enshfum4eftx6kx07yaceqaukvt0spgn9vjpfhxcppvdpr0uhkhtwz/jwedmngw2t4qg nhcioi9isc0vqhknd8ucmd46s12jfob8yi6pebu3hcsnumfqxuyh5phrp5s4jocznkxyjjnhwbibmu3lfoxcutnyhp9f4dx6sz4drfnpwscl0iz5sx5cnax0kyddibeiguplggpjnmed8xy64ve4/dptn3s0ncpda1twbblesqejwf8cebqpp2f29oa7yv2omoattextxgvxpd/dloz bc5k0bchhvqfumwbgkr2cl7vuuep/xmeh5tjiubegjfkp6ip xvytezdnqbql1ffz41uouunb2xrxw9sk4qf38admx36upa2ibwtngmb4yko 9zwramxjup7twi6qzb5yr1ztapfepmr/d/sskr7o1otmhorn1tzcmisoboalfqyn0r4f7xrxulpntbbtnzufh5dt4b40zbziy7z0zagqw21xun9jrtiig15 w/uns3fshwjnvohg1/ oyindqirig7rl5yij5fbw/i ld37tcbt5ctvpwqmg4h2jmrhuae8seaspa2by9ky7yjbirzxmni6cmioe/pnlvdqgkfbn7pnk5yb168yflwagfzcsmjsyi q9dhvpbuhpbgpaiaieoe sgbg4hxid5e19lknjw2kkh7mtivqr/bgp4qixbpgkq40npqsrvtywxqcdgrkeb6/mzhcudou3q0qeaatd72wktrxynko... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-11-11 17:40:53,861 [h1901557][Thread:24][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 83.219.138.161
+	Port: 34252
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: iekomoejxibzckk7qjvfyvayei0fomthpta6at7wus1puqw28mhomhrjypbc2oixzbccpsuwthsnkifdwoizghs 3hwmfoj0ieg3r/frsyape2gcksif/7w k2enshfum4eftx6kx07yaceqaukvt0spgn9vjpfhxcppvdpr0uhkhtwz/jwedmngw2t4qg nhcioi9isc0vqhknd8ucmd46s12jfob8yi6pebu3hcsnumfqxuyh5phrp5s4jocznkxyjjnhwbibmu3lfoxcutnyhp9f4dx6sz4drfnpwscl0iz5sx5cnax0kyddibeiguplggpjnmed8xy64ve4/dptn3s0ncpda1twbblesqejwf8cebqpp2f29oa7yv2omoattextxgvxpd/dloz bc5k0bchhvqfumwbgkr2cl7vuuep/xmeh5tjiubegjfkp6ip xvytezdnqbql1ffz41uouunb2xrxw9sk4qf38admx36upa2ibwtngmb4yko 9zwramxjup7twi6qzb5yr1ztapfepmr/d/sskr7o1otmhorn1tzcmisoboalfqyn0r4f7xrxulpntbbtnzufh5dt4b40zbziy7z0zagqw21xun9jrtiig15 w/uns3fshwjnvohg1/ oyindqirig7rl5yij5fbw/i ld37tcbt5ctvpwqmg4h2jmrhuae8seaspa2by9ky7yjbirzxmni6cmioe/pnlvdqgkfbn7pnk5yb168yflwagfzcsmjsyi q9dhvpbuhpbgpaiaieoe sgbg4hxid5e19lknjw2kkh7mtivqr/bgp4qixbpgkq40npqsrvtywxqcdgrkeb6/mzhcudou3q0qeaatd72wktrxynko... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-11-11 17:40:53,861 [h1901557][Thread:24][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=72&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 83.219.138.161
+	Port: 34252
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: iekomoejxibzckk7qjvfyvayei0fomthpta6at7wus1puqw28mhomhrjypbc2oixzbccpsuwthsnkifdwoizghs 3hwmfoj0ieg3r/frsyape2gcksif/7w k2enshfum4eftx6kx07yaceqaukvt0spgn9vjpfhxcppvdpr0uhkhtwz/jwedmngw2t4qg nhcioi9isc0vqhknd8ucmd46s12jfob8yi6pebu3hcsnumfqxuyh5phrp5s4jocznkxyjjnhwbibmu3lfoxcutnyhp9f4dx6sz4drfnpwscl0iz5sx5cnax0kyddibeiguplggpjnmed8xy64ve4/dptn3s0ncpda1twbblesqejwf8cebqpp2f29oa7yv2omoattextxgvxpd/dloz bc5k0bchhvqfumwbgkr2cl7vuuep/xmeh5tjiubegjfkp6ip xvytezdnqbql1ffz41uouunb2xrxw9sk4qf38admx36upa2ibwtngmb4yko 9zwramxjup7twi6qzb5yr1ztapfepmr/d/sskr7o1otmhorn1tzcmisoboalfqyn0r4f7xrxulpntbbtnzufh5dt4b40zbziy7z0zagqw21xun9jrtiig15 w/uns3fshwjnvohg1/ oyindqirig7rl5yij5fbw/i ld37tcbt5ctvpwqmg4h2jmrhuae8seaspa2by9ky7yjbirzxmni6cmioe/pnlvdqgkfbn7pnk5yb168yflwagfzcsmjsyi q9dhvpbuhpbgpaiaieoe sgbg4hxid5e19lknjw2kkh7mtivqr/bgp4qixbpgkq40npqsrvtywxqcdgrkeb6/mzhcudou3q0qeaatd72wktrxynko... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-11-11 17:40:54,299 [h1901557][Thread:18][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 83.219.138.161
+	Port: 34252
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: iekomoejxibzckk7qjvfyvayei0fomthpta6at7wus1puqw28mhomhrjypbc2oixzbccpsuwthsnkifdwoizghs 3hwmfoj0ieg3r/frsyape2gcksif/7w k2enshfum4eftx6kx07yaceqaukvt0spgn9vjpfhxcppvdpr0uhkhtwz/jwedmngw2t4qg nhcioi9isc0vqhknd8ucmd46s12jfob8yi6pebu3hcsnumfqxuyh5phrp5s4jocznkxyjjnhwbibmu3lfoxcutnyhp9f4dx6sz4drfnpwscl0iz5sx5cnax0kyddibeiguplggpjnmed8xy64ve4/dptn3s0ncpda1twbblesqejwf8cebqpp2f29oa7yv2omoattextxgvxpd/dloz bc5k0bchhvqfumwbgkr2cl7vuuep/xmeh5tjiubegjfkp6ip xvytezdnqbql1ffz41uouunb2xrxw9sk4qf38admx36upa2ibwtngmb4yko 9zwramxjup7twi6qzb5yr1ztapfepmr/d/sskr7o1otmhorn1tzcmisoboalfqyn0r4f7xrxulpntbbtnzufh5dt4b40zbziy7z0zagqw21xun9jrtiig15 w/uns3fshwjnvohg1/ oyindqirig7rl5yij5fbw/i ld37tcbt5ctvpwqmg4h2jmrhuae8seaspa2by9ky7yjbirzxmni6cmioe/pnlvdqgkfbn7pnk5yb168yflwagfzcsmjsyi q9dhvpbuhpbgpaiaieoe sgbg4hxid5e19lknjw2kkh7mtivqr/bgp4qixbpgkq40npqsrvtywxqcdgrkeb6/mzhcudou3q0qeaatd72wktrxynko... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-11-11 17:40:54,299 [h1901557][Thread:18][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=72&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 83.219.138.161
+	Port: 34252
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: iekomoejxibzckk7qjvfyvayei0fomthpta6at7wus1puqw28mhomhrjypbc2oixzbccpsuwthsnkifdwoizghs 3hwmfoj0ieg3r/frsyape2gcksif/7w k2enshfum4eftx6kx07yaceqaukvt0spgn9vjpfhxcppvdpr0uhkhtwz/jwedmngw2t4qg nhcioi9isc0vqhknd8ucmd46s12jfob8yi6pebu3hcsnumfqxuyh5phrp5s4jocznkxyjjnhwbibmu3lfoxcutnyhp9f4dx6sz4drfnpwscl0iz5sx5cnax0kyddibeiguplggpjnmed8xy64ve4/dptn3s0ncpda1twbblesqejwf8cebqpp2f29oa7yv2omoattextxgvxpd/dloz bc5k0bchhvqfumwbgkr2cl7vuuep/xmeh5tjiubegjfkp6ip xvytezdnqbql1ffz41uouunb2xrxw9sk4qf38admx36upa2ibwtngmb4yko 9zwramxjup7twi6qzb5yr1ztapfepmr/d/sskr7o1otmhorn1tzcmisoboalfqyn0r4f7xrxulpntbbtnzufh5dt4b40zbziy7z0zagqw21xun9jrtiig15 w/uns3fshwjnvohg1/ oyindqirig7rl5yij5fbw/i ld37tcbt5ctvpwqmg4h2jmrhuae8seaspa2by9ky7yjbirzxmni6cmioe/pnlvdqgkfbn7pnk5yb168yflwagfzcsmjsyi q9dhvpbuhpbgpaiaieoe sgbg4hxid5e19lknjw2kkh7mtivqr/bgp4qixbpgkq40npqsrvtywxqcdgrkeb6/mzhcudou3q0qeaatd72wktrxynko... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-11-11 17:40:54,752 [h1901557][Thread:24][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 83.219.138.161
+	Port: 34252
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: iekomoejxibzckk7qjvfyvayei0fomthpta6at7wus1puqw28mhomhrjypbc2oixzbccpsuwthsnkifdwoizghs 3hwmfoj0ieg3r/frsyape2gcksif/7w k2enshfum4eftx6kx07yaceqaukvt0spgn9vjpfhxcppvdpr0uhkhtwz/jwedmngw2t4qg nhcioi9isc0vqhknd8ucmd46s12jfob8yi6pebu3hcsnumfqxuyh5phrp5s4jocznkxyjjnhwbibmu3lfoxcutnyhp9f4dx6sz4drfnpwscl0iz5sx5cnax0kyddibeiguplggpjnmed8xy64ve4/dptn3s0ncpda1twbblesqejwf8cebqpp2f29oa7yv2omoattextxgvxpd/dloz bc5k0bchhvqfumwbgkr2cl7vuuep/xmeh5tjiubegjfkp6ip xvytezdnqbql1ffz41uouunb2xrxw9sk4qf38admx36upa2ibwtngmb4yko 9zwramxjup7twi6qzb5yr1ztapfepmr/d/sskr7o1otmhorn1tzcmisoboalfqyn0r4f7xrxulpntbbtnzufh5dt4b40zbziy7z0zagqw21xun9jrtiig15 w/uns3fshwjnvohg1/ oyindqirig7rl5yij5fbw/i ld37tcbt5ctvpwqmg4h2jmrhuae8seaspa2by9ky7yjbirzxmni6cmioe/pnlvdqgkfbn7pnk5yb168yflwagfzcsmjsyi q9dhvpbuhpbgpaiaieoe sgbg4hxid5e19lknjw2kkh7mtivqr/bgp4qixbpgkq40npqsrvtywxqcdgrkeb6/mzhcudou3q0qeaatd72wktrxynko... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-11-11 17:40:54,752 [h1901557][Thread:24][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=72&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 83.219.138.161
+	Port: 34252
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: iekomoejxibzckk7qjvfyvayei0fomthpta6at7wus1puqw28mhomhrjypbc2oixzbccpsuwthsnkifdwoizghs 3hwmfoj0ieg3r/frsyape2gcksif/7w k2enshfum4eftx6kx07yaceqaukvt0spgn9vjpfhxcppvdpr0uhkhtwz/jwedmngw2t4qg nhcioi9isc0vqhknd8ucmd46s12jfob8yi6pebu3hcsnumfqxuyh5phrp5s4jocznkxyjjnhwbibmu3lfoxcutnyhp9f4dx6sz4drfnpwscl0iz5sx5cnax0kyddibeiguplggpjnmed8xy64ve4/dptn3s0ncpda1twbblesqejwf8cebqpp2f29oa7yv2omoattextxgvxpd/dloz bc5k0bchhvqfumwbgkr2cl7vuuep/xmeh5tjiubegjfkp6ip xvytezdnqbql1ffz41uouunb2xrxw9sk4qf38admx36upa2ibwtngmb4yko 9zwramxjup7twi6qzb5yr1ztapfepmr/d/sskr7o1otmhorn1tzcmisoboalfqyn0r4f7xrxulpntbbtnzufh5dt4b40zbziy7z0zagqw21xun9jrtiig15 w/uns3fshwjnvohg1/ oyindqirig7rl5yij5fbw/i ld37tcbt5ctvpwqmg4h2jmrhuae8seaspa2by9ky7yjbirzxmni6cmioe/pnlvdqgkfbn7pnk5yb168yflwagfzcsmjsyi q9dhvpbuhpbgpaiaieoe sgbg4hxid5e19lknjw2kkh7mtivqr/bgp4qixbpgkq40npqsrvtywxqcdgrkeb6/mzhcudou3q0qeaatd72wktrxynko... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-11-11 17:40:55,205 [h1901557][Thread:23][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 83.219.138.161
+	Port: 34252
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: iekomoejxibzckk7qjvfyvayei0fomthpta6at7wus1puqw28mhomhrjypbc2oixzbccpsuwthsnkifdwoizghs 3hwmfoj0ieg3r/frsyape2gcksif/7w k2enshfum4eftx6kx07yaceqaukvt0spgn9vjpfhxcppvdpr0uhkhtwz/jwedmngw2t4qg nhcioi9isc0vqhknd8ucmd46s12jfob8yi6pebu3hcsnumfqxuyh5phrp5s4jocznkxyjjnhwbibmu3lfoxcutnyhp9f4dx6sz4drfnpwscl0iz5sx5cnax0kyddibeiguplggpjnmed8xy64ve4/dptn3s0ncpda1twbblesqejwf8cebqpp2f29oa7yv2omoattextxgvxpd/dloz bc5k0bchhvqfumwbgkr2cl7vuuep/xmeh5tjiubegjfkp6ip xvytezdnqbql1ffz41uouunb2xrxw9sk4qf38admx36upa2ibwtngmb4yko 9zwramxjup7twi6qzb5yr1ztapfepmr/d/sskr7o1otmhorn1tzcmisoboalfqyn0r4f7xrxulpntbbtnzufh5dt4b40zbziy7z0zagqw21xun9jrtiig15 w/uns3fshwjnvohg1/ oyindqirig7rl5yij5fbw/i ld37tcbt5ctvpwqmg4h2jmrhuae8seaspa2by9ky7yjbirzxmni6cmioe/pnlvdqgkfbn7pnk5yb168yflwagfzcsmjsyi q9dhvpbuhpbgpaiaieoe sgbg4hxid5e19lknjw2kkh7mtivqr/bgp4qixbpgkq40npqsrvtywxqcdgrkeb6/mzhcudou3q0qeaatd72wktrxynko... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-11-11 17:40:55,205 [h1901557][Thread:23][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=72&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 83.219.138.161
+	Port: 34252
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: iekomoejxibzckk7qjvfyvayei0fomthpta6at7wus1puqw28mhomhrjypbc2oixzbccpsuwthsnkifdwoizghs 3hwmfoj0ieg3r/frsyape2gcksif/7w k2enshfum4eftx6kx07yaceqaukvt0spgn9vjpfhxcppvdpr0uhkhtwz/jwedmngw2t4qg nhcioi9isc0vqhknd8ucmd46s12jfob8yi6pebu3hcsnumfqxuyh5phrp5s4jocznkxyjjnhwbibmu3lfoxcutnyhp9f4dx6sz4drfnpwscl0iz5sx5cnax0kyddibeiguplggpjnmed8xy64ve4/dptn3s0ncpda1twbblesqejwf8cebqpp2f29oa7yv2omoattextxgvxpd/dloz bc5k0bchhvqfumwbgkr2cl7vuuep/xmeh5tjiubegjfkp6ip xvytezdnqbql1ffz41uouunb2xrxw9sk4qf38admx36upa2ibwtngmb4yko 9zwramxjup7twi6qzb5yr1ztapfepmr/d/sskr7o1otmhorn1tzcmisoboalfqyn0r4f7xrxulpntbbtnzufh5dt4b40zbziy7z0zagqw21xun9jrtiig15 w/uns3fshwjnvohg1/ oyindqirig7rl5yij5fbw/i ld37tcbt5ctvpwqmg4h2jmrhuae8seaspa2by9ky7yjbirzxmni6cmioe/pnlvdqgkfbn7pnk5yb168yflwagfzcsmjsyi q9dhvpbuhpbgpaiaieoe sgbg4hxid5e19lknjw2kkh7mtivqr/bgp4qixbpgkq40npqsrvtywxqcdgrkeb6/mzhcudou3q0qeaatd72wktrxynko... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-11-11 17:40:55,721 [h1901557][Thread:18][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 83.219.138.161
+	Port: 34252
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: iekomoejxibzckk7qjvfyvayei0fomthpta6at7wus1puqw28mhomhrjypbc2oixzbccpsuwthsnkifdwoizghs 3hwmfoj0ieg3r/frsyape2gcksif/7w k2enshfum4eftx6kx07yaceqaukvt0spgn9vjpfhxcppvdpr0uhkhtwz/jwedmngw2t4qg nhcioi9isc0vqhknd8ucmd46s12jfob8yi6pebu3hcsnumfqxuyh5phrp5s4jocznkxyjjnhwbibmu3lfoxcutnyhp9f4dx6sz4drfnpwscl0iz5sx5cnax0kyddibeiguplggpjnmed8xy64ve4/dptn3s0ncpda1twbblesqejwf8cebqpp2f29oa7yv2omoattextxgvxpd/dloz bc5k0bchhvqfumwbgkr2cl7vuuep/xmeh5tjiubegjfkp6ip xvytezdnqbql1ffz41uouunb2xrxw9sk4qf38admx36upa2ibwtngmb4yko 9zwramxjup7twi6qzb5yr1ztapfepmr/d/sskr7o1otmhorn1tzcmisoboalfqyn0r4f7xrxulpntbbtnzufh5dt4b40zbziy7z0zagqw21xun9jrtiig15 w/uns3fshwjnvohg1/ oyindqirig7rl5yij5fbw/i ld37tcbt5ctvpwqmg4h2jmrhuae8seaspa2by9ky7yjbirzxmni6cmioe/pnlvdqgkfbn7pnk5yb168yflwagfzcsmjsyi q9dhvpbuhpbgpaiaieoe sgbg4hxid5e19lknjw2kkh7mtivqr/bgp4qixbpgkq40npqsrvtywxqcdgrkeb6/mzhcudou3q0qeaatd72wktrxynko... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-11-11 17:40:55,721 [h1901557][Thread:18][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=72&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 83.219.138.161
+	Port: 34252
+	Referer: 
+	Path: /Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; Synapse)
+	ViewState: iekomoejxibzckk7qjvfyvayei0fomthpta6at7wus1puqw28mhomhrjypbc2oixzbccpsuwthsnkifdwoizghs 3hwmfoj0ieg3r/frsyape2gcksif/7w k2enshfum4eftx6kx07yaceqaukvt0spgn9vjpfhxcppvdpr0uhkhtwz/jwedmngw2t4qg nhcioi9isc0vqhknd8ucmd46s12jfob8yi6pebu3hcsnumfqxuyh5phrp5s4jocznkxyjjnhwbibmu3lfoxcutnyhp9f4dx6sz4drfnpwscl0iz5sx5cnax0kyddibeiguplggpjnmed8xy64ve4/dptn3s0ncpda1twbblesqejwf8cebqpp2f29oa7yv2omoattextxgvxpd/dloz bc5k0bchhvqfumwbgkr2cl7vuuep/xmeh5tjiubegjfkp6ip xvytezdnqbql1ffz41uouunb2xrxw9sk4qf38admx36upa2ibwtngmb4yko 9zwramxjup7twi6qzb5yr1ztapfepmr/d/sskr7o1otmhorn1tzcmisoboalfqyn0r4f7xrxulpntbbtnzufh5dt4b40zbziy7z0zagqw21xun9jrtiig15 w/uns3fshwjnvohg1/ oyindqirig7rl5yij5fbw/i ld37tcbt5ctvpwqmg4h2jmrhuae8seaspa2by9ky7yjbirzxmni6cmioe/pnlvdqgkfbn7pnk5yb168yflwagfzcsmjsyi q9dhvpbuhpbgpaiaieoe sgbg4hxid5e19lknjw2kkh7mtivqr/bgp4qixbpgkq40npqsrvtywxqcdgrkeb6/mzhcudou3q0qeaatd72wktrxynko... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-11-11 18:11:49,209 [h1901557][Thread:24][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 18:53:13,975 [h1901557][Thread:23][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-11-11 19:11:51,274 [h1901557][Thread:22][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 20:11:54,480 [h1901557][Thread:15][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 21:05:42,945 [h1901557][Thread:24][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-11-11 21:11:56,075 [h1901557][Thread:16][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 21:20:50,297 [h1901557][Thread:22][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2015-11-11 22:11:58,460 [h1901557][Thread:16][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)
+2015-11-11 23:12:00,657 [h1901557][Thread:16][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Object cannot be cast from DBNull to other types.
+   at System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at DotNetNuke.Services.Search.UserIndexer.GetSearchDocuments(Int32 portalId, DateTime startDate)

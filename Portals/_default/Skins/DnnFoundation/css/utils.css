@@ -1,0 +1,90 @@
+﻿/********** Override to display the controlbar properly **********/
+#ControlBar, #ControlBar:before, #ControlBar:after, #ControlBar *:before, 
+#ControlBar *:after, #ControlBar li, #ControlBar li:before, #ControlBar li:after, 
+#ControlBar a, #ControlBar a:before, #ControlBar a:after, .dnn_mact, 
+.dnn_mact:before, .dnn_mact:after, .dnn_mact *:before, .dnn_mact *:after, 
+.dnn_mact li, .dnn_mact li:before, .dnn_mact li:after {
+    -webkit-box-sizing: content-box !important; 
+    -moz-box-sizing: content-box !important; 
+    box-sizing: content-box !important; 
+}
+/*new*/
+.ControlModulePanel {
+    height:270px !important;
+}
+.dnnGrid img {
+    max-width:1000px !important;
+}
+.body > form > .rcbSlide {
+top: -50px;
+}
+/* new*/
+.dnnFormPopup .dnnModalCtrl {
+    display: block;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+     /*width: 70px; */
+    height: 26px;
+    border-radius: 10px;
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+    box-shadow: 0px 0px 5px #666;
+}
+    .dnnFormPopup .dnnModalCtrl button, .button {
+        padding-right:0;
+        padding-left:0;
+        padding-top:0;
+        padding-bottom:19px;
+    }
+
+
+
+
+
+
+
+#ControlBar a:hover { color:#ffffff !important; }
+
+.dnn_mact > li ul a > * { font-size: 14px; }
+/*.dnnSortable            { min-height: 1px !important; }*/
+.dnnDragHint {
+    /*outline: 1px dotted #333;*/
+    outline:none;
+    height: 22px !important;
+    cursor: move;
+    /*background:#ccc;*/
+    background-image: -ms-linear-gradient(left, transparent 0%, #000000 100%);
+    background-image: -moz-linear-gradient(left, transparent 0%, #000000 100%);
+    background-image: -o-linear-gradient(left, transparent 0%, #000000 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(1, #000000));
+    background-image: -webkit-linear-gradient(left, transparent 0%, #000000 100%);
+    background-image: linear-gradient(to right, transparent 0%, #000000 100%);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+/********** Override to display the controlbar properly **********/
+.paneOutline                    { color:#333333; margin-top:2px !important; background: #dadada; }
+.paneOutline .SubHead           { color:#333333; }
+.paneOutline:hover              { background: #cccccc; }
+.dnnEditState .DnnModule        { opacity: 1 !important; }
+
+
+
+
+
+
+
+
+.row.display {
+    background: #eee;
+    font-size: 11px;
+    margin-bottom: 10px;
+    line-height: 2rem;
+}
+.row.display .columns {
+    border: solid 1px #c6c6c6;
+}

@@ -1,0 +1,96 @@
+System.Data.SqlClient.SqlException: There is already an object named 'UpdateTabModuleVersionByModule' in the database.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DotNetNuke.Data.SqlDataProvider.ExecuteADOScript(String SQL)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScript(String Script, Boolean UseTransactions)
+
+
+
+CREATE PROCEDURE dbo.[UpdateTabModuleVersionByModule]
+    @ModuleID	int
+AS
+    UPDATE dbo.TabModules
+        SET    VersionGuid = NEWID()
+    WHERE  ModuleID = @ModuleID
+
+
+
+System.Data.SqlClient.SqlException: There is already an object named 'GetAllUsers' in the database.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DotNetNuke.Data.SqlDataProvider.ExecuteADOScript(String SQL)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScript(String Script, Boolean UseTransactions)
+
+
+
+CREATE PROCEDURE dbo.[GetAllUsers]
+	@PortalID  int,
+	@PageIndex int,
+	@PageSize  int
+
+AS
+	BEGIN
+		-- Set the page bounds
+		DECLARE 
+			@PageLowerBound INT, 
+			@PageUpperBound INT, 
+			@RowsToReturn int
+
+		exec dbo.[CalculatePagingInformation] @PageIndex, @PageSize, @RowsToReturn output, @PageLowerBound output, @PageUpperBound output
+
+		if @PortalID is null
+			begin
+				with [tmpUsers] as (
+					select U.*, row_number() over (order by U.UserName) AS rowid
+						FROM dbo.vw_Users u
+						where U.PortalID IS NULL AND U.IsDeleted = 0
+				)
+				select * from [tmpUsers]
+					where rowid > @PageLowerBound and rowid < @PageUpperBound
+					order by rowid
+			end 
+		else 
+			begin
+				with [tmpUsers] as (
+					select U.*, row_number() over (order by U.UserName) AS rowid
+						FROM dbo.vw_Users u
+						WHERE U.PortalID = @PortalID AND U.IsDeleted = 0
+				)
+				select * from [tmpUsers]
+					where rowid > @PageLowerBound and rowid < @PageUpperBound
+					order by rowid
+			end
+
+		set rowcount 0
+ 
+		if @PortalId is null
+			begin
+				SELECT COUNT(*) as TotalRecords
+					FROM   dbo.Users as U
+					WHERE U.IsDeleted = 0
+						AND NOT EXISTS (
+							select 1 from dbo.UserPortals UP where U.UserId = UP.UserId
+						)
+			end 
+		else 
+			begin
+				SELECT COUNT(*) as TotalRecords
+					FROM   dbo.Users U
+					INNER JOIN dbo.UserPortals UP ON U.UserId = UP.UserId
+						WHERE UP.PortalId = @PortalId
+							AND UP.IsDeleted = 0
+			end
+	END
+
+
+

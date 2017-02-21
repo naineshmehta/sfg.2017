@@ -1,0 +1,81 @@
+2016-10-04 04:00:20,071 [h1901557][Thread:7][ERROR] DotNetNuke.Framework.Reflection - DotNetNuke.Modules.HtmlEditorManager.Components.UpgradeController, DotNetNuke.Modules.HtmlEditorManager
+System.IO.FileNotFoundException: Could not load file or assembly 'DotNetNuke.Modules.HtmlEditorManager' or one of its dependencies. The system cannot find the file specified.
+File name: 'DotNetNuke.Modules.HtmlEditorManager'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2016-10-04 08:46:44,291 [h1901557][Thread:11][ERROR] DotNetNuke.UI.WebControls.DNNListEditControl - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at DotNetNuke.UI.WebControls.DNNListEditControl.get_OldIntegerValue()
+2016-10-04 15:34:04,710 [h1901557][Thread:17][ERROR] DotNetNuke.Framework.Reflection - Active.Modules.Forums.SqlDataProvider, Active.Modules.Forums.40.SqlDataProvider
+System.IO.FileNotFoundException: Could not load file or assembly 'Active.Modules.Forums.40.SqlDataProvider' or one of its dependencies. The system cannot find the file specified.
+File name: 'Active.Modules.Forums.40.SqlDataProvider'
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Framework.Reflection.CreateType(String TypeName, String CacheKey, Boolean UseCache, Boolean IgnoreErrors)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2016-10-04 22:43:48,948 [h1901557][Thread:12][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 104.156.227.54
+	Port: 61156
+	Referer: http://www.google.com
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.53 Safari/525.19
+	ViewState: vNCTsYA4HDHilXAcyIFVItGvfW bs6zOuQxHJp0yk npqSMTfU2K6mpnIzdTrc2f9hFGWicPoy8Sf4gEqihmCT/QlcaqyB0B7/lnya/q gJlO5WJROT9jeotO/8zGVmsTlB7iYelJmApc0ws/13/VX1cWWlbn585wjbUc4yXaGNKz0MEniKtiYahUHMeQVZIMCYBm6WCet2uy1bqgiqmTYp95cSkO8n2 yab/TK9CYVEFidR2YH9cOF2tP1qZv7DucvyQncgdYXz6u1edRgznur7CwXrf M/oLLxEPPqLjL9Uu1a9Ig5cpqOKdLA liHuG99PMAKBnVNVg5KzbF77DsgHpp9K1uGp6dzfa3ssd8PJk5pS 3HzyceB74201r8 0Q/H5peYe 0GohDDd7IziIDeSVgC71xvMwoZAcW40P5Q/6xWCMFa4BMSZeABXH4uydBS Xte7fhgWX8GZt3qHGscFjoHf6eRjLLUu5eyTHX1grRGP8Xa5vVcC hpFzSA G35xWAvMuFi87ulRP95VUGdnuch8mYt1wLosT7IFdDfcWFAqPeTMT9gT X4qJ0LMxK4z8ULTiQS68RsikBpkMQKUttmOfvctwvywGeK8IA1t z6hdjv5zwoBa0414cwcqfcD9jyy9Oe6wHyLj7Ibm76HDTsP2Lv0O/uq7shSl9ktsvWyqtRNAyZiUo1YcRDrPvBJs9sRNWtxS3wix/XUsNDG1rbJ71 3tvAdliFriKI6hvlL St6P/35aSDRVuGv2RrFtCE... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2016-10-04 22:43:49,042 [h1901557][Thread:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=58&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 104.156.227.54
+	Port: 61156
+	Referer: http://www.google.com
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.53 Safari/525.19
+	ViewState: vNCTsYA4HDHilXAcyIFVItGvfW bs6zOuQxHJp0yk npqSMTfU2K6mpnIzdTrc2f9hFGWicPoy8Sf4gEqihmCT/QlcaqyB0B7/lnya/q gJlO5WJROT9jeotO/8zGVmsTlB7iYelJmApc0ws/13/VX1cWWlbn585wjbUc4yXaGNKz0MEniKtiYahUHMeQVZIMCYBm6WCet2uy1bqgiqmTYp95cSkO8n2 yab/TK9CYVEFidR2YH9cOF2tP1qZv7DucvyQncgdYXz6u1edRgznur7CwXrf M/oLLxEPPqLjL9Uu1a9Ig5cpqOKdLA liHuG99PMAKBnVNVg5KzbF77DsgHpp9K1uGp6dzfa3ssd8PJk5pS 3HzyceB74201r8 0Q/H5peYe 0GohDDd7IziIDeSVgC71xvMwoZAcW40P5Q/6xWCMFa4BMSZeABXH4uydBS Xte7fhgWX8GZt3qHGscFjoHf6eRjLLUu5eyTHX1grRGP8Xa5vVcC hpFzSA G35xWAvMuFi87ulRP95VUGdnuch8mYt1wLosT7IFdDfcWFAqPeTMT9gT X4qJ0LMxK4z8ULTiQS68RsikBpkMQKUttmOfvctwvywGeK8IA1t z6hdjv5zwoBa0414cwcqfcD9jyy9Oe6wHyLj7Ibm76HDTsP2Lv0O/uq7shSl9ktsvWyqtRNAyZiUo1YcRDrPvBJs9sRNWtxS3wix/XUsNDG1rbJ71 3tvAdliFriKI6hvlL St6P/35aSDRVuGv2RrFtCE... ---> System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.ObjectStateFormatter.System.Web.UI.IStateFormatter2.Deserialize(String serializedState, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2016-10-04 23:48:44,897 [h1901557][Thread:11][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (%).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)

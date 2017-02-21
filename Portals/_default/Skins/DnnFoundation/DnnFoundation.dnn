@@ -1,0 +1,90 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="DnnC.Skins.DnnFoundation" type="Skin" version="01.00.00">
+      <friendlyName>HammerFlex</friendlyName>
+      <description>A responsive DNN skin using Zurb Foundation 5. Requires installation via the Host/Extensions page.</description>
+      <owner>
+        <name>Geoff Barlow</name>
+        <organization>DnnConsulting.nl</organization>
+        <url>http://www.DnnConsulting.nl</url>
+        <email>info@DnnConsulting.nl</email>
+      </owner>
+      <azureCompatible>true</azureCompatible>
+      <license src="license.txt"></license>
+      <releaseNotes src="releasenotes.txt"></releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">07.01.00</dependency>
+      </dependencies>
+      <components>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>portals/_default/skins/DnnFoundation</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+        <component type="Skin">
+          <skinFiles>
+            <skinName>DnnFoundation</skinName>
+            <basePath />
+          </skinFiles>
+        </component>
+      </components>
+    </package>
+    
+    <package name="DnnC.Containers.DnnFoundation" type="Container" version="01.00.00">
+      <friendlyName>DnnFoundation</friendlyName>
+      <description>Containers for the DnnFoundation Skin package.</description>
+      <owner>
+        <name>Geoff Barlow</name>
+        <organization>DnnConsulting.nl</organization>
+        <url>http://www.DnnConsulting.nl</url>
+        <email>info@DnnConsulting.nl</email>
+      </owner>
+      <license src="license.txt"></license>
+      <releaseNotes src="releasenotes.txt"></releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">07.01.00</dependency>
+      </dependencies>
+
+      <components>
+        <component type="Container">
+          <basePath>portals/_default/containers/DnnFoundation</basePath>
+          <containerFiles>
+            <containerName>DnnFoundation</containerName>
+            <containerFile>
+              <name>container.css</name>
+            </containerFile>
+            <containerFile>
+              <name>NoTitle.ascx</name>
+            </containerFile>
+            <containerFile>
+              <name>Panel.ascx</name>
+            </containerFile>
+            <containerFile>
+              <name>Slider.ascx</name>
+            </containerFile>
+            <containerFile>
+              <name>Slider.css</name>
+            </containerFile>
+            <containerFile>
+              <name>Title_h1.ascx</name>
+            </containerFile>
+            <containerFile>
+              <name>Title_h2.ascx</name>
+            </containerFile>
+            <containerFile>
+              <name>Title_h3.ascx</name>
+            </containerFile>
+            <containerFile>
+              <name>Title_h4.ascx</name>
+            </containerFile>
+
+          </containerFiles>
+        </component>
+      </components>      
+      
+    </package>
+  </packages>
+</dotnetnuke>

@@ -1,0 +1,179 @@
+.gridview>.event
+{
+	position:relative;
+	overflow:hidden;
+}
+
+.gridview.col2>.event
+{
+	float:left;
+	width:50%;
+}
+
+.gridview.col3>.event
+{
+	float:left;
+	width:33%;
+}
+
+.gridview.col4>.event
+{
+	float:left;
+	width:25%;
+}
+
+.gridview>.event:before
+{
+	content:'';
+	display:block;
+	margin-top: 56%; /* 16:9 aspect ratio */
+}
+
+@media only screen and (max-width: 768px) {
+	.gridview.col2>.event, .gridview.col3>.event, .gridview.col4>.event
+	{
+		width:50%;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.gridview>.event:before
+	{
+		margin-top: 40%; 
+	}
+	.gridview>.event, .gridview.col2>.event, .gridview.col3>.event, .gridview.col4>.event
+	{
+		width:100%;
+		float:none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*		Shadow		*/
+.gridview>.event a:before
+{
+	content:'';
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color:transparent;
+
+	transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+.gridview>.event a:hover:before
+{
+	background-color:rgba(255, 255, 255, 0.5);
+}
+
+.gridview>.event a:after
+{
+	content:'';
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75) inset;
+}
+
+.gridview>.event a
+{
+	display:block;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	overflow: hidden;
+	border:1em solid #cbcbcb !important;
+
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+	background-position:center center;
+
+
+	padding:1em;
+	margin:0.5em;
+
+	transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.gridview>.event a:hover
+{
+	border-color:inherit !important;
+}
+
+.gridview>.event a .texts
+{
+	display:block;
+	position:absolute;
+	left:0em;
+	right:0em;
+	bottom: 0.5em;
+}
+
+.gridview>.event a .title
+{
+	display:block;
+	margin-right:2em;
+	padding:0em 0.5em;
+	line-height: 2em;
+	font-size: 1.5em;
+	font-weight:bold;
+	color: #FFF;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.gridview>.event a .texts .summary
+{
+	display:block;
+	margin-top:0.5em;
+	margin-left:2em;
+	background-color:#fff;
+	color:#333;
+
+
+	max-height:0em;
+	overflow:hidden;
+	transition: max-height 0.5s;
+	-o-transition: max-height 0.5s;
+	-webkit-transition: max-height 0.5s;
+	transition: max-height 0.5s;
+}
+
+.gridview>.event a:hover .texts .summary
+{
+	max-height:10em;
+}
+
+.gridview>.event a .texts .summary .inner
+{
+	display:block;
+	margin:0.5em;
+}
+

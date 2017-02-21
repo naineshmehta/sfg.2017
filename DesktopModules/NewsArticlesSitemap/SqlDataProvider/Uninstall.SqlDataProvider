@@ -1,0 +1,12 @@
+﻿/************************************************************/
+/*****              SQLDataProvider		                *****/
+/*****   News Articles Sitemap Provider Uninstall		*****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for  and {objectQualifier}	*****/
+/************************************************************/
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}ifty_nsp_GetNewsArticles]    Script Date: 09/13/2012 17:05:28 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}ifty_nsp_GetNewsArticles]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}ifty_nsp_GetNewsArticles]
+GO

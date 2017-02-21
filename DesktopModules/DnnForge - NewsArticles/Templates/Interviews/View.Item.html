@@ -1,0 +1,109 @@
+<!-- View.Item -->
+<div class="article" itemscope itemtype="http://schema.org/Review">
+    <div class="articleCalendar articleCalendarIcon-[PUBLISHSTARTDATE:MM]">
+        <div class="articleCalendarDay">[PUBLISHSTARTDATE:dd]</div>
+    </div>
+    <div class="articleHeadline" itemprop="itemReviewed"><h1>[EDIT]<a href="[ARTICLELINK]" itemprop="url">[TITLE]</a></h1></div>
+    <div class="articleAuthor Normal"><a href="[AUTHORLINK]"><span itemprop="author">[AUTHOR]</span></a> posted on <span itemprop="datePublished">[PUBLISHSTARTDATE:MMMM dd, yyyy HH:mm]</span>[HASRATING] [RATING][/HASRATING]</div>
+
+    <div class="articleSocial Normal">
+        <span class='st_facebook_vcount' displaytext='Facebook'></span>
+        <span class='st_twitter_vcount' displaytext='Tweet'></span>
+        <span class='st_googleplus_vcount' displaytext='Google +'></span>
+        <span class='st_linkedin_vcount' displaytext='LinkedIn'></span>
+        <span class='st_pinterest_vcount' displaytext='Pinterest'></span>
+    </div>
+
+    <div class="articleEntry Normal" itemprop="reviewBody">
+        [PAGETEXT]
+        [HASCUSTOMFIELDS][CUSTOMFIELDS][/HASCUSTOMFIELDS]
+        [HASLINK]
+        <p><a href="[LINK]" target="[LINKTARGET]">[Read More...]</a></p>
+        [/HASLINK]
+    </div>
+    
+    [HASMULTIPLEPAGES]
+    <div class="articlePaging Normal">
+        Pages: [CURRENTPAGE] of [PAGECOUNT][HASPREVPAGE] [LINKPREVIOUS][/HASPREVPAGE][HASNEXTPAGE] [LINKNEXT][/HASNEXTPAGE]
+    </div>
+    [/HASMULTIPLEPAGES]
+    
+    [HASCATEGORIES] 
+    <div class="articleCategories Normal">
+        Posted in: [CATEGORIES]
+    </div>
+    [/HASCATEGORIES]
+    <div class="articleCategories Normal">
+        Find out more about [AUTHOR] on <a href='https://plus.google.com/[AUTHOR:GooglePlusID]?rel=author'>Google+</a>
+    </div>
+
+    [HASTAGS]
+    <div class="articleCategories Normal">
+        Tags: [TAGS]
+    </div>
+    [/HASTAGS]
+
+    <div class="articleCategories Normal">
+        Actions: 
+        <a rel="nofollow" href="mailto:?subject=[TITLESAFEJS]&amp;body=Thought you might like this: [ARTICLELINK]">E-mail</a> | 
+        <a rel="bookmark" href="[ARTICLELINK]">Permalink</a> | 
+        [HASCOMMENTSENABLED]<a rel="nofollow" href="[COMMENTLINK]">Comments ([COMMENTCOUNT])</a> [ISSYNDICATIONENABLED]<a rel="nofollow" href="[COMMENTRSS]"><img src="Images/rssbutton.gif" alt="RSS comment feed" style="border-width:0px;" /></a>[/ISSYNDICATIONENABLED] [/HASCOMMENTSENABLED]
+        <p style="text-align:center; margin-top:10px;">
+            <!--START MERCHANT:merchant name OutdoorGear UK from affiliatewindow.com.-->
+            <a href="http://www.awin1.com/cread.php?s=24633&v=269&q=2383&r=198165"><img src="http://www.awin1.com/cshow.php?s=24633&v=269&q=2383&r=198165" 
+                border="0"></a>
+                <!--END MERCHANT:merchant name OutdoorGear UK from affiliatewindow.com-->                                            
+            </p>
+        </div>
+
+        [ISRATEABLE]
+        <div class="postRating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+            <meta itemprop="worstRating" content = "0">
+            <h2><a name="#PostRating">Rate this Review!</a></h2>
+            [POSTRATING] [HASRATING]<br><br>Number of reviews: [RATINGCOUNT] | Rating Value: <span itemprop="ratingValue">[RATINGDETAIL]</span> out of <span itemprop="bestRating">5</span>[/HASRATING]
+        </div>
+        [/ISRATEABLE]
+
+    <div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=476669525683318";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="articleComments">
+        <h2><a name="Comments">Comments</a></h2>
+        <div class="fb-comments" data-href="[ARTICLELINK]" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
+    </div>
+	
+	<div id="fb-root"></div>	
+	
+    [HASIMAGES]
+    <div class="articleImages">
+        <h2><a name="#Images">Related Images</a></h2>
+        <table><tr><td>[IMAGES]</td></tr></table>
+    </div>
+    [/HASIMAGES]
+
+    [HASFILES]
+    <div class="articleFiles">
+        <h2><a name="#Files">Related Files</a></h2>
+        [FILES]
+    </div>
+    [/HASFILES]
+
+    [HASRELATED]
+    <div class="related">
+        <h2><a name="#Related">Related Articles</a></h2>
+        [RELATED]
+    </div>
+    [/HASRELATED]
+</div>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $('.articleEntry img').css('width', '100%').css('height', 'auto');
+});
+</script>

@@ -1,0 +1,27 @@
+[UNIQUEMONTH:MMMM yyyy]
+<div itemscope itemtype="http://schema.org/Event">
+    <table width="100%" cellspacing="0">
+        <tr><td class="colleft">
+            <img src="[LOGO]" itemprop="image"/>
+        </td>
+        <td class="colright">
+            <div class="title">
+                <a itemprop="url" href="[URL]" ><span itemprop="name">[TITLE]</span></a>
+            </div>
+            <div class="duration">
+                <span itemprop="startDate">[STARTDATETIME: ddd dd MMM yyyy]</span> - <span itemprop="endDate">[ENDDATETIME: ddd dd MMM yyyy]</span> [RECURRINGINTOOLTIP]
+            </div>
+            <div itemprop="location" itemscope itemtype="http://schema.org/Place">
+                <div class="location" itemprop="name">[LOCATIONNAME]</div>
+                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="streetAddress">[LOCATIONADDRESS]</span>
+                </div>
+            </div>
+            <div class="summary pconly" itemprop="description">
+                [SUMMARY]
+            </div>
+            [CATEGORY]
+        </td>
+        </tr>
+    </table>
+</div>

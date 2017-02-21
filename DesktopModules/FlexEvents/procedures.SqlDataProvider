@@ -1,0 +1,2143 @@
+-- drop old procedures
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexAttachedFileAdd') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileAdd
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexAttachedFileDelete') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileDelete
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexAttachedFileGet') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileGet
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexAttachedFileList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexAttachedFileListAll') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileListAll
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexAttachedFileUpdate') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileUpdate
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingAdd') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingAdd
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingChangeStatus') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingChangeStatus
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingDelete') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingDelete
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingFind') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingFind
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingGet') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingGet
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingListNeedReminding') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingListNeedReminding
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingSearch') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingSearch
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingSearchByUser') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingSearchByUser
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingUpdate') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingUpdate
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingUpdateRemindStatus') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingUpdateRemindStatus
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexCategoryAdd') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryAdd
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexCategoryDelete') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryDelete
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexCategoryGet') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryGet
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexCategoryList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexCategoryListEx') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryListEx
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexCategoryUpdate') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryUpdate
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventAdd') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventAdd
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventArchive') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventArchive
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventDelete') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventDelete
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventGet') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventGet
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventGetLatest') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventGetLatest
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventListRecurring') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventListRecurring
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccuranceGet') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceGet
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccuranceList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccuranceListByDate') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceListByDate
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccuranceListByDateEx') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceListByDateEx
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccuranceListByGroup') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceListByGroup
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccuranceSearch') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceSearch
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccuranceSearchEx') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceSearchEx
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccuranceXModuleSearch') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceXModuleSearch
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventPostEnsure') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventPostEnsure
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventPostList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventPostList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventSearchByName') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventSearchByName
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventUpdate') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventUpdate
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventView') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventView
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexLocationAdd') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexLocationAdd
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexLocationDelete') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexLocationDelete
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexLocationGet') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexLocationGet
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexLocationList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexLocationList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexLocationListEx') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexLocationListEx
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexLocationUpdate') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexLocationUpdate
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexModuleSettingGet') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexModuleSettingGet
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccuranceAdd') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceAdd
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccuranceDelete') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceDelete
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccuranceDump') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceDump
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccuranceFindByDate') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceFindByDate
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccuranceFindNext') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceFindNext
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccuranceList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccuranceSearchLatestBooked') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceSearchLatestBooked
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccuranceUpdate') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceUpdate
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexReviewAdd') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexReviewAdd
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexReviewApprove') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexReviewApprove
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexReviewDelete') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexReviewDelete
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexReviewGet') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexReviewGet
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexReviewList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexReviewList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexReviewListAll') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexReviewListAll
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexReviewSearch') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexReviewSearch
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexSubCalendarEnsure') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexSubCalendarEnsure
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexSubCalendarGetType') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexSubCalendarGetType
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexSubCalendarList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexSubCalendarList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventCategoryEnsure') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventCategoryEnsure
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexCategoryListByEvent') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryListByEvent
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexFriendlyUrlAdd') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexFriendlyUrlAdd
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexFriendlyUrlGetByKey') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexFriendlyUrlGetByKey
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexFriendlyUrlGetByUrl') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexFriendlyUrlGetByUrl
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexFriendlyUrlList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexFriendlyUrlList
+GO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileAdd
+	@EventId int,
+	@Path nvarchar(250),
+	@Title varchar(200),
+	@CustomersOnly bit
+AS
+
+
+INSERT INTO {databaseOwner}{objectQualifier}FlexAttachedFile (
+	EventId,
+	Path,
+	Title,
+	CustomersOnly,
+	Downloads
+) VALUES (
+	@EventId,
+	@Path,
+	@Title,
+	@CustomersOnly,
+	0
+)
+
+select CAST(SCOPE_IDENTITY() as Int)
+
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileDelete
+	@ItemId int
+AS
+
+DELETE {databaseOwner}{objectQualifier}FlexAttachedFile WHERE ItemId=@ItemId
+
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileGet
+	@ItemId int
+	
+AS
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexAttachedFile
+WHERE
+	ItemId = @ItemId 
+
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileList
+	@EventId int,
+	@IncludePrivate bit
+AS
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexAttachedFile
+WHERE
+	EventId = @EventId And (CustomersOnly=0 or @IncludePrivate = 1)
+ORDER BY ItemId ASC
+
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileListAll
+	@ModuleId int
+AS
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexAttachedFile
+WHERE
+	EventId in (select ItemId from {databaseOwner}{objectQualifier}FlexEvent where ModuleId = @ModuleId)
+ORDER BY ItemId ASC
+
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileUpdate
+	@ItemId int,
+	@EventId int,
+	@Path nvarchar(250),
+	@Title varchar(200),
+	@CustomersOnly bit
+AS
+
+Update {databaseOwner}{objectQualifier}FlexAttachedFile 
+SET EventId = @EventId, Path = @Path, Title=@Title , CustomersOnly=@CustomersOnly 
+WHERE ItemId=@ItemId
+
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexBookingAdd
+	@OccuranceId int
+	,@UserId int
+	,@FirstName nvarchar(100)
+	,@LastName nvarchar(100)
+	,@Address nvarchar(200)
+	,@City nvarchar(100)
+	,@State nvarchar(100)
+	,@ZipCode nvarchar(50)
+	,@Country nvarchar(100)
+	,@Email nvarchar(100)
+	,@Phone nvarchar(100)
+	,@Attendees int
+	,@AttendeesTier nvarchar(500)
+	,@SubTotal money
+	,@Discount money
+	,@SalesTax money
+	,@Total money
+	,@Message nvarchar(4000)
+	,@PaymentStatus int
+	,@CreatedDate datetime
+AS
+
+INSERT INTO {databaseOwner}{objectQualifier}FlexBooking (
+	OccuranceId
+	,UserId
+	,FirstName
+	,LastName
+	,Address
+	,City
+	,State
+	,ZipCode
+	,Country
+	,Email
+	,Phone
+	,Attendees
+	,AttendeesTier
+	,SubTotal
+	,Discount
+	,SalesTax
+	,Total
+	,Message
+	,PaymentStatus
+	,CreatedDate
+) VALUES (
+	@OccuranceId
+	,@UserId
+	,@FirstName
+	,@LastName
+	,@Address
+	,@City
+	,@State
+	,@ZipCode
+	,@Country
+	,@Email
+	,@Phone
+	,@Attendees
+	,@AttendeesTier
+	,@SubTotal
+	,@Discount
+	,@SalesTax
+	,@Total
+	,@Message
+	,@PaymentStatus
+	,@CreatedDate
+)
+
+select CAST(SCOPE_IDENTITY() as Int)
+
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexBookingChangeStatus
+	@ItemId int, 
+	@PaymentStatus int, 
+	@PaidDate datetime, 
+	@PaidAmount money,
+	@PaymentDetails nvarchar(2000)
+AS
+
+/*
+    public enum BookingStatus : int
+    {
+        NotPaid = 1,//New created booking
+        Pending = 2,//Made payment, but the payment is not finished
+        Paid = 3
+    }
+*/
+
+UPDATE {databaseOwner}{objectQualifier}FlexBooking SET
+	   PaymentStatus = @PaymentStatus
+	   ,PaidDate = @PaidDate
+	   ,PaidAmount = @PaidAmount
+	   ,PaymentDetails = @PaymentDetails
+WHERE    
+	{databaseOwner}{objectQualifier}FlexBooking.ItemId = @ItemId
+
+If @PaymentStatus = 3
+BEGIN
+	Declare @OccuranceId int, @ConfirmedBookings int, @ConfirmedAttendees int
+	Select @OccuranceId = OccuranceId from {databaseOwner}{objectQualifier}FlexBooking Where ItemId=@ItemId
+	Select @ConfirmedBookings = count(ItemId), @ConfirmedAttendees = sum(Attendees) from {databaseOwner}{objectQualifier}FlexBooking Where OccuranceId = @OccuranceId And PaymentStatus = @PaymentStatus
+	UPDATE {databaseOwner}{objectQualifier}FlexOccurance SET ConfirmedBookings = @ConfirmedBookings, ConfirmedAttendees = @ConfirmedAttendees Where ItemId = @OccuranceId
+END
+
+GO
+
+
+
+
+
+	
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexBookingDelete
+	@ItemId int
+    
+	AS
+
+DECLARE @OccuranceId int, @PaymentStatus int
+Select @OccuranceId = OccuranceId, @PaymentStatus = PaymentStatus from {databaseOwner}{objectQualifier}FlexBooking Where ItemId=@ItemId
+
+DELETE FROM {databaseOwner}{objectQualifier}FlexBooking
+WHERE 
+	{databaseOwner}{objectQualifier}FlexBooking.ItemId = @ItemId
+
+If @PaymentStatus = 3
+BEGIN
+	Declare @ConfirmedBookings int, @ConfirmedAttendees int
+	Select @ConfirmedBookings = count(ItemId), @ConfirmedAttendees = sum(Attendees) from {databaseOwner}{objectQualifier}FlexBooking Where OccuranceId = @OccuranceId And PaymentStatus = @PaymentStatus
+	UPDATE {databaseOwner}{objectQualifier}FlexOccurance SET ConfirmedBookings = @ConfirmedBookings, ConfirmedAttendees = @ConfirmedAttendees Where ItemId = @OccuranceId
+END
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexBookingFind
+	@UserId int,
+	@EventId int,
+	@OccuranceId int
+	
+AS
+
+SELECT
+	B.*
+FROM {databaseOwner}{objectQualifier}FlexBooking B inner join {databaseOwner}{objectQualifier}FlexOccurance O on B.OccuranceId = O.ItemId
+WHERE
+	B.UserId = @UserId AND O.EventId=@EventId And (B.OccuranceId = @OccuranceId or @OccuranceId < 1) 
+	
+Order by PaymentStatus DESC, B.CreatedDate Desc
+	
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexBookingGet
+	@ItemId int
+	
+AS
+
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexBooking
+WHERE
+	{databaseOwner}{objectQualifier}FlexBooking.ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexBookingList
+	@OccuranceId int
+	,@Status int
+AS
+
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexBooking Where OccuranceId = @OccuranceId And PaymentStatus = @Status order by CreatedDate Desc
+
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexBookingListNeedReminding
+	@LocalTime datetime
+AS
+
+select * from {databaseOwner}{objectQualifier}FlexBooking Where PaymentStatus = 3 And
+
+(isnull(AdvancedReminded,0) = 0 And OccuranceId in 
+(SELECT OccuranceId FROM {databaseOwner}{objectQualifier}FlexEventOccurance Where Archived=0 and Suspended=0 and OccuranceStartDate > @LocalTime and Datediff(day, @LocalTime, OccuranceEndDate) <= AdvancedReminder))
+
+Or
+
+(isnull(ReviewReminded,0) = 0 And OccuranceId in 
+(SELECT OccuranceId FROM {databaseOwner}{objectQualifier}FlexEventOccurance Where Archived=0 and Suspended=0 and OccuranceEndDate < @LocalTime and Datediff(day, OccuranceEndDate, @LocalTime) <= ReviewReminder))
+
+Order by OccuranceId ASC
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexBookingSearch
+	@OccuranceId int
+	,@BookingId int
+	,@CustomerName varchar(50)
+	,@PhoneNumber varchar(20)
+AS
+
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexBooking Where OccuranceId = @OccuranceId
+
+ And (
+ (@BookingId > 0 and @BookingId = ItemId) or 
+ (@CustomerName<> '' and FirstName+LastName like '%'+ @CustomerName +'%') or 
+ (@PhoneNumber<> '' and Phone like '%'+ @PhoneNumber +'%')
+ )
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexBookingSearchByUser
+	@UserId int
+	,@OccuranceId int
+	,@Status int
+	,@BookingStartDate datetime
+	,@BookingEndDate datetime
+AS
+
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexBooking Where UserId = @UserId And (@OccuranceId < 1 or OccuranceId = @OccuranceId)
+and (@Status < 1 or PaymentStatus = @Status) and CreatedDate between @BookingStartDate and @BookingEndDate 
+Order by CreatedDate Desc
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexBookingUpdate
+	@ItemId int, 
+	@OccuranceId int, 
+	@UserId int, 
+	@FirstName nvarchar(100), 
+	@LastName nvarchar(100), 
+	@Address nvarchar(200), 
+	@City nvarchar(100), 
+	@State nvarchar(100), 
+	@ZipCode nvarchar(50), 
+	@Country nvarchar(100), 
+	@Email nvarchar(100), 
+	@Phone nvarchar(100), 
+	@Attendees int, 
+	@AttendeesTier nvarchar(500), 
+	@SubTotal money,
+	@Discount money,
+	@SalesTax money,
+	@Total money,
+	@Message nvarchar(4000)
+AS
+DECLARE @myERROR int -- Local @@ERROR
+       , @myRowCount int -- Local @@ROWCOUNT
+
+UPDATE {databaseOwner}{objectQualifier}FlexBooking SET
+	   OccuranceId = @OccuranceId
+	   ,UserId = @UserId
+	   ,FirstName = @FirstName
+	   ,LastName = @LastName
+	   ,Address = @Address
+	   ,City = @City
+	   ,State = @State
+	   ,ZipCode = @ZipCode
+	   ,Country = @Country
+	   ,Email = @Email
+	   ,Phone = @Phone
+	   ,Attendees = @Attendees
+	   ,AttendeesTier = @AttendeesTier
+	   ,SubTotal = @SubTotal
+	   ,Discount = @Discount
+	   ,SalesTax = @SalesTax
+	   ,Total = @Total
+	   ,Message = @Message
+WHERE
+    
+	{databaseOwner}{objectQualifier}FlexBooking.ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexBookingUpdateRemindStatus
+	@Reminded varchar(2000),
+	@IsAdvancedReminder bit
+AS
+
+DECLARE @SqlString nvarchar(2000)
+Set @SqlString = 'UPDATE {databaseOwner}{objectQualifier}FlexBooking SET '
+
+if @IsAdvancedReminder = 1
+	Set @SqlString = @SqlString + ' AdvancedReminded=1 '
+else
+	Set @SqlString = @SqlString + ' ReviewReminded=1 '
+
+Set @SqlString = @SqlString + ' WHERE ItemId in(' + @Reminded + ')'
+
+--print @SQLString
+EXECUTE sp_executesql @SQLString
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryAdd
+	@ModuleId int,
+	@Category nvarchar(100),
+	@Description nvarchar(1000),
+	@BackgroundColor varchar(20),
+	@ForeColor varchar(20),
+	@SortOrder int,
+	@CreatedBy int
+AS
+
+if @SortOrder <= 0
+begin
+	select @SortOrder = ISNULL(max(SortOrder), 0)+1 from {databaseOwner}{objectQualifier}FlexCategory where ModuleId = @ModuleId
+end
+
+INSERT INTO {databaseOwner}{objectQualifier}FlexCategory (
+	ModuleId,
+	Category,
+	Description,
+	BackgroundColor,
+	ForeColor,
+	SortOrder,
+	CreatedBy
+) VALUES (
+	@ModuleId,
+	@Category,
+	@Description,
+	@BackgroundColor,
+	@ForeColor,
+	@SortOrder,
+	@CreatedBy
+)
+
+select CAST(SCOPE_IDENTITY() as Int)
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryDelete
+	@ItemId int
+AS
+
+DELETE {databaseOwner}{objectQualifier}FlexCategory WHERE ItemId=@ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryGet
+	@ItemId int
+	
+AS
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexCategory
+WHERE
+	ItemId = @ItemId 
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryList
+	@ModuleId int
+	
+AS
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexCategory
+WHERE
+	ModuleId = @ModuleId Or @ModuleId <= 0
+ORDER BY SortOrder ASC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryListEx
+	@ModuleId int
+	,@IncludeParentOrChild int
+AS
+
+SELECT 0 as ItemId, @ModuleId as CalendarId INTO #FlexSubCalendar
+if @IncludeParentOrChild = 1
+	insert into #FlexSubCalendar select ItemId, ModuleId as CalendarId from {databaseOwner}{objectQualifier}FlexSubCalendar Where SubCalendarId = @ModuleId
+else
+	insert into #FlexSubCalendar select ItemId, SubCalendarId as CalendarId from {databaseOwner}{objectQualifier}FlexSubCalendar Where ModuleId = @ModuleId
+	
+SELECT C.* FROM {databaseOwner}{objectQualifier}FlexCategory C
+inner join #FlexSubCalendar S on C.ModuleId = S.CalendarId
+ Order By S.ItemId ASC, C.SortOrder ASC
+ 
+DROP TABLE #FlexSubCalendar
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryUpdate
+	@ItemId int,
+	@Category nvarchar(100),
+	@Description nvarchar(1000),
+	@BackgroundColor varchar(20),
+	@ForeColor varchar(20),
+	@SortOrder int
+AS
+
+Update {databaseOwner}{objectQualifier}FlexCategory 
+SET Category = @Category, Description = @Description, BackgroundColor = @BackgroundColor, ForeColor=@ForeColor, SortOrder=@SortOrder 
+WHERE ItemId=@ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventAdd
+	@PortalId Int,
+	@ModuleId Int,
+	@CategoryId nvarchar(200),
+	@LocationId Int,
+	@Title NVarChar(200),
+	@FolderName nvarchar(200),
+	@Summary NVarChar(4000),
+	@Description NText,
+	@Featured bit,
+	@Suspended Bit,
+	@Logo nvarchar(200),
+	@StartDate DateTime,
+	@EndDate DateTime,
+	@LastAllDay Bit,
+	@Recurring Bit,
+	@RecurringPattern int,
+	@RecurringDetail NVarChar(500),
+	@LastRecurring datetime,
+	@RecurredTimes Int,
+	@RequireBooking Bit,
+	@Capacity Int,
+	@CapacityByBooking Bit,
+	@AllowWaitingList Bit,
+	@MaxAttendeesPerBooking Int,
+	@BookingOpens Int,
+	@BookingRoles NVarChar(500),
+	@ChargeBy int,
+	@Cost Money,
+	@PricingTiers NVarChar(1000),
+	@BulkDiscount NVarChar(500),
+	@AllowReview Int,
+	@AdvancedReminder Int,
+	@ReviewReminder Int,
+	@ViewRoles NVarChar(500),
+	@Phone NVarChar(50),
+	@Email NVarChar(200),
+	@Facebook nvarchar(100),
+	@Twitter nvarchar(100),
+	@SEOKeywords NVarChar(500),
+	@CreatedBy Int,
+	@CreatedDate DateTime
+AS
+
+if (@FolderName is null)
+	select @FolderName = Replace(Replace(@Title,' ', ''),'''', '')
+
+
+INSERT INTO {databaseOwner}{objectQualifier}FlexEvent (
+	PortalId,
+	ModuleId,
+	LocationId,
+	Title,
+	FolderName,
+	Summary,
+	Description,
+	Featured,
+	Suspended,
+	Archived,
+	Logo,
+	StartDate,
+	EndDate,
+	LastAllDay,
+	Recurring,
+	RecurringPattern,
+	RecurringDetail,
+	LastRecurring,
+	RecurredTimes,
+	RequireBooking,
+	Capacity,
+	CapacityByBooking,
+	AllowWaitingList,
+	MaxAttendeesPerBooking,
+	BookingOpens,
+	BookingRoles,
+	ChargeBy,
+	Cost,
+	PricingTiers,
+	BulkDiscount,
+	AllowReview,
+	AdvancedReminder,
+	ReviewReminder,
+	ViewRoles,
+	Phone,
+	Email,
+	Facebook,
+	Twitter,
+	SEOKeywords,
+	CreatedBy,
+	CreatedDate,
+	Views
+) VALUES (
+	@PortalId,
+	@ModuleId,
+	@LocationId,
+	@Title,
+	@FolderName,
+	@Summary,
+	@Description,
+	@Featured,
+	@Suspended,
+	0,
+	@Logo,
+	@StartDate,
+	@EndDate,
+	@LastAllDay,
+	@Recurring,
+	@RecurringPattern,
+	@RecurringDetail,
+	@LastRecurring,
+	@RecurredTimes,
+	@RequireBooking,
+	@Capacity,
+	@CapacityByBooking,
+	@AllowWaitingList,
+	@MaxAttendeesPerBooking,
+	@BookingOpens,
+	@BookingRoles,
+	@ChargeBy,
+	@Cost,
+	@PricingTiers,
+	@BulkDiscount,
+	@AllowReview,
+	@AdvancedReminder,
+	@ReviewReminder,
+	@ViewRoles,
+	@Phone,
+	@Email,
+	@Facebook,
+	@Twitter,
+	@SEOKeywords,
+	@CreatedBy,
+	@CreatedDate,
+	0
+)
+
+
+declare @ItemId int
+select @ItemId = CAST(SCOPE_IDENTITY() as Int)
+
+if exists(select * from {databaseOwner}{objectQualifier}FlexEvent where ItemId <> @ItemId and FolderName = @FolderName)
+	update {databaseOwner}{objectQualifier}FlexEvent set FolderName=FolderName+cast(@ItemId as varchar(10)) where ItemId = @ItemId
+
+exec {databaseOwner}{objectQualifier}FlexEventCategoryEnsure @ItemId, @CategoryId
+
+select @ItemId
+
+GO
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventArchive
+	@Timepoint datetime
+AS
+
+Update {databaseOwner}{objectQualifier}FlexEvent Set Archived=1 Where isnull(Archived,0)=0 and ((Recurring=0 And EndDate < @Timepoint) or (Recurring=1 And ISNULL(LastRecurring, '2100-1-1') < @Timepoint))
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventDelete
+	@ItemId Int
+AS
+
+DELETE FROM {databaseOwner}{objectQualifier}FlexBooking
+WHERE 
+	PaymentStatus = 1
+
+DELETE FROM {databaseOwner}{objectQualifier}FlexEvent
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventGet
+	@ItemId Int
+AS
+
+SELECT
+	* 
+FROM {databaseOwner}{objectQualifier}FlexEvent
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+create PROCEDURE {databaseOwner}{objectQualifier}FlexEventGetLatest
+	@ModuleID int,
+	@CreatedBy int
+AS
+
+SELECT
+	top 1 *
+FROM {databaseOwner}{objectQualifier}FlexEvent
+WHERE ModuleID=@ModuleID And CreatedBy = @CreatedBy
+Order by CreatedDate desc
+
+GO
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventList
+	@ModuleID int,
+	@CategoryId int,
+	@CreatedBy int,
+	@Status int,
+	@LocalTime datetime
+AS
+/*
+    public enum EventStatus : int
+    {
+        Ongoing = 0,
+        Today = 1,
+        AWeek = 2,
+        AMonth = 3,
+
+        Finsihed = 4,
+        Suspended = 5,
+        Archived = 6
+    }
+*/
+
+DECLARE @SqlString nvarchar(2000)
+Set @SqlString = 'SELECT * FROM {databaseOwner}{objectQualifier}FlexEvent Where ModuleID= ' + cast(@ModuleID as varchar(10))
+if @CategoryId > 0
+	Set @SqlString = @SqlString + ' And ItemId in (Select EventId from {databaseOwner}{objectQualifier}FlexEventCategory Where CategoryId = ' + cast(@CategoryId as varchar(10)) + ')'
+if @CreatedBy > 0
+	Set @SqlString = @SqlString + ' And CreatedBy = ' + cast(@CreatedBy as varchar(10))
+
+if @Status = 6
+	Set @SqlString = @SqlString + ' and isnull(Archived,0)=1 Order By EndDate Desc'
+else if @Status = 5
+	Set @SqlString = @SqlString + ' and isnull(Suspended,0)=1 Order By StartDate Asc'
+else if @Status = 4
+	Set @SqlString = @SqlString + ' and isnull(Archived,0)=0 and isnull(Suspended,0)=0 and ((Recurring=0 And EndDate < ''' + cast(@LocalTime as varchar(100)) + ''') or (Recurring=1 And ISNULL(LastRecurring, ''2100-1-1'') < ''' + cast(@LocalTime as varchar(100)) + ''')) Order By isnull(LastRecurring, EndDate) Desc'
+else
+begin
+	Set @SqlString = @SqlString + ' and isnull(Archived,0)=0 and isnull(Suspended,0)=0 and ItemId in (Select distinct EventId from {databaseOwner}{objectQualifier}FlexOccurance where '
+	if @Status = 3
+		Set @SqlString = @SqlString + ' OccuranceStartDate between ''' + cast(@LocalTime as varchar(100)) + ''' and '''+ cast(Dateadd(month, 1,@LocalTime) as varchar(100)) +''''
+	else if @Status = 2
+		Set @SqlString = @SqlString + ' OccuranceStartDate between ''' + cast(@LocalTime as varchar(100)) + ''' and '''+ cast(Dateadd(day, 7,@LocalTime) as varchar(100)) +''''
+	else if @Status = 1
+		Set @SqlString = @SqlString + '''' + cast(CAST(@LocalTime AS DateTime) as varchar(100)) + ''' between CAST(OccuranceStartDate AS DateTime) and CAST(OccuranceEndDate AS DateTime) '
+	else if @Status = 0
+		Set @SqlString = @SqlString + ' OccuranceEndDate > ''' + cast(@LocalTime as varchar(100)) + ''''
+
+	Set @SqlString = @SqlString + ')'	
+end
+
+--print @SQLString
+EXECUTE sp_executesql @SQLString
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventListRecurring
+AS
+
+SELECT * FROM {databaseOwner}{objectQualifier}FlexEvent WHERE Archived=0 and Suspended = 0 and Recurring = 1
+
+GO
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceGet
+	@OccuranceID int
+AS
+
+SELECT * from {databaseOwner}{objectQualifier}FlexEventOccurance
+WHERE OccuranceID = @OccuranceID
+
+GO
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceList
+	@ModuleID int,
+	@CategoryId int,
+	@LocationId int,
+	@MaxRecords int,
+	@LocalTime Datetime,
+	@ListType varchar(50)
+AS
+
+if (@MaxRecords > 0)
+	SET ROWCOUNT @MaxRecords
+
+if LOWER(@ListType) = 'latest'
+	SELECT * FROM {databaseOwner}{objectQualifier}FlexEventOccurance Where 
+	(ModuleID = @ModuleID or @ModuleID <= 0) AND
+	((ItemId in (Select EventId from {databaseOwner}{objectQualifier}FlexEventCategory Where CategoryId = @CategoryId)) or @CategoryId <= 0) AND
+	(LocationId = @LocationId or @LocationId <= 0)
+	And OccuranceEndDate > @LocalTime
+	order by CreatedDate DESC
+else	
+	SELECT * FROM {databaseOwner}{objectQualifier}FlexEventOccurance Where 
+	(ModuleID = @ModuleID or @ModuleID <= 0) AND
+	((ItemId in (Select EventId from {databaseOwner}{objectQualifier}FlexEventCategory Where CategoryId = @CategoryId)) or @CategoryId <= 0) AND
+	(LocationId = @LocationId or @LocationId <= 0)
+	And OccuranceEndDate > @LocalTime
+	order by OccuranceStartDate ASC
+
+GO
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceListByDateEx
+	@ModuleID int,
+	@CategoryId int,
+	@LocationId int,
+	@DateRangeStart datetime,
+	@DateRangeEnd datetime,
+	@includeSubCalendar bit
+AS
+
+DECLARE @SqlString nvarchar(2000)
+Set @SqlString = 'SELECT * From {databaseOwner}{objectQualifier}FlexEventOccurance '
+
+Set @SqlString = @SqlString + ' WHERE (ModuleID = ' + cast(@ModuleID as varchar(10))
+if @includeSubCalendar = 1
+	Set @SqlString = @SqlString + ' Or ModuleID in (SELECT SubCalendarId From {databaseOwner}{objectQualifier}FlexSubCalendar Where ModuleId = ' + cast(@ModuleID as varchar(10)) + '))'
+else
+	Set @SqlString = @SqlString + ')'
+
+Set @SqlString = @SqlString + ' and Archived=0 and Suspended=0 '
+if @CategoryId > 0
+	Set @SqlString = @SqlString + ' And ItemId in (Select EventId from {databaseOwner}{objectQualifier}FlexEventCategory Where CategoryId = ' + cast(@CategoryId as varchar(10)) + ')'
+if @LocationId > 0
+	Set @SqlString = @SqlString + ' And LocationId = ' + cast(@LocationId as varchar(10))
+
+if @DateRangeStart is not null
+begin
+	Set @SqlString = @SqlString + ' And OccuranceEndDate > ''' + cast(@DateRangeStart as varchar(100)) + ''''
+	Set @SqlString = @SqlString + ' And OccuranceStartDate < ''' + cast(@DateRangeEnd as varchar(100)) + ''''
+end
+
+if @DateRangeEnd < GETDATE()
+	Set @SqlString = @SqlString + ' Order By OccuranceEndDate DESC '
+else
+	Set @SqlString = @SqlString + ' Order By OccuranceStartDate Asc '
+	
+--print @SQLString
+EXECUTE sp_executesql @SQLString
+
+GO
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceListByGroup
+	@GroupId int,
+	@MaxRecords int,
+	@LocalTime Datetime
+AS
+
+if (@MaxRecords > 0)
+	SET ROWCOUNT @MaxRecords
+
+SELECT * FROM {databaseOwner}{objectQualifier}FlexEventOccurance Where 
+ItemId in (Select EventId from {databaseOwner}{objectQualifier}FlexEventPost Where GroupId = @GroupId)
+And OccuranceEndDate > @LocalTime
+order by OccuranceStartDate ASC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceSearchEx
+	@ModuleID int,
+	@LocationId int,
+	@EventId int,
+	@Title nvarchar(100),
+	@DateRangeStart datetime,
+	@DateRangeEnd datetime,
+	@includeSubCalendar bit
+AS
+
+DECLARE @SqlString nvarchar(2000)
+Set @SqlString = 'SELECT * from {databaseOwner}{objectQualifier}FlexEventOccurance '
+
+
+Set @SqlString = @SqlString + ' WHERE (ModuleID = ''' + cast(@ModuleID as varchar(10)) + ''''
+if @includeSubCalendar = 1
+	Set @SqlString = @SqlString + ' Or ModuleID in (SELECT SubCalendarId From {databaseOwner}{objectQualifier}FlexSubCalendar Where ModuleId = ' + cast(@ModuleID as varchar(10)) + '))'
+else
+	Set @SqlString = @SqlString + ')'
+	
+Set @SqlString = @SqlString + ' and Archived=0 and Suspended=0 '
+if @LocationId > 0
+	Set @SqlString = @SqlString + ' and LocationId= ' + cast(@LocationId as varchar(10))
+
+if @EventId > 0
+	Set @SqlString = @SqlString + ' And ItemId = ''' + cast(@EventId as varchar(10)) + ''''
+else
+	Set @SqlString = @SqlString + ' And Title+Summary like (''%' + Replace(@Title, '''', '''''') + '%'')'
+
+if @DateRangeStart is not null
+begin
+	Set @SqlString = @SqlString + ' And OccuranceEndDate > ''' + cast(@DateRangeStart as varchar(100)) + ''''
+	Set @SqlString = @SqlString + ' And OccuranceStartDate < ''' + cast(@DateRangeEnd as varchar(100)) + ''''
+end
+
+Set @SqlString = @SqlString + ' Order By OccuranceStartDate Asc '
+	
+--print @SQLString
+EXECUTE sp_executesql @SQLString
+
+GO
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceXModuleSearch
+	@ModuleIDs varchar(200),
+	@CategoryIDs varchar(200),
+	@LocationIds varchar(100),
+	@Date datetime,
+	@Keyword nvarchar(50)
+AS
+
+DECLARE @SqlString nvarchar(2000)
+Set @SqlString = 'SELECT * from {databaseOwner}{objectQualifier}FlexEventOccurance '
+
+Set @SqlString = @SqlString + ' WHERE ModuleID in (' + @ModuleIDs + ')'
+Set @SqlString = @SqlString + ' and Archived=0 and Suspended=0 '
+if @Keyword is not null
+	if ISNUMERIC(@Keyword) = 1
+		Set @SqlString = @SqlString + ' and ItemId = ' + @Keyword 
+	else
+		Set @SqlString = @SqlString + ' and Title like ''%' + @Keyword + '%'''
+else
+begin
+	if @CategoryIDs is not null
+		Set @SqlString = @SqlString + ' And ItemId in (Select EventId from {databaseOwner}{objectQualifier}FlexEventCategory Where CategoryId in(' + @CategoryIDs + '))'
+
+	if @LocationIds is not null
+		Set @SqlString = @SqlString + ' And LocationId in (' + @LocationIds + ')'
+
+	if @Date > '2000-1-1'
+	begin
+		declare @DateBegin datetime, @DateEnd datetime
+		select @DateBegin = @Date, @DateEnd = DATEADD(SECOND, 24*60*60 - 1, @Date)
+		
+		Set @SqlString = @SqlString + ' And OccuranceStartDate <= ''' + cast(@DateEnd as varchar(100)) + ''' And OccuranceEndDate >= ''' + cast(@Date as varchar(100)) + ''''
+	end
+end
+	
+
+Set @SqlString = @SqlString + ' Order By OccuranceStartDate Asc '
+	
+--print @SQLString
+EXECUTE sp_executesql @SQLString
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventPostEnsure
+	@EventId int,
+	@Groups nvarchar(200)
+AS
+
+DELETE {databaseOwner}{objectQualifier}FlexEventPost Where EventId = @EventId
+
+Insert into {databaseOwner}{objectQualifier}FlexEventPost (EventId, GroupId)
+Select @EventId as EventId, RoleId as GroupId from {databaseOwner}{objectQualifier}Roles
+where charindex(',' + cast(RoleID as varchar(10)) + ',', ',' + @Groups + ',') > 0
+
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventPostList
+	@EventId int
+AS
+
+Select * from {databaseOwner}{objectQualifier}FlexEventPost Where EventId = @EventId order by ItemId ASC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventSearchByName
+	@ModuleID int,
+	@CreatedBy int,
+	@Keyword nvarchar(100)
+AS
+
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexEvent
+WHERE ModuleID=@ModuleID And (CreatedBy = @CreatedBy or isnull(@CreatedBy,0) <= 0)
+And Title+Summary like '%'+@Keyword+'%'
+Order BY CHARINDEX(@Keyword, Title,0) ASC
+
+GO
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventUpdate
+	@ItemId Int, 
+	@PortalId Int, 
+	@ModuleId Int, 
+	@CategoryId nvarchar(200), 
+	@LocationId Int, 
+	@Title NVarChar(200), 
+	@Summary NVarChar(4000), 
+	@Description NText, 
+	@Featured bit, 
+	@Suspended Bit, 
+	@Archived Bit, 
+	@Logo nvarchar(200),
+	@StartDate DateTime, 
+	@EndDate DateTime, 
+	@LastAllDay Bit, 
+	@Recurring Bit, 
+	@RecurringPattern int,
+	@RecurringDetail NVarChar(500), 
+	@LastRecurring datetime,
+	@RecurredTimes Int, 
+	@RequireBooking Bit, 
+	@Capacity Int, 
+	@CapacityByBooking Bit, 
+	@AllowWaitingList Bit, 
+	@MaxAttendeesPerBooking Int, 
+	@BookingOpens Int, 
+	@BookingRoles NVarChar(500), 
+	@ChargeBy int, 
+	@Cost Money, 
+	@PricingTiers NVarChar(1000), 
+	@BulkDiscount NVarChar(500), 
+	@AllowReview Int, 
+	@AdvancedReminder Int, 
+	@ReviewReminder Int, 
+	@ViewRoles NVarChar(500), 
+	@Phone NVarChar(50), 
+	@Email NVarChar(200),
+	@Facebook nvarchar(100),
+	@Twitter nvarchar(100),
+	@SEOKeywords NVarChar(500), 
+	@LastModifiedDate DateTime 
+AS
+
+UPDATE {databaseOwner}{objectQualifier}FlexEvent SET
+	PortalId = @PortalId,
+	ModuleId = @ModuleId,
+	LocationId = @LocationId,
+	Title = @Title,
+	Summary = @Summary,
+	Description = @Description,
+	Featured = @Featured,
+	Suspended = @Suspended,
+	Archived = @Archived,
+	Logo = @Logo,
+	StartDate = @StartDate,
+	EndDate = @EndDate,
+	LastAllDay = @LastAllDay,
+	Recurring = @Recurring,
+	RecurringPattern = @RecurringPattern,
+	RecurringDetail = @RecurringDetail,
+	LastRecurring = @LastRecurring,
+	RecurredTimes = @RecurredTimes,
+	RequireBooking = @RequireBooking,
+	Capacity = @Capacity,
+	CapacityByBooking = @CapacityByBooking,
+	AllowWaitingList = @AllowWaitingList,
+	MaxAttendeesPerBooking = @MaxAttendeesPerBooking,
+	BookingOpens = @BookingOpens,
+	BookingRoles = @BookingRoles,
+	ChargeBy = @ChargeBy,
+	Cost = @Cost,
+	PricingTiers = @PricingTiers,
+	BulkDiscount = @BulkDiscount,
+	AllowReview = @AllowReview,
+	AdvancedReminder = @AdvancedReminder,
+	ReviewReminder = @ReviewReminder,
+	ViewRoles = @ViewRoles,
+	Phone = @Phone,
+	Email = @Email,
+	Facebook = @Facebook,
+	Twitter = @Twitter,
+	SEOKeywords = @SEOKeywords,
+	LastModifiedDate = @LastModifiedDate
+WHERE
+	ItemId = @ItemId
+
+	exec {databaseOwner}{objectQualifier}FlexEventCategoryEnsure @ItemId, @CategoryId
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventView
+	@ItemId Int
+AS
+
+Update {databaseOwner}{objectQualifier}FlexEvent Set Views = Views +1
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexLocationAdd
+	@ModuleId int,
+	@Name nvarchar(200),
+	@Address varchar(500),
+	@Longitude float,
+	@Latitude float,
+	@Zoom int,
+	@Detail nvarchar(1000),
+	@Icon nvarchar(200),
+	@TimeZone varchar(50),
+	@Country varchar(100),
+	@Region varchar(100),
+	@CreatedBy int
+AS
+
+Declare @SortOrder int
+select @SortOrder = ISNULL(max(SortOrder), 0)+1 from {databaseOwner}{objectQualifier}FlexLocation where ModuleId = @ModuleId
+
+INSERT INTO {databaseOwner}{objectQualifier}FlexLocation (
+	ModuleId,
+	Name,
+	Address,
+	Longitude,
+	Latitude,
+	Zoom,
+	Detail,
+	Icon,
+	SortOrder,
+	TimeZone,
+	Country,
+	Region,
+	CreatedBy
+) VALUES (
+	@ModuleId,
+	@Name,
+	@Address,
+	@Longitude,
+	@Latitude,
+	@Zoom,
+	@Detail,
+	@Icon,
+	@SortOrder,
+	@TimeZone,
+	@Country,
+	@Region,
+	@CreatedBy
+)
+
+select CAST(SCOPE_IDENTITY() as Int)
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexLocationDelete
+	@ItemId int
+AS
+
+DELETE {databaseOwner}{objectQualifier}FlexLocation WHERE ItemId=@ItemId
+
+GO
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexLocationGet
+	@ItemId int
+	
+AS
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexLocation
+WHERE
+	ItemId = @ItemId 
+
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexLocationList
+	@ModuleId int
+	
+AS
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexLocation
+WHERE
+	ModuleId = @ModuleId Or @ModuleId <= 0
+ORDER BY SortOrder ASC
+
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexLocationListEx
+	@ModuleId int
+	,@IncludeParentOrChild int
+AS
+
+SELECT 0 as ItemId, @ModuleId as CalendarId INTO #FlexSubCalendar
+if @IncludeParentOrChild = 1
+	insert into #FlexSubCalendar select ItemId, ModuleId as CalendarId from {databaseOwner}{objectQualifier}FlexSubCalendar Where SubCalendarId = @ModuleId
+else
+	insert into #FlexSubCalendar select ItemId, SubCalendarId as CalendarId from {databaseOwner}{objectQualifier}FlexSubCalendar Where ModuleId = @ModuleId
+	
+
+SELECT L.* FROM {databaseOwner}{objectQualifier}FlexLocation L
+inner join #FlexSubCalendar S on L.ModuleId = S.CalendarId
+ Order By S.ItemId ASC, L.SortOrder ASC
+ 
+DROP TABLE #FlexSubCalendar
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexLocationUpdate
+	@ItemId int,
+	@Name nvarchar(200),
+	@Address varchar(500),
+	@Longitude float,
+	@Latitude float,
+	@Zoom int,
+	@Detail nvarchar(1000),
+	@Icon nvarchar(200),
+	@TimeZone varchar(50),
+	@Country varchar(100),
+	@Region varchar(100),
+	@SortOrder int
+AS
+
+Update {databaseOwner}{objectQualifier}FlexLocation 
+SET Name = @Name, Address = @Address, Longitude=@Longitude, Latitude=@Latitude, Zoom=@Zoom, Detail=@Detail, Icon = @Icon, TimeZone = @TimeZone, Country = @Country, Region = @Region, SortOrder=@SortOrder 
+WHERE ItemId=@ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexModuleSettingGet
+
+@SettingName   nvarchar(50)
+
+AS
+SELECT ModuleID, SettingValue
+FROM {databaseOwner}{objectQualifier}ModuleSettings 
+WHERE  SettingName = @SettingName
+
+GO
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceAdd
+	@EventId Int,
+	@OccuranceStartDate Datetime,
+	@OccuranceEndDate Datetime
+AS
+
+INSERT INTO {databaseOwner}{objectQualifier}FlexOccurance (
+	EventId,
+	OccuranceStartDate,
+	OccuranceEndDate
+) VALUES (
+	@EventId,
+	@OccuranceStartDate,
+	@OccuranceEndDate
+)
+
+select CAST(SCOPE_IDENTITY() as Int)
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceDelete
+	@ItemId int
+AS
+
+/*
+    public enum BookingStatus : int
+    {
+        NotPaid = 1,//New created booking
+        Pending = 2,//Made payment, but the payment is not finished
+        Paid = 3
+    }
+*/
+
+DELETE {databaseOwner}{objectQualifier}FlexBooking WHERE OccuranceId=@ItemId And PaymentStatus<2
+If not exists (select * from {databaseOwner}{objectQualifier}FlexBooking WHERE OccuranceId=@ItemId)
+DELETE {databaseOwner}{objectQualifier}FlexOccurance WHERE ItemId=@ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceDump
+	@timepoint Datetime
+AS
+
+DELETE FROM {databaseOwner}{objectQualifier}FlexOccurance
+WHERE
+	OccuranceEndDate < @timepoint And isnull(ConfirmedBookings,0)+isnull(ConfirmedAttendees,0) = 0
+And EventId in (select ItemId from {databaseOwner}{objectQualifier}FlexEvent where Recurring=1)
+
+GO
+
+
+
+
+
+create PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceFindByDate
+	@EventId int,
+	@StartDate datetime	
+AS
+
+SELECT
+	top 1 *
+FROM {databaseOwner}{objectQualifier}FlexOccurance
+WHERE
+	EventId = @EventId 
+
+ORDER BY abs(Datediff(D, OccuranceStartDate, @StartDate)) ASC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceFindNext
+	@ModuleId int
+	, @LocalTime datetime
+AS
+SELECT
+	O.EventId, MIN(O.OccuranceStartDate) as OccuranceStartDate, MIN(O.OccuranceEndDate) as OccuranceEndDate
+FROM {databaseOwner}{objectQualifier}FlexOccurance O inner join {databaseOwner}{objectQualifier}FlexEvent E
+on O.EventId = E.ItemId
+
+WHERE E.ModuleId = @ModuleId and O.OccuranceEndDate > @LocalTime
+Group By O.EventId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceList
+	@EventId int,
+	@BookedOnly bit
+	
+AS
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexOccurance
+WHERE
+	EventId = @EventId 
+And ((@BookedOnly = 0) or (@BookedOnly = 1 And isnull(ConfirmedBookings,0)+isnull(ConfirmedAttendees,0) > 0))
+ORDER BY OccuranceStartDate ASC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceSearchLatestBooked
+	@ModuleID int
+	,@EventId int
+	,@CreatedBy int
+	,@Keyword varchar(100)
+AS
+
+Select EO.OccuranceId, EO.ItemId, EO.Title, EO.OccuranceStartDate, EO.OccuranceEndDate, EO.ConfirmedBookings, EO.ConfirmedAttendees from {databaseOwner}{objectQualifier}FlexEventOccurance EO 
+inner join {databaseOwner}{objectQualifier}FlexBooking B on EO.OccuranceId = B.OccuranceId 
+
+where EO.ModuleId =@ModuleID And EO.Archived = 0 And ((EO.ItemId = @EventId) or (@EventId <=0 and Title like '%'+@Keyword+'%')) And (CreatedBy = @CreatedBy or @CreatedBy < 1)
+
+Group By EO.OccuranceId, EO.ItemId, EO.Title, EO.OccuranceStartDate, EO.OccuranceEndDate, EO.ConfirmedBookings, EO.ConfirmedAttendees
+having (COUNT(B.ItemId) > 0)
+Order by CHARINDEX(@Keyword, Title,0) ASC, EO.OccuranceStartDate
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceUpdate
+	@ItemId int,
+	@OccuranceStartDate Datetime,
+	@OccuranceEndDate Datetime,
+	@ConfirmedBookings int,
+	@ConfirmedAttendees int
+AS
+
+Update {databaseOwner}{objectQualifier}FlexOccurance
+SET OccuranceStartDate = @OccuranceStartDate, OccuranceEndDate = @OccuranceEndDate, ConfirmedBookings=@ConfirmedBookings, ConfirmedAttendees=@ConfirmedAttendees
+WHERE ItemId=@ItemId
+
+GO
+
+
+
+
+
+CREATE procedure {databaseOwner}{objectQualifier}FlexReviewAdd
+	@UserId int,
+	@EventId int,
+	@UserFullName nvarchar(100),
+	@UserIP varchar(15),
+	@UserFrom nvarchar(50),
+	@Email varchar(50),
+	@Comment ntext,
+	@CreatedDate datetime,
+	@Pending bit
+AS
+
+insert into {databaseOwner}{objectQualifier}FlexReview (
+	UserId,
+	EventId,
+	UserFullName,
+	UserIP,
+	UserFrom,
+	Email,
+	Comment,
+	CreatedDate,
+	Pending
+) values (
+	@UserId,
+	@EventId,
+	@UserFullName,
+	@UserIP,
+	@UserFrom,
+	@Email,
+	@Comment,
+	@CreatedDate,
+	@Pending
+)
+
+select SCOPE_identity()
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexReviewApprove
+	@ItemId int
+AS
+
+Update {databaseOwner}{objectQualifier}FlexReview Set Pending=0
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexReviewDelete
+	@ItemId int
+AS
+
+DELETE FROM {databaseOwner}{objectQualifier}FlexReview
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE procedure {databaseOwner}{objectQualifier}FlexReviewGet
+	@ItemId int
+AS
+
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexReview
+WHERE ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE procedure {databaseOwner}{objectQualifier}FlexReviewList
+	@EventId int,
+	@Approved bit,
+	@OrPostedBy varchar(50)
+AS
+
+if ISNUMERIC(@OrPostedBy) = 1
+	SELECT * FROM {databaseOwner}{objectQualifier}FlexReview
+	WHERE EventId = @EventId and (Pending<>@Approved or @OrPostedBy = UserId)
+	ORDER BY CreatedDate Desc
+else
+	SELECT * FROM {databaseOwner}{objectQualifier}FlexReview
+	WHERE EventId = @EventId and (Pending<>@Approved or @OrPostedBy = UserIP)
+	ORDER BY CreatedDate Desc
+
+GO
+
+
+
+
+
+CREATE procedure {databaseOwner}{objectQualifier}FlexReviewListAll
+	@ModuleId int,
+	@Approved bit
+AS
+
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexReview
+WHERE EventId in (select ItemId from {databaseOwner}{objectQualifier}FlexEvent where ModuleId = @ModuleId) and Pending<>@Approved
+ORDER BY CreatedDate Desc
+
+GO
+
+
+
+
+
+CREATE procedure {databaseOwner}{objectQualifier}FlexReviewSearch
+	@ModuleId int,
+	@EventId int,
+	@Keyword nvarchar(50)
+AS
+
+if ISNULL(@EventId, 0) > 0
+	SELECT * FROM {databaseOwner}{objectQualifier}FlexReview
+	WHERE EventId = @EventId and Comment like '%' + @Keyword + '%'
+	ORDER BY CreatedDate Desc
+else
+	SELECT * FROM {databaseOwner}{objectQualifier}FlexReview
+	WHERE EventId in (select ItemId from {databaseOwner}{objectQualifier}FlexEvent where ModuleId = @ModuleId) and Comment like '%' + @Keyword + '%'
+	ORDER BY CreatedDate Desc
+
+GO
+
+
+
+
+
+CREATE procedure {databaseOwner}{objectQualifier}FlexSubCalendarEnsure
+	@ModuleId int,
+	@SubModuleIds nvarchar(200)
+AS
+
+DELETE {databaseOwner}{objectQualifier}FlexSubCalendar Where ModuleId = @ModuleId
+
+Insert into {databaseOwner}{objectQualifier}FlexSubCalendar (ModuleId, SubCalendarId)
+Select @ModuleId as ModuleId, ModuleID as SubModuleId from {databaseOwner}{objectQualifier}Modules 
+where charindex(',' + cast(ModuleID as varchar(10)) + ',', ',' + @SubModuleIds + ',') > 0
+
+
+GO
+
+
+
+
+
+CREATE procedure {databaseOwner}{objectQualifier}FlexSubCalendarGetType
+	@ModuleId int
+AS
+
+if exists(select * from {databaseOwner}{objectQualifier}FlexSubCalendar where ModuleId = @ModuleId)
+select 1 as [Type]
+
+if exists(select * from {databaseOwner}{objectQualifier}FlexSubCalendar where SubCalendarId = @ModuleId)
+select 2 as [Type], ModuleId as Parent from {databaseOwner}{objectQualifier}FlexSubCalendar where SubCalendarId = @ModuleId
+
+select 3 as [Type]
+
+GO
+
+
+
+
+
+CREATE procedure {databaseOwner}{objectQualifier}FlexSubCalendarList
+	@ModuleId int
+AS
+
+Select SubCalendarId from {databaseOwner}{objectQualifier}FlexSubCalendar Where ModuleId = @ModuleId order by ItemId ASC
+
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexEventCategoryEnsure
+	@EventId int,
+	@Categories nvarchar(200)
+AS
+
+DELETE {databaseOwner}{objectQualifier}FlexEventCategory Where EventId = @EventId
+
+Insert into {databaseOwner}{objectQualifier}FlexEventCategory (EventId, CategoryId)
+Select @EventId as EventId, ItemId as CategoryId from {databaseOwner}{objectQualifier}FlexCategory
+where charindex(',' + cast(ItemId as varchar(10)) + ',', ',' + @Categories + ',') > 0
+
+Order by charindex(',' + cast(ItemId as varchar(10)) + ',', ',' + @Categories + ',') ASC
+
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryListByEvent
+	@EventId int
+AS
+SELECT
+	C.*
+FROM {databaseOwner}{objectQualifier}FlexCategory  C
+INNER JOIN {databaseOwner}{objectQualifier}FlexEventCategory EC on EC.CategoryId = C.ItemId
+WHERE
+	EC.EventId = @EventId
+ORDER BY EC.ItemId ASC
+
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexFriendlyUrlAdd
+	@ModuleId int,
+	@RewriteKey varchar(100),
+	@FriendlyUrl nvarchar(250)
+AS
+
+if exists(select * from {databaseOwner}{objectQualifier}FlexFriendlyUrl where ModuleId = @ModuleId And FriendlyUrl = @FriendlyUrl)
+	Update {databaseOwner}{objectQualifier}FlexFriendlyUrl Set RewriteKey = @RewriteKey where ModuleId = @ModuleId And FriendlyUrl = @FriendlyUrl
+else
+	Insert into {databaseOwner}{objectQualifier}FlexFriendlyUrl (ModuleId, RewriteKey, FriendlyUrl) values(@ModuleId, @RewriteKey, @FriendlyUrl)
+
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexFriendlyUrlGetByKey
+	@RewriteKey varchar(100)
+AS
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexFriendlyUrl
+WHERE
+	RewriteKey = @RewriteKey
+
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexFriendlyUrlGetByUrl
+	@FriendlyUrl varchar(250)
+AS
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexFriendlyUrl
+WHERE
+	FriendlyUrl = @FriendlyUrl
+
+GO
+
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}FlexFriendlyUrlList
+	@ModuleId int
+AS
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}FlexFriendlyUrl
+WHERE
+	ModuleId = @ModuleId
+
+GO
+
+
+
+
+

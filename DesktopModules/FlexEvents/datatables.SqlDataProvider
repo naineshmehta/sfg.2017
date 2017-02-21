@@ -1,0 +1,470 @@
+if not exists(select * from sysobjects where id = object_id('{databaseOwner}{objectQualifier}FlexAttachedFile') and type = 'U')
+begin
+
+	CREATE TABLE {databaseOwner}{objectQualifier}FlexAttachedFile(
+		ItemId int IDENTITY(1,1) NOT NULL,
+		EventId int NOT NULL,
+		Path nvarchar(250) NOT NULL,
+		Title nvarchar(200) NULL,
+		CustomersOnly bit NOT NULL,
+		Downloads int NOT NULL,
+	 CONSTRAINT PK_{objectQualifier}FlexAttachedFile PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	))
+
+end
+go
+
+
+
+
+
+
+
+if not exists(select * from sysobjects where id = object_id('{databaseOwner}{objectQualifier}FlexBooking') and type = 'U')
+begin
+
+	CREATE TABLE {databaseOwner}{objectQualifier}FlexBooking(
+		ItemId int IDENTITY(1,1) NOT NULL,
+		OccuranceId int NOT NULL,
+		UserId int NULL,
+		FirstName nvarchar(100) NOT NULL,
+		LastName nvarchar(100) NOT NULL,
+		Address nvarchar(200) NOT NULL,
+		City nvarchar(100) NOT NULL,
+		State nvarchar(100) NOT NULL,
+		ZipCode nvarchar(50) NOT NULL,
+		Country nvarchar(100) NOT NULL,
+		Email nvarchar(100) NOT NULL,
+		Phone nvarchar(100) NOT NULL,
+		Attendees int NOT NULL,
+		AttendeesTier nvarchar(500) NULL,
+		SubTotal money NOT NULL,
+		Discount money NULL,
+		SalesTax money NOT NULL,
+		Total money NOT NULL,
+		Message nvarchar(4000) NULL,
+		PaymentStatus int NOT NULL,
+		CreatedDate datetime NOT NULL,
+		PaidDate datetime NULL,
+		PaidAmount money NULL,
+		PaymentDetails nvarchar(2000) NULL,
+		AdvancedReminded bit NULL,
+		ReviewReminded bit NULL,
+	 CONSTRAINT PK_{objectQualifier}FlexBooking PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	))
+
+end
+go
+
+
+
+
+
+
+
+
+if not exists(select * from sysobjects where id = object_id('{databaseOwner}{objectQualifier}FlexCategory') and type = 'U')
+begin
+
+	CREATE TABLE {databaseOwner}{objectQualifier}FlexCategory(
+		ItemId int IDENTITY(1,1) NOT NULL,
+		ModuleId int NOT NULL,
+		Category nvarchar(100) NOT NULL,
+		Description nvarchar(1000) NULL,
+		BackgroundColor varchar(20) NOT NULL,
+		ForeColor varchar(20) NULL,
+		SortOrder int NOT NULL,
+		CreatedBy int NOT NULL,
+	 CONSTRAINT PK_{objectQualifier}FlexCategory PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	))
+
+end
+else
+begin
+
+	if not exists(select * from dbo.syscolumns where id = object_id('{databaseOwner}{objectQualifier}FlexCategory') and name = 'Description') 
+	  alter table {databaseOwner}{objectQualifier}FlexCategory
+	    add Description nvarchar(1000) NULL
+
+end
+go
+
+
+
+
+
+
+
+
+if not exists(select * from sysobjects where id = object_id('{databaseOwner}{objectQualifier}FlexEvent') and type = 'U')
+begin
+
+	CREATE TABLE {databaseOwner}{objectQualifier}FlexEvent(
+		ItemId int IDENTITY(1,1) NOT NULL,
+		PortalId int NOT NULL,
+		ModuleId int NOT NULL,
+		LocationId int NULL,
+		Title nvarchar(200) NOT NULL,
+		FolderName nvarchar(200) NULL,
+		Summary nvarchar(4000) NULL,
+		Description ntext NULL,
+		Featured bit NOT NULL,
+		Suspended bit NOT NULL,
+		Archived bit NULL,
+		Logo nvarchar(200) NULL,
+		StartDate datetime NOT NULL,
+		EndDate datetime NOT NULL,
+		LastAllDay bit NOT NULL,
+		Recurring bit NOT NULL,
+		RecurringPattern int NULL,
+		RecurringDetail nvarchar(500) NULL,
+		LastRecurring datetime NULL,
+		RecurredTimes int NULL,
+		RequireBooking bit NOT NULL,
+		Capacity int NULL,
+		CapacityByBooking bit NULL,
+		AllowWaitingList bit NULL,
+		MaxAttendeesPerBooking int NULL,
+		BookingOpens int NULL,
+		BookingRoles nvarchar(500) NULL,
+		ChargeBy int NULL,
+		Cost money NULL,
+		PricingTiers nvarchar(1000) NULL,
+		BulkDiscount nvarchar(500) NULL,
+		AllowReview int NULL,
+		AdvancedReminder int NULL,
+		ReviewReminder int NULL,
+		ViewRoles nvarchar(500) NULL,
+		Phone nvarchar(50) NULL,
+		Email nvarchar(200) NULL,
+		Facebook nvarchar(100) NULL,
+		Twitter nvarchar(100) NULL,
+		SEOKeywords nvarchar(500) NULL,
+		CreatedBy int NOT NULL,
+		CreatedDate datetime NOT NULL,
+		LastModifiedDate datetime NULL,
+		Views int NOT NULL,
+	 CONSTRAINT PK_{objectQualifier}FlexEvent PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	))
+
+end
+go
+
+
+
+
+
+
+
+
+if not exists(select * from sysobjects where id = object_id('{databaseOwner}{objectQualifier}FlexLocation') and type = 'U')
+begin
+
+	CREATE TABLE {databaseOwner}{objectQualifier}FlexLocation(
+		ItemId int IDENTITY(1,1) NOT NULL,
+		ModuleId int NOT NULL,
+		Name nvarchar(200) NOT NULL,
+		Address nvarchar(500) NOT NULL,
+		Longitude float NULL,
+		Latitude float NULL,
+		Zoom int NULL,
+		Detail nvarchar(1000) NULL,
+		Icon nvarchar(200) NULL,
+		TimeZone varchar(50) NULL,
+		Country varchar(100) NULL,
+		Region varchar(100) NULL,
+		SortOrder int NOT NULL,
+		CreatedBy int NOT NULL,
+	 CONSTRAINT PK_{objectQualifier}FlexLocation PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	))
+
+end
+else
+begin
+	if not exists(select * from dbo.syscolumns where id = object_id('{databaseOwner}{objectQualifier}FlexLocation') and name = 'Country') 
+	  alter table {databaseOwner}{objectQualifier}FlexLocation
+	    add Country varchar(100)
+
+	if not exists(select * from dbo.syscolumns where id = object_id('{databaseOwner}{objectQualifier}FlexLocation') and name = 'Region') 
+	  alter table {databaseOwner}{objectQualifier}FlexLocation
+	    add Region varchar(100)
+end
+go
+
+
+
+
+
+
+
+if not exists(select * from sysobjects where id = object_id('{databaseOwner}{objectQualifier}FlexOccurance') and type = 'U')
+begin
+
+	CREATE TABLE {databaseOwner}{objectQualifier}FlexOccurance(
+		ItemId int IDENTITY(1,1) NOT NULL,
+		EventId int NOT NULL,
+		OccuranceStartDate datetime NOT NULL,
+		OccuranceEndDate datetime NOT NULL,
+		ConfirmedBookings int NULL,
+		ConfirmedAttendees int NULL,
+	 CONSTRAINT PK_{objectQualifier}FlexEventOccurance PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	))
+
+end
+go
+
+
+
+
+
+
+
+if not exists(select * from sysobjects where id = object_id('{databaseOwner}{objectQualifier}FlexReview') and type = 'U')
+begin
+
+	CREATE TABLE {databaseOwner}{objectQualifier}FlexReview(
+		ItemId int IDENTITY(1,1) NOT NULL,
+		EventId int NOT NULL,
+		UserId int NULL,
+		UserFullName nvarchar(100) NULL,
+		UserIP varchar(15) NULL,
+		UserFrom nvarchar(50) NULL,
+		Email nvarchar(50) NULL,
+		Comment ntext NOT NULL,
+		CreatedDate datetime NOT NULL,
+		Pending bit NOT NULL,
+	 CONSTRAINT PK_{objectQualifier}FlexReview PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	))
+
+end
+go
+
+
+
+
+
+
+
+if not exists(select * from sysobjects where id = object_id('{databaseOwner}{objectQualifier}FlexSubCalendar') and type = 'U')
+begin
+
+	CREATE TABLE {databaseOwner}{objectQualifier}FlexSubCalendar(
+		ItemId int IDENTITY(1,1) NOT NULL,
+		ModuleId int NOT NULL,
+		SubCalendarId int NOT NULL
+	 CONSTRAINT PK_{objectQualifier}FlexSubCalendar PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	))
+
+end
+go
+
+
+
+
+
+
+
+if not exists(select * from sysobjects where id = object_id('{databaseOwner}{objectQualifier}FlexEventPost') and type = 'U')
+begin
+
+	CREATE TABLE {databaseOwner}{objectQualifier}FlexEventPost(
+		ItemId int IDENTITY(1,1) NOT NULL,
+		EventId int NOT NULL,
+		GroupId int NOT NULL
+	 CONSTRAINT PK_{objectQualifier}FlexEventPost PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	))
+
+end
+go
+
+
+
+
+
+
+
+if not exists(select * from sysobjects where id = object_id('{databaseOwner}{objectQualifier}FlexEventCategory') and type = 'U')
+begin
+
+	CREATE TABLE {databaseOwner}{objectQualifier}FlexEventCategory(
+		ItemId int IDENTITY(1,1) NOT NULL,
+		EventId int NOT NULL,
+		CategoryId int NOT NULL
+	 CONSTRAINT PK_{objectQualifier}FlexEventCategory PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	))
+
+end
+go
+
+
+
+
+
+
+
+if not exists(select * from sysobjects where id = object_id('{databaseOwner}{objectQualifier}FlexFriendlyUrl') and type = 'U')
+begin
+
+	CREATE TABLE {databaseOwner}{objectQualifier}FlexFriendlyUrl(
+		ItemId int IDENTITY(1,1) NOT NULL,
+		ModuleId int NOT NULL,
+		RewriteKey varchar(100) NOT NULL,
+		FriendlyUrl varchar(250) NOT NULL
+	 CONSTRAINT PK_{objectQualifier}FlexFriendlyUrl PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	))
+
+end
+go
+
+
+
+
+
+
+--remove old CategoryId column
+
+IF EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexEvent_FlexCategory') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEvent'))
+	ALTER TABLE {databaseOwner}{objectQualifier}FlexEvent  drop  CONSTRAINT FK_{objectQualifier}FlexEvent_FlexCategory 
+GO
+
+if exists(select * from dbo.syscolumns where id = object_id('{databaseOwner}{objectQualifier}FlexEvent') and name = 'CategoryId')
+begin
+
+	EXECUTE ('insert {databaseOwner}{objectQualifier}FlexEventCategory(EventId, CategoryId) select ItemId as EventId, CategoryId from {databaseOwner}{objectQualifier}FlexEvent')
+
+	alter table {databaseOwner}{objectQualifier}FlexEvent drop column CategoryId
+end
+go
+
+
+
+
+
+
+
+
+IF NOT  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexAttachedFile_FlexEvent') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexAttachedFile'))
+	ALTER TABLE {databaseOwner}{objectQualifier}FlexAttachedFile  WITH CHECK ADD  CONSTRAINT FK_{objectQualifier}FlexAttachedFile_FlexEvent FOREIGN KEY(EventId) REFERENCES {databaseOwner}{objectQualifier}FlexEvent (ItemId) ON DELETE CASCADE
+GO
+
+IF NOT  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexBooking_FlexOccurance') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBooking'))
+	ALTER TABLE {databaseOwner}{objectQualifier}FlexBooking  WITH CHECK ADD  CONSTRAINT FK_{objectQualifier}FlexBooking_FlexOccurance FOREIGN KEY(OccuranceId) REFERENCES {databaseOwner}{objectQualifier}FlexOccurance (ItemId)
+GO
+
+IF NOT  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexCategory_Modules') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexCategory'))
+	ALTER TABLE {databaseOwner}{objectQualifier}FlexCategory  WITH CHECK ADD  CONSTRAINT FK_{objectQualifier}FlexCategory_Modules FOREIGN KEY(ModuleId) REFERENCES {databaseOwner}{objectQualifier}Modules (ModuleID) ON DELETE CASCADE
+GO
+
+IF NOT  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexEvent_FlexLocation') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEvent'))
+	ALTER TABLE {databaseOwner}{objectQualifier}FlexEvent  WITH CHECK ADD  CONSTRAINT FK_{objectQualifier}FlexEvent_FlexLocation FOREIGN KEY(LocationId) REFERENCES {databaseOwner}{objectQualifier}FlexLocation (ItemId)
+GO
+
+IF NOT  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexEvent_Modules') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEvent'))
+	ALTER TABLE {databaseOwner}{objectQualifier}FlexEvent  WITH CHECK ADD  CONSTRAINT FK_{objectQualifier}FlexEvent_Modules FOREIGN KEY(ModuleId) REFERENCES {databaseOwner}{objectQualifier}Modules (ModuleID) ON DELETE CASCADE
+GO
+
+IF NOT  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexLocation_Modules') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexLocation'))
+	ALTER TABLE {databaseOwner}{objectQualifier}FlexLocation  WITH CHECK ADD  CONSTRAINT FK_{objectQualifier}FlexLocation_Modules FOREIGN KEY(ModuleId) REFERENCES {databaseOwner}{objectQualifier}Modules (ModuleID) ON DELETE CASCADE
+GO
+
+IF NOT  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexOccurance_FlexEvent') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccurance'))
+	ALTER TABLE {databaseOwner}{objectQualifier}FlexOccurance  WITH CHECK ADD  CONSTRAINT FK_{objectQualifier}FlexOccurance_FlexEvent FOREIGN KEY(EventId) REFERENCES {databaseOwner}{objectQualifier}FlexEvent (ItemId) ON DELETE CASCADE
+GO
+
+IF NOT  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexReview_FlexEvent') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexReview'))
+	ALTER TABLE {databaseOwner}{objectQualifier}FlexReview  WITH CHECK ADD  CONSTRAINT FK_{objectQualifier}FlexReview_FlexEvent FOREIGN KEY(EventId) REFERENCES {databaseOwner}{objectQualifier}FlexEvent (ItemId) ON DELETE CASCADE
+GO
+
+IF NOT  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexSubCalendar_Modules') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexSubCalendar'))
+	ALTER TABLE {databaseOwner}{objectQualifier}FlexSubCalendar  WITH CHECK ADD  CONSTRAINT FK_{objectQualifier}FlexSubCalendar_Modules FOREIGN KEY(ModuleID) REFERENCES {databaseOwner}{objectQualifier}Modules (ModuleID) ON DELETE CASCADE
+GO
+
+IF NOT  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexSubCalendar_Modules2') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexSubCalendar'))
+	ALTER TABLE {databaseOwner}{objectQualifier}FlexSubCalendar  WITH CHECK ADD  CONSTRAINT FK_{objectQualifier}FlexSubCalendar_Modules2 FOREIGN KEY(SubCalendarID) REFERENCES {databaseOwner}{objectQualifier}Modules (ModuleID) ON DELETE NO ACTION
+GO
+
+IF NOT  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexEventPost_FlexEvent') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventPost'))
+	ALTER TABLE {databaseOwner}{objectQualifier}FlexEventPost  WITH CHECK ADD  CONSTRAINT FK_{objectQualifier}FlexEventPost_FlexEvent FOREIGN KEY(EventID) REFERENCES {databaseOwner}{objectQualifier}FlexEvent (ItemId) ON DELETE CASCADE
+GO
+
+IF NOT  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexEventPost_Roles') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventPost'))
+	ALTER TABLE {databaseOwner}{objectQualifier}FlexEventPost  WITH CHECK ADD  CONSTRAINT FK_{objectQualifier}FlexEventPost_Roles FOREIGN KEY(GroupId) REFERENCES {databaseOwner}{objectQualifier}Roles (RoleID) ON DELETE CASCADE
+GO
+
+IF NOT  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexEventCategory_Category') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventCategory'))
+	ALTER TABLE {databaseOwner}{objectQualifier}FlexEventCategory  WITH CHECK ADD  CONSTRAINT FK_{objectQualifier}FlexEventCategory_Category FOREIGN KEY(CategoryId) REFERENCES {databaseOwner}{objectQualifier}FlexCategory (ItemID) ON DELETE CASCADE
+GO
+
+IF NOT  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexFriendlyUrl_Modules') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexFriendlyUrl'))
+	ALTER TABLE {databaseOwner}{objectQualifier}FlexFriendlyUrl  WITH CHECK ADD  CONSTRAINT FK_{objectQualifier}FlexFriendlyUrl_Modules FOREIGN KEY(ModuleID) REFERENCES {databaseOwner}{objectQualifier}Modules (ModuleID) ON DELETE CASCADE
+GO
+
+
+
+
+
+
+
+
+
+
+
+
+-- View
+-- CREATE VIEW must be the only statement in the batch
+
+IF  EXISTS (SELECT * FROM sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccurance'))
+DROP VIEW {databaseOwner}{objectQualifier}FlexEventOccurance
+GO
+
+CREATE VIEW {databaseOwner}{objectQualifier}FlexEventOccurance
+AS
+SELECT E.*, STUFF(CategoryIDs,1,1,'') as CategoryIDs, O.ItemId AS OccuranceId, 
+	       O.OccuranceStartDate, O.OccuranceEndDate, O.ConfirmedBookings, 
+	       O.ConfirmedAttendees
+FROM  {databaseOwner}{objectQualifier}FlexEvent E INNER JOIN
+	       {databaseOwner}{objectQualifier}FlexOccurance O ON E.ItemId = O.EventId
+CROSS APPLY 
+	(
+	SELECT ','+Cast(CategoryID as varchar(10))
+	FROM {databaseOwner}{objectQualifier}FlexEventCategory EC
+	WHERE E.ItemId = EC.EventId 
+	FOR XML PATH('') )
+	XC (CategoryIDs)
+GO
+
+
+
+--Install scheduler
+if not exists(select * from {databaseOwner}{objectQualifier}Schedule where TypeFullName='BizModules.FlexEvents.RecurringScheduler, BizModules.FlexEvents')
+insert {databaseOwner}{objectQualifier}Schedule(TypeFullName, TimeLapse, TimeLapseMeasurement, RetryTimeLapse, RetryTimeLapseMeasurement, RetainHistoryNum, AttachToEvent, CatchUpEnabled, Enabled, ObjectDependencies, FriendlyName) 
+values ('BizModules.FlexEvents.RecurringScheduler, BizModules.FlexEvents', 1, 'd', 1, 'h', 50, '', 0, 1, 'FlexEvents', 'FlexEvents Recurring Mgmt')
+
+if not exists(select * from {databaseOwner}{objectQualifier}Schedule where TypeFullName='BizModules.FlexEvents.RemindingScheduler, BizModules.FlexEvents')
+insert {databaseOwner}{objectQualifier}Schedule(TypeFullName, TimeLapse, TimeLapseMeasurement, RetryTimeLapse, RetryTimeLapseMeasurement, RetainHistoryNum, AttachToEvent, CatchUpEnabled, Enabled, ObjectDependencies, FriendlyName) 
+values ('BizModules.FlexEvents.RemindingScheduler, BizModules.FlexEvents', 1, 'h', 1, 'h', 50, '', 0, 1, 'FlexEvents', 'FlexEvents Reminder')
+
+
+

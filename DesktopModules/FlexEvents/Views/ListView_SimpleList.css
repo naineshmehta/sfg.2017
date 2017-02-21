@@ -1,0 +1,139 @@
+h5.title
+{
+	font-size:2em;
+	line-height:2em;
+	font-weight:bold;
+	text-align:center;
+}
+
+.simplelistview .newmonth
+{
+	margin-bottom:1em;
+
+	text-transform: none;
+	font-size: 1.5em;
+	margin: 1em auto;
+	text-align: center;
+	position: relative;
+	background-color: transparent;
+	z-index: 1;
+}
+
+.simplelistview .newmonth:after
+{
+	content: "";
+	border-bottom: 1px solid #C2C2C2;
+	height: 1px;
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	z-index: -1;
+}
+
+.simplelistview .newmonth span
+{
+	font-weight:bold;
+	text-align:center;
+	background-color: #FFF;
+	padding: 0px 7.5%;
+}
+
+
+
+
+
+
+
+
+
+
+.simplelistview .event
+{
+	margin:2em 0em;
+}
+
+.simplelistview .event.alt
+{
+}
+
+.simplelistview .event .colleft
+{
+	vertical-align:top;
+	min-width:4em;
+	max-width:8em;
+	width:15%;
+	margin-right:1em;
+}
+
+.simplelistview .event .colleft>img
+{
+	width:100%;	
+	border-radius:0.25em;
+}
+
+.simplelistview .event .colright
+{
+	position:relative;
+	padding-left:1em;
+}
+
+@media only screen and (max-width: 480px) {
+	.simplelistview .event .colright
+	{
+		padding-left:0.25em;
+	}
+}
+
+.simplelistview .event .colright .title
+{
+	margin-right:5em;/*to avoid category*/
+}
+
+.simplelistview .featured .title:before
+{
+	line-height:16px;
+	vertical-align: middle;
+	content:url('../images/featured.png');
+}
+
+.simplelistview .event .title a
+{
+	color: #3A87AD;
+	font-size:1.1em;
+	font-weight:bold;
+	text-decoration:none;
+	text-transform:none;
+}
+
+.simplelistview .event .duration
+{
+	line-height:1.4em;
+	margin:0.3em 0em;
+	font-weight:bold;
+}
+
+a:hover.tooltips span.tooltip 
+{
+	margin-left:-132px;
+}
+
+.simplelistview .event .location
+{
+	color:#888;
+}
+
+.simplelistview .event .category
+{
+	position:absolute;
+	top:0em;
+	right:0em;
+	line-height:1.5em;
+	padding:0em 0.5em;
+	font-weight:bold;
+	border:1px solid #ddd;
+	background-color:#eee;
+	color:#fff;
+}
+

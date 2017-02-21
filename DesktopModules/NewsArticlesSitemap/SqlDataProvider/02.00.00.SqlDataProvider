@@ -1,0 +1,101 @@
+﻿/************************************************************/
+/*****              SQLDataProvider		                *****/
+/*****   News Articles Sitemap Provider 02.00.00		*****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for  and {objectQualifier}	*****/
+/************************************************************/
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}ifty_nsp_GetNewsArticles]    Script Date: 09/13/2012 17:05:28 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}ifty_nsp_GetNewsArticles]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC sp_executesql @statement = N'-- =============================================
+-- Author:		Bruce Chapman
+-- Create date: 10 Sep 2012
+-- Description:	Retrieves News Articles
+-- Updates
+-- bc 28 sep 12 : add check so that maxEntries doesnt set rowcount if below zero
+-- =============================================
+CREATE PROCEDURE {databaseOwner}[{objectQualifier}ifty_nsp_GetNewsArticles]
+	@portalId int
+	, @moduleId int
+	, @maxEntries int
+	, @featuredonly bit
+	, @showHiddenAndExpired bit
+	, @showSecured bit
+	, @singlePagesOnly bit
+	, @effectiveDate datetime
+	, @authorId int
+	, @categoryIds nvarchar(255)
+AS
+BEGIN
+	SET NOCOUNT ON
+	
+	create table #Categories (CategoryId int)
+	declare @catRemaining nvarchar(255), @catRaw nvarchar(10), @pos int, @catCount int, @maxRows int
+	set @catRemaining = @categoryIds
+	set @pos = 100
+	while (@pos > 1 and @catRemaining is not null)
+	begin
+		set @pos = charindex('','',@catRemaining)
+		if (@pos > 1)
+		begin
+			set @catRaw = substring(@catRemaining, 1, @pos -1)
+		end
+		else
+		begin
+			set @catRaw = @catRemaining
+		end
+		if (isnumeric(@catRaw) = 1 and NOT LTRIM(RTRIM(@catRaw)) = '','')
+		BEGIN
+			insert into #Categories (CategoryId) values (convert(int, @catRaw))
+		end
+		
+		if (@pos > 1)
+			set @catRemaining = substring(@catRemaining, @pos + 1, datalength(@catRemaining))
+	END
+	select @catCount = Coalesce(Count(CategoryId),0) from #categories
+	
+	set @maxRows = coalesce(@maxEntries, 0)
+	if (@maxRows > -1)
+		set rowcount @maxRows
+	else
+		set rowcount 0
+	select a.ArticleId
+	, p.PageId
+	, a.Title
+	, p.Title as PageTitle
+	, a.CreatedDate
+	, a.LastUpdate
+	, a.CommentCount
+	, a.NumberOfViews
+	, a.Rating
+
+	, case when a.CommentCount > 0 
+	  then (select max(CreatedDate) from {databaseOwner}{objectQualifier}DnnForge_newsArticles_Comment c where c.ArticleId = a.ArticleID) 
+	  else null end as LatestCommentDate
+	from {databaseOwner}{objectQualifier}DnnForge_NewsArticles_Article a
+	left join {databaseOwner}{objectQualifier}dnnForge_NewsArticles_Page p 
+	  on p.ArticleID = a.ArticleId
+	 and (@singlePagesOnly = 0 or SortOrder = 0)
+	left join {databaseOwner}{objectQualifier}dnnForge_newsArticles_ArticleCategories ac
+	   on ac.ArticleId = a.ArticleId
+	where a.ModuleId = @moduleId
+	  and (IsFeatured = 1 or @featuredOnly = 0)  --featured only
+	  and ((IsSecure = 1 and @showSecured = 1) or IsSecure = 0) --show secured if specified
+	  and (@showHiddenAndExpired = 1 
+	   or (IsDraft = 0 or StartDate > @effectiveDate or EndDate < @effectiveDate))
+	  and (@catCount = 0 or ac.CategoryId in (select CategoryId from #categories))
+	  and ((@authorId > 0 and @authorId = a.AuthorId) or @authorId = -1)
+	Order by a.ArticleId Desc, p.PageId asc
+
+
+	SEt rowCount 0	
+END
+' 
+END
+GO

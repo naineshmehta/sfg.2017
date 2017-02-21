@@ -1,0 +1,437 @@
+--constriants
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexAttachedFile_FlexEvent') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexAttachedFile'))
+ALTER TABLE {databaseOwner}{objectQualifier}FlexAttachedFile DROP CONSTRAINT FK_{objectQualifier}FlexAttachedFile_FlexEvent
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexBooking_FlexOccurance') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBooking'))
+ALTER TABLE {databaseOwner}{objectQualifier}FlexBooking DROP CONSTRAINT FK_{objectQualifier}FlexBooking_FlexOccurance
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexCategory_Modules') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexCategory'))
+ALTER TABLE {databaseOwner}{objectQualifier}FlexCategory DROP CONSTRAINT FK_{objectQualifier}FlexCategory_Modules
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexEvent_FlexCategory') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEvent'))
+ALTER TABLE {databaseOwner}{objectQualifier}FlexEvent DROP CONSTRAINT FK_{objectQualifier}FlexEvent_FlexCategory
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexEvent_FlexLocation') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEvent'))
+ALTER TABLE {databaseOwner}{objectQualifier}FlexEvent DROP CONSTRAINT FK_{objectQualifier}FlexEvent_FlexLocation
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexEvent_Modules') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEvent'))
+ALTER TABLE {databaseOwner}{objectQualifier}FlexEvent DROP CONSTRAINT FK_{objectQualifier}FlexEvent_Modules
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexLocation_Modules') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexLocation'))
+ALTER TABLE {databaseOwner}{objectQualifier}FlexLocation DROP CONSTRAINT FK_{objectQualifier}FlexLocation_Modules
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexOccurance_FlexEvent') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccurance'))
+ALTER TABLE {databaseOwner}{objectQualifier}FlexOccurance DROP CONSTRAINT FK_{objectQualifier}FlexOccurance_FlexEvent
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexReview_FlexEvent') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexReview'))
+ALTER TABLE {databaseOwner}{objectQualifier}FlexReview DROP CONSTRAINT FK_{objectQualifier}FlexReview_FlexEvent
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexSubCalendar_Modules') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexSubCalendar'))
+ALTER TABLE {databaseOwner}{objectQualifier}FlexSubCalendar DROP CONSTRAINT FK_{objectQualifier}FlexSubCalendar_Modules
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexSubCalendar_Modules2') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexSubCalendar'))
+ALTER TABLE {databaseOwner}{objectQualifier}FlexSubCalendar DROP CONSTRAINT FK_{objectQualifier}FlexSubCalendar_Modules2
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexEventPost_FlexEvent') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexSubCalendar'))
+ALTER TABLE {databaseOwner}{objectQualifier}FlexEventPost DROP CONSTRAINT FK_{objectQualifier}FlexEventPost_FlexEvent
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'FK_{objectQualifier}FlexEventPost_Roles') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexSubCalendar'))
+ALTER TABLE {databaseOwner}{objectQualifier}FlexEventPost DROP CONSTRAINT FK_{objectQualifier}FlexEventPost_Roles
+GO
+
+
+
+
+
+
+
+
+
+
+--tables
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexAttachedFile') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}FlexAttachedFile
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexReview') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}FlexReview
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBooking') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}FlexBooking
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccurance') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}FlexOccurance
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEvent') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}FlexEvent
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventCategory') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}FlexEventCategory
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexCategory') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}FlexCategory
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexLocation') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}FlexLocation
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexSubCalendar') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}FlexSubCalendar
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventPost') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}FlexEventPost
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexFriendlyUrl') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}FlexFriendlyUrl
+GO
+
+
+
+
+
+
+
+
+
+
+
+--Views
+
+IF  EXISTS (SELECT * FROM sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccurance'))
+DROP VIEW {databaseOwner}{objectQualifier}FlexEventOccurance
+GO
+
+
+
+
+
+
+
+
+
+-- Installed schedulers
+delete {databaseOwner}{objectQualifier}Schedule where TypeFullName = 'BizModules.FlexEvents.RecurringScheduler, BizModules.FlexEvents'
+
+delete {databaseOwner}{objectQualifier}Schedule where TypeFullName = 'BizModules.FlexEvents.RemindingScheduler, BizModules.FlexEvents'
+
+
+
+
+
+
+
+
+
+--Stored Procedures
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexAttachedFileAdd') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileAdd
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexAttachedFileDelete') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileDelete
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexAttachedFileGet') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileGet
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexAttachedFileList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexAttachedFileListAll') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileListAll
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexAttachedFileUpdate') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexAttachedFileUpdate
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingAdd') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingAdd
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingChangeStatus') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingChangeStatus
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingDelete') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingDelete
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingFind') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingFind
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingGet') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingGet
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingListNeedReminding') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingListNeedReminding
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingSearch') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingSearch
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingSearchByUser') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingSearchByUser
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingUpdate') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingUpdate
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexBookingUpdateRemindStatus') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexBookingUpdateRemindStatus
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexCategoryAdd') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryAdd
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexCategoryDelete') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryDelete
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexCategoryGet') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryGet
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexCategoryList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexCategoryListEx') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryListEx
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexCategoryUpdate') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryUpdate
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventAdd') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventAdd
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventArchive') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventArchive
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventDelete') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventDelete
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventGet') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventGet
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventGetLatest') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventGetLatest
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventListRecurring') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventListRecurring
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccuranceGet') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceGet
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccuranceList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccuranceListByDate') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceListByDate
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccuranceListByDateEx') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceListByDateEx
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccuranceListByGroup') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceListByGroup
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccuranceSearch') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceSearch
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccuranceSearchEx') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceSearchEx
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventOccuranceXModuleSearch') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventOccuranceXModuleSearch
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventSearchByName') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventSearchByName
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventUpdate') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventUpdate
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventView') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventView
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexLocationAdd') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexLocationAdd
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexLocationDelete') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexLocationDelete
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexLocationGet') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexLocationGet
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexLocationList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexLocationList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexLocationListEx') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexLocationListEx
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexLocationUpdate') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexLocationUpdate
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexModuleSettingGet') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexModuleSettingGet
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccuranceAdd') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceAdd
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccuranceDelete') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceDelete
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccuranceDump') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceDump
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccuranceFindByDate') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceFindByDate
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccuranceFindNext') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceFindNext
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccuranceList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccuranceSearchLatestBooked') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceSearchLatestBooked
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexOccuranceUpdate') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexOccuranceUpdate
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexReviewAdd') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexReviewAdd
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexReviewApprove') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexReviewApprove
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexReviewDelete') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexReviewDelete
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexReviewGet') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexReviewGet
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexReviewList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexReviewList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexReviewListAll') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexReviewListAll
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexReviewSearch') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexReviewSearch
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexSubCalendarEnsure') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexSubCalendarEnsure
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexSubCalendarGetType') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexSubCalendarGetType
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexSubCalendarList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexSubCalendarList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexEventCategoryEnsure') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexEventCategoryEnsure
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexCategoryListByEvent') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexCategoryListByEvent
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexFriendlyUrlAdd') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexFriendlyUrlAdd
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexFriendlyUrlGetByKey') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexFriendlyUrlGetByKey
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexFriendlyUrlGetByUrl') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexFriendlyUrlGetByUrl
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}FlexFriendlyUrlList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}FlexFriendlyUrlList
+GO
+
+

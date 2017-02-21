@@ -1,0 +1,113 @@
+<!-- View.Item -->
+<div class="article" itemscope itemtype="http://schema.org/Article">
+    <div class="articleCalendar articleCalendarIcon-[PUBLISHSTARTDATE:MM]">
+        <div class="articleCalendarDay">[PUBLISHSTARTDATE:dd]</div>
+    </div>
+    <div class="articleHeadline" itemprop="name"><h1>[EDIT]<a href="[ARTICLELINK]" itemprop="url">[TITLE]</a></h1></div>
+    <div class="articleAuthor Normal"><a href="[AUTHORLINK]"><span itemprop="author">[AUTHOR]</span></a> posted on <span itemprop="datePublished">[PUBLISHSTARTDATE:MMMM dd, yyyy HH:mm]</span>[HASRATING] [RATING][/HASRATING]</div>
+
+<div class="articleSocial Normal">
+    <span class='st_facebook_vcount' displaytext='Facebook'></span>
+    <span class='st_twitter_vcount' displaytext='Tweet'></span>
+    <span class='st_googleplus_vcount' displaytext='Google +'></span>
+    <span class='st_linkedin_vcount' displaytext='LinkedIn'></span>
+    <span class='st_pinterest_vcount' displaytext='Pinterest'></span>
+</div>
+
+    <div class="articleEntry Normal" itemprop="articleBody">
+        [PAGETEXT]
+        [HASCUSTOMFIELDS][CUSTOMFIELDS][/HASCUSTOMFIELDS]
+        [HASLINK]
+            <p><a href="[LINK]" target="[LINKTARGET]">[Read More...]</a></p>
+        [/HASLINK]
+    </div>
+    
+    [HASMULTIPLEPAGES]
+    <div class="articlePaging Normal">
+        Pages: [CURRENTPAGE] of [PAGECOUNT][HASPREVPAGE] [LINKPREVIOUS][/HASPREVPAGE][HASNEXTPAGE] [LINKNEXT][/HASNEXTPAGE]
+    </div>
+    [/HASMULTIPLEPAGES]
+    
+    [HASCATEGORIES] 
+    <div class="articleCategories Normal">
+        Posted in: <span itemprop="articleSection">[CATEGORIES]</span>
+    </div>
+	<div class="articleCategories Normal">
+        View more lineup, ticket, rumors and news about [CATEGORIES] here!
+    </div>
+    [/HASCATEGORIES]
+    <div class="articleCategories Normal">
+        Find out more about [AUTHOR] on <a href='https://plus.google.com/[AUTHOR:GooglePlusID]?rel=author'>Google+</a>
+    </div>
+
+
+[HASTAGS]
+    <div class="articleTags Normal">
+        Tags: <span itemprop="keywords">[TAGS]</span>
+    </div>
+[/HASTAGS]
+
+    <div class="articleCategories Normal">
+		<p style="text-align:center; margin-top:10px;">
+			<!--START MERCHANT:merchant name Expedia UK from affiliatewindow.com.-->
+			<a href="https://www.awin1.com/cread.php?s=568699&v=3456&q=144398&r=198165"><img src="https://www.awin1.com/cshow.php?s=568699&v=3456&q=144398&r=198165" 
+border="0"></a>
+			<!--END MERCHANT:merchant name Expedia UK from affiliatewindow.com-->
+						
+		</p>
+    </div>
+
+</div>
+<div id="fb-root"></div>
+<div class="articleComments">
+<h2><a name="Comments">Comments</a></h2>
+<div class="fb-comments" data-href="[ARTICLELINK]" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
+</div>
+
+[HASIMAGES]
+<div class="articleImages">
+    <h2><a name="#Images">Related Images</a></h2>
+    <table><tr><td>[IMAGES]</td></tr></table>
+                                    
+</div>
+[/HASIMAGES]
+
+[HASFILES]
+<div class="articleFiles">
+    <h2><a name="#Files">Related Files</a></h2>
+    [FILES]
+</div>
+[/HASFILES]
+
+[HASRELATED]
+<div class="related">
+    <h2><a name="#Related">Related Articles</a></h2>
+    [RELATED]
+</div>
+[/HASRELATED]
+
+[ISRATEABLE]
+<div class="postRating">
+    <h2><a name="#PostRating">Post Rating</a></h2>
+    [POSTRATING]
+</div>
+[/ISRATEABLE]
+
+[HASCOMMENTSENABLED]
+<div class="articleComments">
+    <h2><a name="Comments">Comments</a></h2>
+    [HASCOMMENTS][COMMENTS][/HASCOMMENTS]
+    [HASNOCOMMENTS]<span class="Normal">There are currently no comments, be the first to post one.</span>[/HASNOCOMMENTS]
+</div>
+
+<div class="postComment">
+    <h2><a name="PostComment">Post Comment</a></h2>
+    [POSTCOMMENT]
+</div>
+[/HASCOMMENTSENABLED]
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.articleEntry img').css('width', '100%').css('height', 'auto');
+    });
+</script>

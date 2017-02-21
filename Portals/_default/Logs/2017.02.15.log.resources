@@ -1,0 +1,18 @@
+2017-02-15 13:57:54,423 [UK03601][Thread:3][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Web.UI.Utilities.ApplySkin(Control telerikControl, String fallBackEmbeddedSkinName, String controlName, String webControlSkinSubFolderName)
+2017-02-15 14:38:51,626 [UK03601][Thread:3][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.TypeLoadException: Could not load type 'DotNetNuke.Services.Log.SiteLog.PurgeSiteLog' from assembly 'DOTNETNUKE'.
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Services.Scheduling.ProcessGroup.GetSchedulerClient(String strProcess, ScheduleHistoryItem objScheduleHistoryItem)
+   at DotNetNuke.Services.Scheduling.ProcessGroup.Run(ScheduleHistoryItem objScheduleHistoryItem)
+2017-02-15 17:15:13,323 [UK03601][Thread:5][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.TypeLoadException: Could not load type 'DotNetNuke.Services.Log.SiteLog.PurgeSiteLog' from assembly 'DOTNETNUKE'.
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Services.Scheduling.ProcessGroup.GetSchedulerClient(String strProcess, ScheduleHistoryItem objScheduleHistoryItem)
+   at DotNetNuke.Services.Scheduling.ProcessGroup.Run(ScheduleHistoryItem objScheduleHistoryItem)

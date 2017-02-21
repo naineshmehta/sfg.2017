@@ -1,0 +1,278 @@
+2017-02-12 09:15:19,941 [UK03601][Thread:32][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.TypeLoadException: Could not load type 'DotNetNuke.Services.Log.SiteLog.PurgeSiteLog' from assembly 'DOTNETNUKE'.
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Services.Scheduling.ProcessGroup.GetSchedulerClient(String strProcess, ScheduleHistoryItem objScheduleHistoryItem)
+   at DotNetNuke.Services.Scheduling.ProcessGroup.Run(ScheduleHistoryItem objScheduleHistoryItem)
+2017-02-12 09:16:04,796 [UK03601][Thread:36][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.OverflowException: Arithmetic operation resulted in an overflow.
+   at System.IntPtr.op_Explicit(IntPtr value)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.FirstPass(BitmapData sourceData, Int32 width, Int32 height)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.Quantize(Image source)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveIndexed(ImageFormat format, Image img, Stream target, Byte colors, Boolean dither, Boolean fourPass, Int32 ditherPercent, Boolean useGdiQuantization)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveImage(Stream s, Image i)
+   at Ventrian.NewsArticles.ImageHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2017-02-12 09:16:04,974 [UK03601][Thread:20][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.OverflowException: Arithmetic operation resulted in an overflow.
+   at System.IntPtr.op_Explicit(IntPtr value)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.FirstPass(BitmapData sourceData, Int32 width, Int32 height)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.Quantize(Image source)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveIndexed(ImageFormat format, Image img, Stream target, Byte colors, Boolean dither, Boolean fourPass, Int32 ditherPercent, Boolean useGdiQuantization)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveImage(Stream s, Image i)
+   at Ventrian.NewsArticles.ImageHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2017-02-12 09:16:29,119 [UK03601][Thread:7][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.OverflowException: Arithmetic operation resulted in an overflow.
+   at System.IntPtr.op_Explicit(IntPtr value)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.FirstPass(BitmapData sourceData, Int32 width, Int32 height)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.Quantize(Image source)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveIndexed(ImageFormat format, Image img, Stream target, Byte colors, Boolean dither, Boolean fourPass, Int32 ditherPercent, Boolean useGdiQuantization)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveImage(Stream s, Image i)
+   at Ventrian.NewsArticles.ImageHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2017-02-12 09:16:29,332 [UK03601][Thread:37][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.OverflowException: Arithmetic operation resulted in an overflow.
+   at System.IntPtr.op_Explicit(IntPtr value)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.FirstPass(BitmapData sourceData, Int32 width, Int32 height)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.Quantize(Image source)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveIndexed(ImageFormat format, Image img, Stream target, Byte colors, Boolean dither, Boolean fourPass, Int32 ditherPercent, Boolean useGdiQuantization)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveImage(Stream s, Image i)
+   at Ventrian.NewsArticles.ImageHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2017-02-12 09:18:33,799 [UK03601][Thread:12][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.OverflowException: Arithmetic operation resulted in an overflow.
+   at System.IntPtr.op_Explicit(IntPtr value)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.FirstPass(BitmapData sourceData, Int32 width, Int32 height)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.Quantize(Image source)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveIndexed(ImageFormat format, Image img, Stream target, Byte colors, Boolean dither, Boolean fourPass, Int32 ditherPercent, Boolean useGdiQuantization)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveImage(Stream s, Image i)
+   at Ventrian.NewsArticles.ImageHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2017-02-12 09:21:29,186 [UK03601][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.IndexOutOfRangeException: SimilarCount
+   at System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at DotNetNuke.Services.Journal.JournalItem.Fill(IDataReader dr)
+   at DotNetNuke.Common.Utilities.CBO.FillObjectFromReader(Object objObject, IDataReader dr)
+2017-02-12 09:22:43,771 [UK03601][Thread:7][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.IndexOutOfRangeException: SimilarCount
+   at System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at DotNetNuke.Services.Journal.JournalItem.Fill(IDataReader dr)
+   at DotNetNuke.Common.Utilities.CBO.FillObjectFromReader(Object objObject, IDataReader dr)
+2017-02-12 09:35:48,034 [UK03601][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.IndexOutOfRangeException: SimilarCount
+   at System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at DotNetNuke.Services.Journal.JournalItem.Fill(IDataReader dr)
+   at DotNetNuke.Common.Utilities.CBO.FillObjectFromReader(Object objObject, IDataReader dr)
+2017-02-12 12:13:24,464 [UK03601][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.TypeLoadException: Could not load type 'DotNetNuke.Services.Log.SiteLog.PurgeSiteLog' from assembly 'DOTNETNUKE'.
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Services.Scheduling.ProcessGroup.GetSchedulerClient(String strProcess, ScheduleHistoryItem objScheduleHistoryItem)
+   at DotNetNuke.Services.Scheduling.ProcessGroup.Run(ScheduleHistoryItem objScheduleHistoryItem)
+2017-02-12 12:53:42,660 [UK03601][Thread:18][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.OverflowException: Arithmetic operation resulted in an overflow.
+   at System.IntPtr.op_Explicit(IntPtr value)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.FirstPass(BitmapData sourceData, Int32 width, Int32 height)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.Quantize(Image source)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveIndexed(ImageFormat format, Image img, Stream target, Byte colors, Boolean dither, Boolean fourPass, Int32 ditherPercent, Boolean useGdiQuantization)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveImage(Stream s, Image i)
+   at Ventrian.NewsArticles.ImageHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2017-02-12 12:53:42,665 [UK03601][Thread:22][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.OverflowException: Arithmetic operation resulted in an overflow.
+   at System.IntPtr.op_Explicit(IntPtr value)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.FirstPass(BitmapData sourceData, Int32 width, Int32 height)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.Quantize(Image source)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveIndexed(ImageFormat format, Image img, Stream target, Byte colors, Boolean dither, Boolean fourPass, Int32 ditherPercent, Boolean useGdiQuantization)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveImage(Stream s, Image i)
+   at Ventrian.NewsArticles.ImageHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2017-02-12 12:53:42,674 [UK03601][Thread:32][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.OverflowException: Arithmetic operation resulted in an overflow.
+   at System.IntPtr.op_Explicit(IntPtr value)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.FirstPass(BitmapData sourceData, Int32 width, Int32 height)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.Quantize(Image source)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveIndexed(ImageFormat format, Image img, Stream target, Byte colors, Boolean dither, Boolean fourPass, Int32 ditherPercent, Boolean useGdiQuantization)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveImage(Stream s, Image i)
+   at Ventrian.NewsArticles.ImageHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2017-02-12 12:53:42,768 [UK03601][Thread:26][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.OverflowException: Arithmetic operation resulted in an overflow.
+   at System.IntPtr.op_Explicit(IntPtr value)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.FirstPass(BitmapData sourceData, Int32 width, Int32 height)
+   at Ventrian.ImageResizer.ImageQuantization.Quantizer.Quantize(Image source)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveIndexed(ImageFormat format, Image img, Stream target, Byte colors, Boolean dither, Boolean fourPass, Int32 ditherPercent, Boolean useGdiQuantization)
+   at Ventrian.ImageResizer.ImageOutputSettings.SaveImage(Stream s, Image i)
+   at Ventrian.NewsArticles.ImageHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2017-02-12 16:16:27,613 [UK03601][Thread:9][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.TypeLoadException: Could not load type 'DotNetNuke.Services.Log.SiteLog.PurgeSiteLog' from assembly 'DOTNETNUKE'.
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Services.Scheduling.ProcessGroup.GetSchedulerClient(String strProcess, ScheduleHistoryItem objScheduleHistoryItem)
+   at DotNetNuke.Services.Scheduling.ProcessGroup.Run(ScheduleHistoryItem objScheduleHistoryItem)
+2017-02-12 16:50:17,694 [UK03601][Thread:11][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error:  is currently unavailable." ctrl="DotNetNuke.Web.Mvc.MvcHostControl" exc="System.Web.HttpException (0x80004005): A public action method 'Edit' was not found on controller 'NM.Modules.FlexEventsUpcoming.Controllers.ItemController'.
+   at System.Web.Mvc.Controller.HandleUnknownAction(String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at DotNetNuke.Web.Mvc.Framework.Modules.ModuleApplication.ExecuteRequest(ModuleRequestContext context)
+   at DotNetNuke.Web.Mvc.MvcHostControl.OnInit(EventArgs e)"
+2017-02-12 16:50:17,719 [UK03601][Thread:11][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="An error has occurred." ctrl="ASP.admin_menus_moduleactions_moduleactions_ascx" exc="System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.UI.Modules.ModuleInstanceContext.LoadActions(HttpRequest request)
+   at DotNetNuke.UI.Modules.ModuleInstanceContext.get_Actions()
+   at DotNetNuke.UI.Containers.ActionBase.OnLoad(EventArgs e)"
+2017-02-12 16:55:54,940 [UK03601][Thread:42][ERROR] DotNetNuke.Collections.CollectionExtensions - Error loading portal setting: FlexEventsUpcoming_Setting1:False Default value 5 was used instead
+2017-02-12 16:55:56,688 [UK03601][Thread:42][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error: Upcoming Events is currently unavailable." ctrl="DotNetNuke.Web.Mvc.MvcSettingsControl" exc="System.Web.HttpCompileException (0x80004005): c:\inetpub\wwwroot\new.summerfestivalguide.co.uk\DesktopModules\MVC\FlexEventsUpcoming\Views\Settings\Settings.cshtml(11): error CS0029: Cannot implicitly convert type 'int' to 'bool'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at DotNetNuke.Web.Mvc.Framework.ActionResults.DnnViewResult.ExecuteResult(ControllerContext context, TextWriter writer)
+   at DotNetNuke.Web.Mvc.MvcHostControl.RenderModule(ModuleRequestResult moduleResult)
+   at DotNetNuke.Web.Mvc.MvcHostControl.OnLoad(EventArgs e)"
+2017-02-12 16:57:01,647 [UK03601][Thread:43][ERROR] DotNetNuke.Collections.CollectionExtensions - Error loading portal setting: FlexEventsUpcoming_Setting1:False Default value 5 was used instead
+2017-02-12 16:57:15,359 [UK03601][Thread:14][ERROR] DotNetNuke.Collections.CollectionExtensions - Error loading portal setting: FlexEventsUpcoming_Setting1:False Default value 5 was used instead
+2017-02-12 17:01:10,262 [UK03601][Thread:14][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Procedure or function FlexEventsUpcoming_Get has too many arguments specified.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at PetaPoco.Database.<Query>d__2`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at PetaPoco.Database.Fetch[T](String sql, Object[] args)
+   at NM.Modules.FlexEventsUpcoming.Components.ItemManager.GetItems(Int32 moduleId, Int32 portalId, Int32 recordsToReturn) in C:\inetpub\wwwroot\new.summerfestivalguide.co.uk\DesktopModules\MVC\FlexEventsUpcoming\Components\ItemManager.cs:line 33
+   at NM.Modules.FlexEventsUpcoming.Controllers.ItemController.Index() in C:\inetpub\wwwroot\new.summerfestivalguide.co.uk\DesktopModules\MVC\FlexEventsUpcoming\Controllers\ItemController.cs:line 26
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+ClientConnectionId:7033b965-2d01-480c-8d3c-5def2f52ed98
+Error Number:8144,State:2,Class:16
+2017-02-12 17:01:10,332 [UK03601][Thread:14][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error: Upcoming Events is currently unavailable." ctrl="DotNetNuke.Web.Mvc.MvcHostControl" exc="System.Data.SqlClient.SqlException (0x80131904): Procedure or function FlexEventsUpcoming_Get has too many arguments specified.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at PetaPoco.Database.<Query>d__2`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at PetaPoco.Database.Fetch[T](String sql, Object[] args)
+   at NM.Modules.FlexEventsUpcoming.Components.ItemManager.GetItems(Int32 moduleId, Int32 portalId, Int32 recordsToReturn) in C:\inetpub\wwwroot\new.summerfestivalguide.co.uk\DesktopModules\MVC\FlexEventsUpcoming\Components\ItemManager.cs:line 33
+   at NM.Modules.FlexEventsUpcoming.Controllers.ItemController.Index() in C:\inetpub\wwwroot\new.summerfestivalguide.co.uk\DesktopModules\MVC\FlexEventsUpcoming\Controllers\ItemController.cs:line 26
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at DotNetNuke.Web.Mvc.Framework.Modules.ModuleApplication.ExecuteRequest(ModuleRequestContext context)
+   at DotNetNuke.Web.Mvc.MvcHostControl.OnInit(EventArgs e)
+ClientConnectionId:7033b965-2d01-480c-8d3c-5def2f52ed98
+Error Number:8144,State:2,Class:16"
+2017-02-12 17:01:23,531 [UK03601][Thread:14][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="An error has occurred." ctrl="ASP.admin_menus_moduleactions_moduleactions_ascx" exc="System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.UI.Modules.ModuleInstanceContext.LoadActions(HttpRequest request)
+   at DotNetNuke.UI.Modules.ModuleInstanceContext.get_Actions()
+   at DotNetNuke.UI.Containers.ActionBase.OnLoad(EventArgs e)"
+2017-02-12 17:11:23,586 [UK03601][Thread:20][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Specified cast is not valid.
+   at NM.Modules.FlexEventsUpcoming.Controllers.ItemController.Index() in C:\inetpub\wwwroot\new.summerfestivalguide.co.uk\DesktopModules\MVC\FlexEventsUpcoming\Controllers\ItemController.cs:line 26
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2017-02-12 17:11:23,663 [UK03601][Thread:20][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error: Upcoming Events is currently unavailable." ctrl="DotNetNuke.Web.Mvc.MvcHostControl" exc="System.InvalidCastException: Specified cast is not valid.
+   at NM.Modules.FlexEventsUpcoming.Controllers.ItemController.Index() in C:\inetpub\wwwroot\new.summerfestivalguide.co.uk\DesktopModules\MVC\FlexEventsUpcoming\Controllers\ItemController.cs:line 26
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at DotNetNuke.Web.Mvc.Framework.Modules.ModuleApplication.ExecuteRequest(ModuleRequestContext context)
+   at DotNetNuke.Web.Mvc.MvcHostControl.OnInit(EventArgs e)"
+2017-02-12 17:11:34,808 [UK03601][Thread:20][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="An error has occurred." ctrl="ASP.admin_menus_moduleactions_moduleactions_ascx" exc="System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.UI.Modules.ModuleInstanceContext.LoadActions(HttpRequest request)
+   at DotNetNuke.UI.Modules.ModuleInstanceContext.get_Actions()
+   at DotNetNuke.UI.Containers.ActionBase.OnLoad(EventArgs e)"
+2017-02-12 17:13:55,411 [UK03601][Thread:22][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidCastException: Specified cast is not valid.
+   at NM.Modules.FlexEventsUpcoming.Controllers.ItemController.Index() in C:\inetpub\wwwroot\new.summerfestivalguide.co.uk\DesktopModules\MVC\FlexEventsUpcoming\Controllers\ItemController.cs:line 26
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+2017-02-12 17:13:55,523 [UK03601][Thread:22][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error: Upcoming Events is currently unavailable." ctrl="DotNetNuke.Web.Mvc.MvcHostControl" exc="System.InvalidCastException: Specified cast is not valid.
+   at NM.Modules.FlexEventsUpcoming.Controllers.ItemController.Index() in C:\inetpub\wwwroot\new.summerfestivalguide.co.uk\DesktopModules\MVC\FlexEventsUpcoming\Controllers\ItemController.cs:line 26
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at DotNetNuke.Web.Mvc.Framework.Modules.ModuleApplication.ExecuteRequest(ModuleRequestContext context)
+   at DotNetNuke.Web.Mvc.MvcHostControl.OnInit(EventArgs e)"
+2017-02-12 17:14:07,939 [UK03601][Thread:22][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="An error has occurred." ctrl="ASP.admin_menus_moduleactions_moduleactions_ascx" exc="System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.UI.Modules.ModuleInstanceContext.LoadActions(HttpRequest request)
+   at DotNetNuke.UI.Modules.ModuleInstanceContext.get_Actions()
+   at DotNetNuke.UI.Containers.ActionBase.OnLoad(EventArgs e)"
+2017-02-12 17:59:24,567 [UK03601][Thread:8][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Error: Upcoming Events is currently unavailable." ctrl="DotNetNuke.Web.Mvc.MvcHostControl" exc="System.Web.HttpParseException (0x80004005): The foreach block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at DotNetNuke.Web.Mvc.Framework.ActionResults.DnnViewResult.ExecuteResult(ControllerContext context, TextWriter writer)
+   at DotNetNuke.Web.Mvc.MvcHostControl.RenderModule(ModuleRequestResult moduleResult)
+   at DotNetNuke.Web.Mvc.MvcHostControl.OnLoad(EventArgs e)"
+2017-02-12 18:16:35,341 [UK03601][Thread:41][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.TypeLoadException: Could not load type 'DotNetNuke.Services.Log.SiteLog.PurgeSiteLog' from assembly 'DOTNETNUKE'.
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMarkHandle stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName, ObjectHandleOnStack type)
+   at System.RuntimeTypeHandle.GetTypeByName(String name, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean loadTypeFromPartialName)
+   at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, Boolean reflectionOnly, StackCrawlMark& stackMark)
+   at System.Type.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at System.Web.Compilation.BuildManager.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase)
+   at DotNetNuke.Services.Scheduling.ProcessGroup.GetSchedulerClient(String strProcess, ScheduleHistoryItem objScheduleHistoryItem)
+   at DotNetNuke.Services.Scheduling.ProcessGroup.Run(ScheduleHistoryItem objScheduleHistoryItem)

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+
+  <!--		ModuleSettings		-->
+
+  <data name="ControlTitle_modulesettings.Text">
+    <value>Module Settings</value>
+  </data>
+  <data name="GeneralOptions.Text">
+    <value>General Options</value>
+  </data>
+  <data name="Permission.Text">
+    <value>Permission</value>
+  </data>
+  <data name="PaymentOptions.Text">
+    <value>Payment Options</value>
+  </data>
+  <data name="SubCalendar.Text">
+    <value>Sub Calendar</value>
+  </data>
+  <data name="CustomViewEventPage.Text">
+    <value>Custom Event Detail Page</value>
+  </data>
+  <data name="CustomViewEventPage.Help">
+    <value>When disabled, event details are displayed within this module, you can optionally choose to display event details in a dedicated DNN page which includes FXE-EventDetails module.</value>
+  </data>
+  <data name="ViewEventPage.Text">
+    <value>Event Detail Page</value>
+  </data>
+  <data name="ViewEventPage.Help">
+    <value>Navigate to this page to view event details, FXE-EventDetails module must be placed on this page</value>
+  </data>
+  <data name="AllowReviews.Text">
+    <value>Accept Reviews</value>
+  </data>
+  <data name="AllowReviews.Help">
+    <value>Whether to accept reviews for all events</value>
+  </data>
+  <data name="ReviewNeedApproval.Text">
+    <value>Review Need Approval</value>
+  </data>
+  <data name="ReviewNeedApproval.Help">
+    <value>Reviews will only be displayed after approval when this option is enabled, this option is ignored if the author has add permission in this module.</value>
+  </data>
+  <data name="ViewPermission.Text">
+    <value>View Permission</value>
+  </data>
+  <data name="ViewPermission.Help">
+    <value>In default, all events are visible to users who can view this page, you can optionally turn on view permission to set who can view a event</value>
+  </data>
+  <data name="AddEventRoles.Text">
+    <value>Add Event Roles</value>
+  </data>
+  <data name="AddEventRoles.Help">
+    <value>User roles who can add events to this module, edit their own events and reviews posted to them.</value>
+  </data>
+  <data name="ShareLocations.Text">
+    <value>Share Locations</value>
+  </data>
+  <data name="ShareLocations.Help">
+    <value>For users with add event permission, this option allows them to see and use locations added by other users. </value>
+  </data>
+  <data name="ManageRoles.Text">
+    <value>Manage Roles</value>
+  </data>
+  <data name="ManageRoles.Help">
+    <value>User roles who can manage all events and reviews in this module.</value>
+  </data>
+  <data name="BookingOpens.Text">
+    <value>Booking Opens</value>
+  </data>
+  <data name="BookingOpens.Help">
+    <value>Number of days users can book a event before it happens, set it to 0 if users can book a event at any time</value>
+  </data>
+  <data name="Currency.Text">
+    <value>Currency</value>
+  </data>
+  <data name="Currency.Help">
+    <value>The currency to be used for online booking</value>
+  </data>
+  <data name="ListView.Text">
+    <value>Event List View</value>
+  </data>
+  <data name="ListView.Help">
+    <value>The default list view of this module</value>
+  </data>
+  <data name="MapViewHeight.Text">
+    <value>Map View Height</value>
+  </data>
+  <data name="MapViewHeight.Help">
+    <value>The width of the map view fits to its container, while the height can be customized</value>
+  </data>
+  <data name="SalesTax.Text">
+    <value>Sales Tax</value>
+  </data>
+  <data name="SalesTax.Help">
+    <value>Whether to collect sales tax, choose Home State Only if you wish to collect tax only from users of specefic state.</value>
+  </data>
+  <data name="HomeCountry.Text">
+    <value>Home Country</value>
+  </data>
+  <data name="HomeCountry.Help">
+    <value>The country of users to collect tax from</value>
+  </data>
+  <data name="HomeState.Text">
+    <value>Home State</value>
+  </data>
+  <data name="HomeState.Help">
+    <value>The state of users to collect tax from</value>
+  </data>
+  <data name="TaxRate.Text">
+    <value>Tax Rate</value>
+  </data>
+  <data name="TaxRate.Help">
+    <value>The tax rate to be collected</value>
+  </data>
+  <data name="AllUsers.Text">
+    <value>All Users</value>
+  </data>
+  <data name="RegisteredUsers.Text">
+    <value>Registered</value>
+  </data>
+  <data name="CustomersOnly.Text">
+    <value>Customers Only</value>
+  </data>
+  <data name="Nobody.Text">
+    <value>Nobody</value>
+  </data>
+  <data name="Nobody.Text">
+    <value>Nobody</value>
+  </data>
+  <data name="Paypal.Text">
+    <value>Paypal</value>
+  </data>
+  <data name="Paypal.Help">
+    <value>Accept paypal</value>
+  </data>
+  <data name="PaypalProcessor.Text">
+    <value>Paypal ID</value>
+  </data>
+  <data name="PaypalProcessor.Help">
+    <value>Your paypal processor</value>
+  </data>
+  <data name="AuthorizeNet.Text">
+    <value>Authorize.Net</value>
+  </data>
+  <data name="AuthorizeNet.Help">
+    <value>Accept Authorize.Net</value>
+  </data>
+  <data name="ApiLogin.Text">
+    <value>Api Login</value>
+  </data>
+  <data name="ApiLogin.Help">
+    <value>Authorize.Net Api Login</value>
+  </data>
+  <data name="TransactionKey.Text">
+    <value>Transaction Key</value>
+  </data>
+  <data name="TransactionKey.Help">
+    <value>Authorize.Net Transaction Key</value>
+  </data>
+  <data name="MerchantHash.Text">
+    <value>Merchant Hash</value>
+  </data>
+  <data name="MerchantHash.Help">
+    <value>Authorize.Net Merchant Hash, please ensure you apply same value to Authorized.Net account settings page</value>
+  </data>
+  <data name="ManualPayment.Text">
+    <value>Manual Payment</value>
+  </data>
+  <data name="ManualPayment.Help">
+    <value>Accept manual payment, you are responsible to collect payments and manually change payment status</value>
+  </data>
+  <data name="PaymentInstructions.Text">
+    <value>Payment Instructions</value>
+  </data>
+  <data name="PaymentInstructions.Help">
+    <value>The instructions for users who choose to pay manually</value>
+  </data>
+
+
+
+
+  <data name="PageSizeRequired.Text">
+    <value>List View Page Size is required</value>
+  </data>
+  <data name="PageSizeInvalid.Text">
+    <value>List View Page Size is invalid</value>
+  </data>
+  <data name="BookingOpensInvalid.Text">
+    <value>Booking open period is invalid</value>
+  </data>
+  <data name="MapViewHeightInvalid.Text">
+    <value>Map view height is invalid</value>
+  </data>
+  <data name="ProcessorIdRequired.Text">
+    <value>Paypal Processor ID is required</value>
+  </data>
+  <data name="ProcessorIdInvalid.Text">
+    <value>Paypal Processor ID is invalid</value>
+  </data>
+  <data name="ApiLoginRequired.Text">
+    <value>Authorized.NET API login is required</value>
+  </data>
+  <data name="TransactionKeyRequired.Text">
+    <value>Authorized.NET transaction key is required</value>
+  </data>
+  <data name="MerchantHashRequired.Text">
+    <value>Authorized.NET merchant hash is required</value>
+  </data>
+  <data name="PaymentInstructionsRequired.Text">
+    <value>Payment instructions is required</value>
+  </data>
+
+
+  <data name="AddMetadata.Text">
+    <value>Add Metadata</value>
+  </data>
+  <data name="AddMetadata.Help">
+    <value>When enabled, users with add event permission can add new categories and locations. Users with manage permission are not affected by this option.</value>
+  </data>
+  <data name="ShowRegistrationTab.Text">
+    <value>Show Registration Tab</value>
+  </data>
+  <data name="ShowRegistrationTab.Help">
+    <value>When a user add event without manage permission, this option dictates whether to show the registration tab. Users with manage permission are not affected by this option.</value>
+  </data>
+
+  <data name="EventModules.Text">
+    <value>Event Modules</value>
+  </data>
+  <data name="EventModules.Help">
+    <value>Choose event modules you wish to link as sub calendars of this module. </value>
+  </data>
+  <data name="ParentCalendar.Text">
+    <value>Parent Calendar</value>
+  </data>
+  <data name="ParentCalendar.Help">
+    <value>The parent calendar of this module. </value>
+  </data>
+  <data name="MaxCategories.Text">
+    <value>Max Categories</value>
+  </data>
+  <data name="MaxCategories.Help">
+    <value>The maximum number of categories an event belongs to </value>
+  </data>
+  <data name="FriendlyURL.Text">
+    <value>Friendly URL</value>
+  </data>
+  <data name="FriendlyURL.Help">
+    <value>Use friendly URL for event detail page</value>
+  </data>
+  <data name="TurnOffBeforeUninstallation.Text">
+    <value>Please remember to turn off this option before uninstalling Flex Events</value>
+  </data>
+  <data name="MonthFilter.Text">
+    <value>Month Filter</value>
+  </data>
+  <data name="MonthFilter.Help">
+    <value>Filter events by month. All events will be displayed if disabled</value>
+  </data>
+
+</root>

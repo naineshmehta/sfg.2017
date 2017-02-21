@@ -1,0 +1,67 @@
+System.Data.SqlClient.SqlException: 'IX_Lists_ParentID' is not a constraint.
+Could not drop constraint. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DotNetNuke.Data.SqlDataProvider.ExecuteADOScript(String SQL)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScript(String Script, Boolean UseTransactions)
+
+
+
+IF  EXISTS (SELECT * FROM sys.indexes WHERE name = N'IX_Lists_ParentID')
+	ALTER TABLE dbo.[Lists] 
+		DROP CONSTRAINT [IX_Lists_ParentID]
+
+
+System.Data.SqlClient.SqlException: The operation failed because an index or statistics with name 'IX_Lists_ParentID' already exists on table 'Lists'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DotNetNuke.Data.SqlDataProvider.ExecuteADOScript(String SQL)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScript(String Script, Boolean UseTransactions)
+
+
+
+CREATE INDEX IX_Lists_ParentID on [Lists] (ParentID ASC) on [PRIMARY]
+
+
+System.Data.SqlClient.SqlException: 'IX_Lists_ListName_ParentID' is not a constraint.
+Could not drop constraint. See previous errors.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DotNetNuke.Data.SqlDataProvider.ExecuteADOScript(String SQL)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScript(String Script, Boolean UseTransactions)
+
+
+
+IF  EXISTS (SELECT * FROM sys.indexes WHERE name = N'IX_Lists_ListName_ParentID')
+	ALTER TABLE dbo.[Lists] 
+		DROP CONSTRAINT [IX_Lists_ListName_ParentID]
+
+
+System.Data.SqlClient.SqlException: The operation failed because an index or statistics with name 'IX_Lists_ListName_ParentID' already exists on table 'Lists'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DotNetNuke.Data.SqlDataProvider.ExecuteADOScript(String SQL)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScript(String Script, Boolean UseTransactions)
+
+
+
+CREATE INDEX IX_Lists_ListName_ParentID on [Lists] (ListName ASC, ParentID ASC) on [PRIMARY]
+
+
+
